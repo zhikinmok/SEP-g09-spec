@@ -1,0 +1,54 @@
+/*
+* @author Kira
+* @date Tue Oct 25 23:54:03 CEST 2016
+*/
+
+package lu.uni.lassy.excalibur.group09.spec.environment {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+
+Environment Model {
+			
+			actor actEmergencyCoordinator role rnactEmergencyCoordinator cardinality [1..*] {
+				
+				operation init():ptBoolean
+			
+				input interface inactEmergencyCoordinator {
+					operation ieGetCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
+					operation ieMessage(AMessage:ptString) : ptBoolean
+				}
+				
+				
+				output interface outactEmergencyCoordinator {
+					operation oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
+					operation oeConfirmLocation() : ptBoolean
+					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeSubmitEvent(ctCrisis:ctCrisis) : ptBoolean
+				}
+			}
+			
+			
+			
+			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] {
+				
+				operation init() : ptBoolean
+			
+				input interface inactFiremenCoordinator {
+					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+				}
+				
+				output interface outactFiremenCoordinator {
+					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
+					operation oeRequestHelp(AdtVehicleType: dtVehicleType, ANumber:ptInteger) : ptBoolean
+				}
+			}
+			
+			
+}
+}
