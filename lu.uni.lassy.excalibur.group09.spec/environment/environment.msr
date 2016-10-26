@@ -32,7 +32,18 @@ Environment Model {
 				}
 			}
 			
+			actor actCommunicationCompany role rnactCommunicationCompany cardinality [1..*] {
+				
+				operation init() : ptBoolean
 			
+				input interface inactFiremenCoordinator {
+					operation ieRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
+				}
+				
+				output interface outactFiremenCoordinator {
+					operation oeSendCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
+				}
+			}
 			
 			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] {
 				
@@ -46,6 +57,34 @@ Environment Model {
 					operation oeMessage(AMessage:ptString) : ptBoolean
 					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
 					operation oeRequestHelp(AdtVehicleType: dtVehicleType, ANumber:ptInteger) : ptBoolean
+				}
+			}
+			
+				actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] {
+				
+				operation init() : ptBoolean
+			
+				input interface inactPoliceCoordinator {
+					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+				}
+				
+				output interface outactPoliceCoordinator {
+					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
+				}
+			}
+			
+				actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] {
+				
+				operation init() : ptBoolean
+			
+				input interface inactTowServiceCoordinator {
+					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+				}
+				
+				output interface outactTowServiceCoordinator {
+					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
 				}
 			}
 			
