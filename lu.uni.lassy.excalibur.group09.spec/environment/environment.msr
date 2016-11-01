@@ -21,18 +21,19 @@ Environment Model {
 				operation init():ptBoolean
 			
 				input interface inactEmergencyCoordinator {
-					operation ieGetCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
+					operation ieReceiveCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
 					operation ieMessage(AMessage:ptString) : ptBoolean
 				}
 				
 				
 				output interface outactEmergencyCoordinator {
-					operation oeRequestCoordinates(AdtHumanPhoneNumber:dtPhoneNumber) : ptBoolean
+					operation oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 					operation oeConfirmLocation() : ptBoolean
 				}
 			}
+			
 			
 			actor actCommunicationCompany role rnactCommunicationCompany cardinality [1..*] {
 				
@@ -47,28 +48,30 @@ Environment Model {
 				}
 			}
 			
+			
 			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] {
 				
 				operation init() : ptBoolean
 			
 				input interface inactFiremenCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactFiremenCoordinator {
 					operation oeMessage(AMessage:ptString) : ptBoolean
 					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
-					operation oeRequestHelp(AdtVehicleType: enTeamType, ANumber:ptInteger) : ptBoolean
+					operation oeRequestHelp(AdtVehicleType: enTeamType, ARequestedNumber:ptInteger) : ptBoolean
 					operation oeRefreshMap() : ptBoolean
 				}
 			}
 			
-				actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] {
+			
+			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] {
 				
 				operation init() : ptBoolean
 			
 				input interface inactPoliceCoordinator {
-					operation ieReceiveNewCrisisEvent(AAdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AAdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactPoliceCoordinator {
@@ -77,12 +80,12 @@ Environment Model {
 				}
 			}
 			
-				actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] {
+			actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] {
 				
 				operation init() : ptBoolean
 			
 				input interface inactTowServiceCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactTowServiceCoordinator {
