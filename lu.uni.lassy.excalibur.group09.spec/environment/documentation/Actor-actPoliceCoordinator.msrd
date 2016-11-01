@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator
-@description ""
+@description "Is representing a police team leader."
 //input events
 @inputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.inactPoliceCoordinator.ieReceiveNewCrisisEvent

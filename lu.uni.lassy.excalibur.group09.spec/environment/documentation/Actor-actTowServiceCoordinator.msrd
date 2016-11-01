@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator
-@description ""
+@description "Is representing a tow service driver."
 //input events
 @inputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.inactTowServiceCoordinator.ieReceiveNewCrisisEvent

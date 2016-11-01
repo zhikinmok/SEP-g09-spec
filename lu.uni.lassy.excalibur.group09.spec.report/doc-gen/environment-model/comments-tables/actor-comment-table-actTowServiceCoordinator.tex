@@ -1,0 +1,26 @@
+\subsection{\msrcode{actTowServiceCoordinator} Actor}
+
+
+\begin{actortable}
+	\addheading{Actor}
+	
+	\adddoublerow{actTowServiceCoordinator}{Is representing a tow service driver.}
+	
+	
+	
+	
+	
+
+	\addrowheading{OutputInterfaces}
+	\addnumbereddoublerow{OUT}{\hypertarget{actTowServiceCoordinator.outactTowServiceCoordinator.oeMessage}
+			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actTowServiceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus}
+			{\msrcode{oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus):ptBoolean}}}
+			{}
+	
+	\addrowheading{InputInterfaces}
+	\addnumbereddoublerow{IN}{\msrcode{ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress):ptBoolean}}
+							 {}
+	
+\end{actortable}

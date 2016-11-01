@@ -1,0 +1,26 @@
+\subsection{\msrcode{actPoliceCoordinator} Actor}
+
+
+\begin{actortable}
+	\addheading{Actor}
+	
+	\adddoublerow{actPoliceCoordinator}{Is representing a police team leader.}
+	
+	
+	
+	
+	
+
+	\addrowheading{OutputInterfaces}
+	\addnumbereddoublerow{OUT}{\hypertarget{actPoliceCoordinator.outactPoliceCoordinator.oeMessage}
+			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actPoliceCoordinator.outactPoliceCoordinator.oeUpdateDispatchStatus}
+			{\msrcode{oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus):ptBoolean}}}
+			{}
+	
+	\addrowheading{InputInterfaces}
+	\addnumbereddoublerow{IN}{\msrcode{ieReceiveNewCrisisEvent(AAdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress):ptBoolean}}
+							 {}
+	
+\end{actortable}

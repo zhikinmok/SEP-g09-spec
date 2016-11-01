@@ -1,0 +1,73 @@
+package usecases.ucisuGlobalManagementOfEvent {
+	import lu.uni.lassy.excalibur.group09.spec.usecases
+	import lu.uni.lassy.excalibur.group09.spec.environment
+	import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+	
+	Use Case Model {
+
+		use case instance ucisuGlobalManagementOfEvent : suGlobalManagementOfEvent{
+			actors {
+				Camille : actEmergencyCoordinator
+				Orange : actCommunicationCompany
+				Fabio : actFiremenCoordinator
+				Ted : actTowServiceCoordinator
+				Polo : actPoliceCoordinator
+			}
+			use case steps {
+				Camille executed instanceof subfunction oeRequestCoordinates(AdtPhoneNumber="691123456") {
+					ieRequestCoordinates("AdtPhoneNumber") returned to Orange
+				}
+				
+				Orange executed instanceof subfunction oeSendCoordinates(AdtCoordinates="X=75.08, Y=23.03") {
+					ieReceiveCoordinates("AdtCoordinates") returned to Camille			
+				}
+				
+//				Camille executed instanceof subfunction oeCreateNewCrisisEvent(AdtCrisisID="", AdtName="", AenHumanType="", AdtPhoneNumberX="691123456", AdtCrisisEventLocation="A4, 1321 Luxembourg") {
+				Camille executed instanceof subfunction oeCreateNewCrisisEvent(AdtCrisisID="", AdtName="", AenHumanType="", AdtPhoneNumberX="691123456", AdtCrisisEventLocation="A4, 1321 Luxembourg") {
+					ieReceiveNewCrisisEvent("AdtCrisisID","AdtName","AenHumanType","AdtPhoneNumber","AdtCrisisEventLocation") returned to Fabio
+					ieReceiveNewCrisisEvent("AdtCrisisID","AdtName","AenHumanType","AdtPhoneNumber","AdtCrisisEventLocation") returned to Ted
+				}
+				
+				Fabio executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatus="InTransit") {
+					
+					}
+					
+				Ted executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusX="InTransit") {
+			
+					}
+					
+				Fabio executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXX="Arrived") {
+			
+					}
+
+					
+				Fabio executed instanceof subfunction oeRequestHelp(AenTeamType="Police", RequestedNumber="1") {
+					ieReceiveNewCrisisEvent("AdtCrisisID","AdtName","AenHumanType","AdtPhoneNumber","AdtCrisisEventLocation") returned to Polo
+					}
+
+				Polo executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXX="InTransit") {
+			
+					}
+					
+				Ted executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXXX="Arrived") {
+			
+					}
+					
+				Polo executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXXXX="Arrived") {
+			
+					}
+
+
+					
+				
+
+
+				
+
+				
+
+
+			}
+		}
+	}
+}

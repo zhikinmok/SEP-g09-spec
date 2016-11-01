@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator
-@description ""
+@description "Is representing the person that receives the victim's or witness' call in the emergency central."
 //input events
 @inputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.inactEmergencyCoordinator.ieReceiveCoordinates

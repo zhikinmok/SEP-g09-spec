@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany
-@description ""
+@description "Is representing any communication company in Luxembourg."
 //input events
 @inputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.inactCommunicationCompany.ieRequestCoordinates

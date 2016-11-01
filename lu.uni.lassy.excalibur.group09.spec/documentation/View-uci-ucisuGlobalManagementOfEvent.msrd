@@ -1,0 +1,10 @@
+/*
+@author Kira
+@date Tue Nov 01 21:53:48 CET 2016
+*/
+
+
+@@view uci-ucisuGlobalManagementOfEvent
+@instance Use-Case usecases.ucisuGlobalManagementOfEvent.ucisuGlobalManagementOfEvent 
+@description ""
+@caption ""

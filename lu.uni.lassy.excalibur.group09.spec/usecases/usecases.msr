@@ -75,7 +75,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 //			actor actPoliceCoordinator[primary,active]
 		}
 		
-		use case system subfunction oeRequestHelp(AdtVehicleType: enTeamType, RequestedNumber:ptInteger) {
+		use case system subfunction oeRequestHelp(AenTeamType: enTeamType, RequestedNumber:ptInteger) {
 			actor actFiremenCoordinator[primary,active]
 			actor actPoliceCoordinator[secondary,passive]
 			actor actTowServiceCoordinator[secondary,passive]

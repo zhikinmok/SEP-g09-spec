@@ -1,0 +1,34 @@
+\subsection{\msrcode{actEmergencyCoordinator} Actor}
+
+
+\begin{actortable}
+	\addheading{Actor}
+	
+	\adddoublerow{actEmergencyCoordinator}{Is representing the person that receives the victim's or witness' call in the emergency central.}
+	
+	
+	
+	
+	
+
+	\addrowheading{OutputInterfaces}
+	\addnumbereddoublerow{OUT}{\hypertarget{actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates}
+			{\msrcode{oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actEmergencyCoordinator.outactEmergencyCoordinator.oeMessage}
+			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent}
+			{\msrcode{oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation}
+			{\msrcode{oeConfirmLocation():ptBoolean}}}
+			{}
+	
+	\addrowheading{InputInterfaces}
+	\addnumbereddoublerow{IN}{\msrcode{ieReceiveCoordinates(AdtCoordinates:dtCoordinates):ptBoolean}}
+							 {}
+	\addnumbereddoublerow{IN}{\msrcode{ieMessage(AMessage:ptString):ptBoolean}}
+							 {}
+	
+\end{actortable}

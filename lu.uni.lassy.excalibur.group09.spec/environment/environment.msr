@@ -29,7 +29,7 @@ Environment Model {
 				output interface outactEmergencyCoordinator {
 					operation oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
 					operation oeConfirmLocation() : ptBoolean
 				}
 			}

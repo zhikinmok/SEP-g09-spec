@@ -1,0 +1,32 @@
+\subsection{\msrcode{actFiremenCoordinator} Actor}
+
+
+\begin{actortable}
+	\addheading{Actor}
+	
+	\adddoublerow{actFiremenCoordinator}{Is representing any firemen team leader able to manage a two Ambulances.}
+	
+	
+	
+	
+	
+
+	\addrowheading{OutputInterfaces}
+	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeMessage}
+			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus}
+			{\msrcode{oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp}
+			{\msrcode{oeRequestHelp(AdtVehicleType:enTeamType, ARequestedNumber:ptInteger):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeRefreshMap}
+			{\msrcode{oeRefreshMap():ptBoolean}}}
+			{}
+	
+	\addrowheading{InputInterfaces}
+	\addnumbereddoublerow{IN}{\msrcode{ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress):ptBoolean}}
+							 {}
+	
+\end{actortable}
