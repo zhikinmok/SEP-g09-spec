@@ -15,7 +15,34 @@ import lu.uni.lassy.messir.libraries.string
 Concept Model {
 
 	Primary Types {
-   
+		   datatype dtPhoneNumber {
+		   		attribute value : ptInteger
+		   }
+		   
+		   datatype dtAddress {
+		   		attribute value : ptString
+		   }
+		   
+		   datatype dtCrisisID {
+		   		attribute value : ptInteger
+		   }
+		   
+		   datatype dtCoordinates {
+		   		attribute X : ptInteger
+		   		attribute Y : ptInteger
+		   }
+
+		   enum enDispatchStatus {
+		   		constants["InStation", "InTransit", "Arrived"]
+		   }		   
+		   
+		   enum enHumanType {
+		   		constants["Victim", "Witness"]
+		   }
+		   
+		   enum enTeamType {
+		   	constants["AmbulanceTeam", "PoliceTeam", "TowServiceTeam", "FireFighterTeam"]
+		   }
 	}
 }
 }

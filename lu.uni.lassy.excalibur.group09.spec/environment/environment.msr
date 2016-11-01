@@ -10,6 +10,8 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+
 
 
 Environment Model {
@@ -25,10 +27,10 @@ Environment Model {
 				
 				
 				output interface outactEmergencyCoordinator {
-					operation oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
-					operation oeConfirmLocation() : ptBoolean
+					operation oeRequestCoordinates(AdtHumanPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeSubmitEvent(ctCrisis:ctCrisis) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
+					operation oeConfirmLocation() : ptBoolean
 				}
 			}
 			
@@ -36,11 +38,11 @@ Environment Model {
 				
 				operation init() : ptBoolean
 			
-				input interface inactFiremenCoordinator {
+				input interface inactCommunicationCompany {
 					operation ieRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 				}
 				
-				output interface outactFiremenCoordinator {
+				output interface outactCommunicationCompany {
 					operation oeSendCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
 				}
 			}
@@ -50,13 +52,14 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactFiremenCoordinator {
-					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactFiremenCoordinator {
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
-					operation oeRequestHelp(AdtVehicleType: dtVehicleType, ANumber:ptInteger) : ptBoolean
+					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
+					operation oeRequestHelp(AdtVehicleType: enTeamType, ANumber:ptInteger) : ptBoolean
+					operation oeRefreshMap() : ptBoolean
 				}
 			}
 			
@@ -65,12 +68,12 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactPoliceCoordinator {
-					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AAdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactPoliceCoordinator {
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
+					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 				}
 			}
 			
@@ -79,12 +82,12 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactTowServiceCoordinator {
-					operation ieSendACrisis(ActCrisis:ctCrisis) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtHumanName:ptString, AenHumanType:enHumanType, AdtHumanPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactTowServiceCoordinator {
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateStatus(AdtStatus:dtStatus): ptBoolean
+					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 				}
 			}
 			
