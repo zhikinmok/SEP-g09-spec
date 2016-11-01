@@ -38,6 +38,8 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 				step i: actTowServiceCoordinator executes oeUpdateDispatchStatus
 				step j: actPoliceCoordinator executes oeUpdateDispatchStatus
 				
+				ordering constraint "if (b) then previously (a)"
+				ordering constraint "step (c) must be executed before the step (d) to (j)"				
 		}
 		
 		use case system subfunction oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) {

@@ -1,0 +1,24 @@
+/*
+@author Kira
+@date Tue Nov 01 13:52:02 CET 2016
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

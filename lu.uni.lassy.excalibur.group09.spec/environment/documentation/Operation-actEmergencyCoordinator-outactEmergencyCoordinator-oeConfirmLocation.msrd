@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:44 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

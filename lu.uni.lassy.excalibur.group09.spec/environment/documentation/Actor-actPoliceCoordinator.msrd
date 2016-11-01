@@ -1,0 +1,23 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:54 CET 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator
+@description ""
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.inactPoliceCoordinator.ieReceiveNewCrisisEvent
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeMessage
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeUpdateDispatchStatus
+""
+
+@endOutputEvents

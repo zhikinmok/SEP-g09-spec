@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:29 CET 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctState
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctState.vpStarted
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctState.init
+""
+@endOperations

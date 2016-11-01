@@ -1,0 +1,27 @@
+/*
+@author Kira
+@date Tue Nov 01 13:52:07 CET 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestHelp
+@description ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestHelp.AdtVehicleType ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestHelp.RequestedNumber ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

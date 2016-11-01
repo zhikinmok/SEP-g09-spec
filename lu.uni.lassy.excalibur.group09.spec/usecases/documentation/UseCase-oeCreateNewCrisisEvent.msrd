@@ -1,0 +1,30 @@
+/*
+@author Kira
+@date Tue Nov 01 13:52:05 CET 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent
+@description ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtCrisisID ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtName ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AenHumanType ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtPhoneNumber ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtCrisisEventLocation ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

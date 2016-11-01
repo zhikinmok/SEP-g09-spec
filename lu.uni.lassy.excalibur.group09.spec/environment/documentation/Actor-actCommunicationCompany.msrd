@@ -1,0 +1,20 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:45 CET 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany
+@description ""
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.inactCommunicationCompany.ieRequestCoordinates
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeSendCoordinates
+""
+
+@endOutputEvents

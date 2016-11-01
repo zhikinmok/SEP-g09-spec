@@ -1,0 +1,46 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:43 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent.AdtCrisisID
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent.AdtName
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent.AenHumanType
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent.AdtPhoneNumber
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent.AdtCrisisEventLocation
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

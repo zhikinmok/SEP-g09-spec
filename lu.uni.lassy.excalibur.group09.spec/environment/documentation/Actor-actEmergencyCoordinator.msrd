@@ -1,0 +1,32 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:39 CET 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator
+@description ""
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.inactEmergencyCoordinator.ieReceiveCoordinates
+""
+@inputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.inactEmergencyCoordinator.ieMessage
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeMessage
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation
+""
+
+@endOutputEvents

@@ -1,0 +1,29 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:48 CET 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator
+@description ""
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.inactFiremenCoordinator.ieReceiveNewCrisisEvent
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeMessage
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp
+""
+@outputEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRefreshMap
+""
+
+@endOutputEvents

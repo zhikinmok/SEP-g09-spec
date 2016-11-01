@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:53 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRefreshMap
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

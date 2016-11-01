@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Tue Nov 01 13:51:39 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.init
+@description "
+used to initialize the current object as a new instance of the actEmergencyCoordinator type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new actEmergencyCoordinator instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

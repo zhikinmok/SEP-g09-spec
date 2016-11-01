@@ -1,0 +1,15 @@
+package usecases.ucisuGlobalManagementOfEvent {
+	import lu.uni.lassy.excalibur.group09.spec.usecases
+
+	Use Case Model {
+
+		use case instance ucisuGlobalManagementOfEvent : suGlobalManagementOfEvent{
+			actors {
+				
+			}
+			use case steps {
+				
+			}
+		}
+	}
+}

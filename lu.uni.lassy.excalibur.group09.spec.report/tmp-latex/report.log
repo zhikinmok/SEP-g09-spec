@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2016.10.12)  25 OCT 2016 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2016.10.12)  1 NOV 2016 13:52
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -2889,21 +2889,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
 
 
 
-] (./report.toc)
+] (./report.toc [2])
 \tf@toc=\write13
 \openout13 = `report.toc'.
 
- [2] (./report.lof)
+ [3] (./report.lof)
 \tf@lof=\write14
 \openout14 = `report.lof'.
 
- [3] [4
-
-] (./report.lol)
+ [4] (./report.lol)
 \tf@lol=\write15
 \openout15 = `report.lol'.
 
- [5]
+ [5
+
+]
 (./doc/introduction/introduction.tex [6
 
 ]
@@ -2950,14 +2950,211 @@ Package microtype Info: Character `AE ' is missing
 
 LaTeX Warning: Citation `messirbook' on page 10 undefined on input line 19.
 
-) (./doc-gen/doc-gen.tex) [10]
-(./doc/additional-constraints/additional-constraints.tex
-Chapter 3.
-) [11
+) (./doc-gen/doc-gen.tex (./doc-gen/usecase-model/usecase-model.tex
 
-] (./doc/appendix/appendix.tex) (./doc-gen/appendix/appendix-gen.tex)
+LaTeX Warning: Citation `armour01usecase' on page 10 undefined on input line 5.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10])
+(./doc-gen/environment-model/environment-model.tex [11] [12
+
+]
+Chapter 3.
+) (./doc-gen/concept-model/concept-model.tex [13] [14
+
+]
+Chapter 4.
+
+(./doc-gen/concept-model/comments-tables/primaryTypesClasses-comments-table.tex
+)
+(./doc-gen/concept-model/comments-tables/primaryTypesDatatypes-comments-table.t
+ex)
+(./doc-gen/concept-model/comments-tables/primaryTypesAssociations-comments-tabl
+e.tex)
+(./doc-gen/concept-model/comments-tables/primaryTypesAggregations-comments-tabl
+e.tex)
+(./doc-gen/concept-model/comments-tables/primaryTypesCompositions-comments-tabl
+e.tex)
+(./doc-gen/concept-model/comments-tables/secondaryTypesClasses-comments-table.t
+ex)
+(./doc-gen/concept-model/comments-tables/secondaryTypesDatatypes-comments-table
+.tex)
+(./doc-gen/concept-model/comments-tables/secondaryTypesAssociations-comments-ta
+ble.tex)
+(./doc-gen/concept-model/comments-tables/secondaryTypesAggregations-comments-ta
+ble.tex [15])
+(./doc-gen/concept-model/comments-tables/secondaryTypesCompositions-comments-ta
+ble.tex)) (./doc-gen/operation-model/operation-model.tex [16]
+Chapter 5.
+) (./doc-gen/test-model/test-model.tex [17
+
+] [18]
+Chapter 6.
+)) [19
+
+] (./doc/additional-constraints/additional-constraints.tex [20
+
+]
+Chapter 7.
+) [21] (./doc/appendix/appendix.tex) (./doc-gen/appendix/appendix-gen.tex
+(./doc-gen/appendix/appendix-undocumentedMsrSpecElements.tex [22
+
+]
+Appendix A.
+[23]
+Overfull \hbox (152.74905pt too wide) in paragraph at lines 78--79
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCommun
+icationCompany.outactCommunicationCompany.oeSendCoordinates 
+ []
+
+
+Overfull \hbox (133.79489pt too wide) in paragraph at lines 79--80
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
+ncyCoordinator.outactEmergencyCoordinator.oeConfirmLocation 
+ []
+
+
+Overfull \hbox (159.93188pt too wide) in paragraph at lines 80--81
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
+ncyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent 
+ []
+
+
+Overfull \hbox (92.6296pt too wide) in paragraph at lines 81--82
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
+ncyCoordinator.outactEmergencyCoordinator.oeMessage 
+ []
+
+
+Overfull \hbox (148.73647pt too wide) in paragraph at lines 82--83
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
+ncyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates 
+ []
+
+
+Overfull \hbox (66.0182pt too wide) in paragraph at lines 83--84
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
+nCoordinator.outactFiremenCoordinator.oeMessage 
+ []
+
+
+Overfull \hbox (83.95032pt too wide) in paragraph at lines 84--85
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
+nCoordinator.outactFiremenCoordinator.oeRefreshMap 
+ []
+
+
+Overfull \hbox (86.97641pt too wide) in paragraph at lines 85--86
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
+nCoordinator.outactFiremenCoordinator.oeRequestHelp 
+ []
+
+
+Overfull \hbox (134.21883pt too wide) in paragraph at lines 86--87
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
+nCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus 
+ []
+
+
+Overfull \hbox (44.24995pt too wide) in paragraph at lines 87--88
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actPolice
+Coordinator.outactPoliceCoordinator.oeMessage 
+ []
+
+
+Overfull \hbox (112.45058pt too wide) in paragraph at lines 88--89
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actPolice
+Coordinator.outactPoliceCoordinator.oeUpdateDispatchStatus 
+ []
+
+
+Overfull \hbox (94.75572pt too wide) in paragraph at lines 89--90
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actTowSer
+viceCoordinator.outactTowServiceCoordinator.oeMessage 
+ []
+
+
+Overfull \hbox (162.95634pt too wide) in paragraph at lines 90--91
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actTowSer
+viceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus 
+ []
+
+) (./doc-gen/appendix/appendix-msrSpecFilesListings.tex [24]
+Appendix B.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(./src-gen/messir-spec/.views.msr
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 2.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 4.
+)
+(./src-gen/messir-spec/environment/environment.msr [25
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/primarytypes-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+(./src-gen/messir-spec/concepts/primarytypes-associations/primarytypes-associat
+ions.msr)
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/primarytypes-
+ []
+
+(./src-gen/messir-spec/concepts/primarytypes-classes/primarytypes-classes.msr)
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/primarytypes-
+ []
+
+
+(./src-gen/messir-spec/concepts/primarytypes-datatypes/primarytypes-datatypes.m
+sr [27])
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
+ []
+
+
+(./src-gen/messir-spec/concepts/secondarytypes-associations/secondarytypes-asso
+ciations.msr) [28]
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
+ []
+
+
+(./src-gen/messir-spec/concepts/secondarytypes-classes/secondarytypes-classes.m
+sr)
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
+ []
+
+
+(./src-gen/messir-spec/concepts/secondarytypes-datatypes/secondarytypes-datatyp
+es.msr) (./src-gen/messir-spec/tests/tests.msr [29])
+(./src-gen/messir-spec/usecases/usecases.msr [30]))) [31]
 No file report.gls.
-[12]
+[32]
 No file report.bbl.
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -2974,8 +3171,8 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the report.log file.
 
-Package atenddvi Info: Last page = 13.
-[13
+Package atenddvi Info: Last page = 33.
+[33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
@@ -2984,7 +3181,7 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 84.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 1687A21E8FB447C1CE6D634C8228F8E4;670.
+(rerunfilecheck)             Checksum: 12E1A3E8DBBF1A774153B798A042B68A;5208.
 
 
 LaTeX Warning: There were undefined references.
@@ -2992,12 +3189,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 57303 strings out of 493014
- 1237156 string characters out of 6137018
- 1630879 words of memory out of 5000000
- 59444 multiletter control sequences out of 15000+600000
- 32238 words of font info for 101 fonts, out of 8000000 for 9000
+ 58266 strings out of 493014
+ 1253318 string characters out of 6137018
+ 1787768 words of memory out of 5000000
+ 60276 multiletter control sequences out of 15000+600000
+ 36925 words of font info for 110 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 69i,16n,98p,10506b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,16n,98p,10506b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (13 pages, 27808 bytes).
+Output written on report.dvi (33 pages, 232356 bytes).
