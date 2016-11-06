@@ -5,7 +5,7 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.init
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.init
 @description "
 used to initialize the current object as a new instance of the actEmergencyCoordinator type. "
 //postFunctional descriptions

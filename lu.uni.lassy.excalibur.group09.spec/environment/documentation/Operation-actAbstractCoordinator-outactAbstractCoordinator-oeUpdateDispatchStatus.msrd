@@ -1,0 +1,34 @@
+/*
+@author Kira
+@date Sun Nov 06 22:51:37 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus.AenDispatchStatus
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

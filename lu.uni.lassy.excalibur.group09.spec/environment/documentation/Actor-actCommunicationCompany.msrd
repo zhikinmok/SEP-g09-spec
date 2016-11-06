@@ -8,13 +8,13 @@
 @description "Is representing any communication company in Luxembourg."
 //input events
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.inactCommunicationCompany.ieRequestCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.inactCommunicationCompany.ieRequestCrisisEventLocation
 ""
 
 @endInputEvents
 //output events
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeSendCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation
 ""
 
 @endOutputEvents

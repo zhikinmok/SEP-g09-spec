@@ -7,18 +7,18 @@
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator
 @description "Is representing any firemen team leader able to manage a two Ambulances."
 //input events
-@inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.inactFiremenCoordinator.ieReceiveNewCrisisEvent
-""
-
-@endInputEvents
+//@inputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.inactFiremenCoordinator.ieReceiveNewCrisisEvent
+//""
+//
+//@endInputEvents
 //output events
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeMessage
-""
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus
-""
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeMessage
+//""
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus
+//""
 @outputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp
 ""

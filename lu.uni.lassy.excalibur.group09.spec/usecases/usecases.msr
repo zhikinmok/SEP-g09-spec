@@ -15,73 +15,95 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 	Use Case Model {
 		
 		use case system summary suGlobalManagementOfEvent() {
-				actor actEmergencyCoordinator[primary, active]
+				actor actCentralCoordinator[primary, active]
 				actor actCommunicationCompany[secondary, active]
 				actor actFiremenCoordinator[secondary, active]
 				actor actPoliceCoordinator[secondary, active]
 				actor actTowServiceCoordinator[secondary, active]
 				
-				reuse oeRequestCoordinates[0..*]
-				reuse oeSendCoordinates[0..*]
+				reuse oeRequestCrisisEventLocation[0..*]
+				reuse oeReceiveCrisisEventLocation[0..*]
+				reuse oeConfirmCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
 				reuse oeUpdateDispatchStatus[2..*]
 				reuse oeRequestHelp[0..*]
 				
-				step a: actEmergencyCoordinator executes oeRequestCoordinates
-				step b: actCommunicationCompany executes oeSendCoordinates
-				step c: actEmergencyCoordinator executes oeCreateNewCrisisEvent
-				step d: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step e: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step f: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step g: actFiremenCoordinator executes oeRequestHelp
-				step h: actPoliceCoordinator executes oeUpdateDispatchStatus
-				step i: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step j: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step a: actCentralCoordinator executes oeRequestCrisisEventLocation
+				step b: actCommunicationCompany executes oeReceiveCrisisEventLocation
+				step c: actCentralCoordinator executes oeConfirmCrisisEventLocation
+				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
+				step e: actFiremenCoordinator executes oeUpdateDispatchStatus
+				step f: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step g: actFiremenCoordinator executes oeUpdateDispatchStatus
+				step h: actFiremenCoordinator executes oeRequestHelp
+				step i: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step j: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step k: actPoliceCoordinator executes oeUpdateDispatchStatus
 				
 				ordering constraint "if (b) then previously (a)"
-				ordering constraint "step (c) must be executed before the step (d) to (j)"				
+				ordering constraint "step (c) must be executed before step (d)"
+				ordering constraint "step (d) must be executed before the step (e) to (k)"				
 		}
 		
-		use case system subfunction oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) {
-			actor actEmergencyCoordinator[primary,active]
+		use case system subfunction oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) {
+			actor actCentralCoordinator[primary,active]
 			actor actCommunicationCompany[secondary, passive]
 			returned messages{
-				ieRequestCoordinates(AdtPhoneNumber) returned to actCommunicationCompany //Slide 208..
+				ieRequestCrisisEventLocation(AdtPhoneNumber) returned to actCommunicationCompany //Slide 208..
 			}
 		}
 		
-		use case system subfunction oeSendCoordinates(AdtCoordinates:dtCoordinates) {
+		
+		use case system subfunction oeReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) {
 			actor actCommunicationCompany[primary, active]
-			actor actEmergencyCoordinator[secondary, passive]
+			actor actCentralCoordinator[secondary, passive]
 			returned messages{
-				ieReceiveCoordinates(AdtCoordinates) returned to actEmergencyCoordinator
+				ieReceiveCrisisEventLocation(AdtMapWithPin) returned to actCentralCoordinator
 			}	
 		}
 		
-		use case system subfunction oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) {
-			actor actEmergencyCoordinator[primary,active]
-			actor actFiremenCoordinator[secondary,passive]
-			actor actPoliceCoordinator[secondary,passive]
-			actor actTowServiceCoordinator[secondary,passive]
+		
+		use case system subfunction oeConfirmCrisisEventLocation() {
+			actor actCentralCoordinator[primary, active]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtCrisisEventLocation) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtCrisisEventLocation) returned to actTowServiceCoordinator
+				ieConfirmCrisisEventLocation() returned to actCentralCoordinator
+			}	
+		}
+		
+		
+		use case system subfunction oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin) {
+			actor actCentralCoordinator[primary,active]
+			actor actAbstractCoordinator[secondary,passive]
+			returned messages{
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actAbstractCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
 			}
 		}
 		
+		
 		use case system subfunction oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus){
-			actor actFiremenCoordinator[primary,active]
-//			actor actTowServiceCoordinator[primary,active]
+			actor actAbstractCoordinator[primary,active]
+//			actor actFiremenCoordinator[primary,active]
 //			actor actPoliceCoordinator[primary,active]
+//			actor actTowServiceCoordinator[primary,active]
+			returned messages{
+				ieMessage(AMessage) returned to actAbstractCoordinator
+			}
 		}
+		
 		
 		use case system subfunction oeRequestHelp(AenTeamType: enTeamType, RequestedNumber:ptInteger) {
 			actor actFiremenCoordinator[primary,active]
-			actor actPoliceCoordinator[secondary,passive]
-			actor actTowServiceCoordinator[secondary,passive]
+			actor actAbstractCoordinator[secondary,passive]
+//			actor actPoliceCoordinator[secondary,passive]
+//			actor actTowServiceCoordinator[secondary,passive]
+			
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtCrisisEventLocation) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtCrisisEventLocation) returned to actTowServiceCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actAbstractCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowPoliceCoordinator
 			}
 		}
 		

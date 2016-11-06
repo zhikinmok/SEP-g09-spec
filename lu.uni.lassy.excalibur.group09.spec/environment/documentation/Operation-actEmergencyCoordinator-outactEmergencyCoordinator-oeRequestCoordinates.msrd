@@ -5,10 +5,10 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates.AdtPhoneNumber
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation.AdtPhoneNumber
 ""
 @endParameters
 

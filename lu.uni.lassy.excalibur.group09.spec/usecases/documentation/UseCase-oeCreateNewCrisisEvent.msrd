@@ -10,7 +10,7 @@
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtName ""
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AenHumanType ""
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtPhoneNumber ""
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtCrisisEventLocation ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtMapWithPin ""
 @endParameters
 @protocolCondition
 "

@@ -266,6 +266,14 @@
   <semanticResources>usecases/usecaseinstance-suGlobalManagementOfEvent-ucisuGlobalManagementOfEvent.msr</semanticResources>
   <semanticResources>documentation/View-uci-ucisuGlobalManagementOfEvent.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCaseInstance-ucisuGlobalManagementOfEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtURL.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtMap.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtMapWithPin.msrd</semanticResources>
+  <semanticResources>environment/documentation/Actor-actAbstractCoordinator.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractCoordinator-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeMessage.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeUpdateDispatchStatus.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeConfirmCrisisEventLocation.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

@@ -7,17 +7,17 @@
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator
 @description "Is representing a police team leader."
 //input events
-@inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.inactPoliceCoordinator.ieReceiveNewCrisisEvent
-""
-
-@endInputEvents
-//output events
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeMessage
-""
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeUpdateDispatchStatus
-""
-
-@endOutputEvents
+//@inputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.inactPoliceCoordinator.ieReceiveNewCrisisEvent
+//""
+//
+//@endInputEvents
+////output events
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeMessage
+//""
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeUpdateDispatchStatus
+//""
+//
+//@endOutputEvents

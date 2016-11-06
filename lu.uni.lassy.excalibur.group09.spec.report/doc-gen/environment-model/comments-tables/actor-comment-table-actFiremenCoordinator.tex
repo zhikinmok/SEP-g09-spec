@@ -6,18 +6,15 @@
 	
 	\adddoublerow{actFiremenCoordinator}{Is representing any firemen team leader able to manage a two Ambulances.}
 	
+	\addrowheading{Extends}
+	\addsinglerow{lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator}
+	
 	
 	
 	
 	
 
 	\addrowheading{OutputInterfaces}
-	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeMessage}
-			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
-			{}
-	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus}
-			{\msrcode{oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus):ptBoolean}}}
-			{}
 	\addnumbereddoublerow{OUT}{\hypertarget{actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp}
 			{\msrcode{oeRequestHelp(AdtVehicleType:enTeamType, ARequestedNumber:ptInteger):ptBoolean}}}
 			{}
@@ -25,8 +22,5 @@
 			{\msrcode{oeRefreshMap():ptBoolean}}}
 			{}
 	
-	\addrowheading{InputInterfaces}
-	\addnumbereddoublerow{IN}{\msrcode{ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress):ptBoolean}}
-							 {}
 	
 \end{actortable}

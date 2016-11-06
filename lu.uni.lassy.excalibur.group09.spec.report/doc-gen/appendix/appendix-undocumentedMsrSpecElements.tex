@@ -4,44 +4,28 @@
 
 \section[Undocumented Use Cases]{Undocumented Use Cases}
 
-\subsection[Undocumented Use Cases - Summary Level]{Undocumented Summary Level Use Cases}
-\begin{itemize}
-\item lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent 
-\end{itemize}
 
 
 \subsection[Undocumented Use Cases - Subfunction Level]{Undocumented Subfunction Level Use Cases}
 \begin{itemize}
+\item lu.uni.lassy.excalibur.group09.spec.usecases.oeConfirmCrisisEventLocation 
 \item lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent 
-\item lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCoordinates 
+\item lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation 
 \item lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestHelp 
-\item lu.uni.lassy.excalibur.group09.spec.usecases.oeSendCoordinates 
+\item lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation 
 \item lu.uni.lassy.excalibur.group09.spec.usecases.oeUpdateDispatchStatus 
 \end{itemize}
 
-\subsection[Undocumented Use Case Views]{Undocumented Use Case Views}
+
+
+
+
+
+
+\section[Undocumented Actors]{Undocumented Actors}
 \begin{itemize}
-\item uc-suGlobalManagementOfEvent 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator 
 \end{itemize}
-
-
-
-
-\section[Undocumented Use Case Instances]{Undocumented Use Case Instances}
-
-\subsection[Undocumented Use Case Instances - Summary Level]{Undocumented Summary Level Use Case Instances}
-\begin{itemize}
-\item usecases.ucisuGlobalManagementOfEvent.ucisuGlobalManagementOfEvent 
-\end{itemize}
-
-
-
-\subsection[Undocumented Use Case Instance Views]{Undocumented Use Case Instance Views}
-\begin{itemize}
-\item uci-ucisuGlobalManagementOfEvent 
-\end{itemize}
-
-
 
 
 
@@ -58,7 +42,10 @@
 \item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtAddress 
 \item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtCoordinates 
 \item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtCrisisID 
+\item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMap 
+\item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMapWithPin 
 \item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtPhoneNumber 
+\item lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtURL 
 \end{itemize}
 
 \subsection[Undocumented Primary Enumeration Types]{Undocumented Primary Enumeration Types}
@@ -84,19 +71,15 @@
 
 \section[Undocumented Operation Specifications]{Undocumented Operation Specifications}
 \begin{itemize}
-\item lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeSendCoordinates 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeMessage 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeMessage 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeMessage 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage 
+\item lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation 
 \item lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRefreshMap 
 \item lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeMessage 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actPoliceCoordinator.outactPoliceCoordinator.oeUpdateDispatchStatus 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeMessage 
-\item lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus 
 \end{itemize}
 
 

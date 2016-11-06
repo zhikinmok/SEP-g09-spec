@@ -6,5 +6,5 @@
 
 @@view uc-suGlobalManagementOfEvent
 @model Use-Case lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent 
-@description ""
+@description "Shows the suGlobaManagementOfEvent use-case and its actors."
 @caption ""

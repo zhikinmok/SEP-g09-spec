@@ -5,10 +5,10 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeSendCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeSendCoordinates.AdtCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation.AdtMapWithPin
 ""
 @endParameters
 

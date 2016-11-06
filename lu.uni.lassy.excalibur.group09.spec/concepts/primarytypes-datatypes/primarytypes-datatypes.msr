@@ -27,11 +27,24 @@ Concept Model {
 		   		attribute value : ptInteger
 		   }
 		   
+		   datatype dtURL {
+		   		attribute value : ptString
+		   }
+		   
+		   datatype dtMap{
+		   		attribute value : dtURL
+		   }
+		   
 		   datatype dtCoordinates {
 		   		attribute X : ptInteger
 		   		attribute Y : ptInteger
 		   }
-
+		   
+		   datatype dtMapWithPin{
+		   		attribute map : dtURL
+		   		attribute pin : dtCoordinates
+		   }
+		   
 		   enum enDispatchStatus {
 		   		constants["InStation", "InTransit", "Arrived"]
 		   }		   
@@ -41,7 +54,7 @@ Concept Model {
 		   }
 		   
 		   enum enTeamType {
-		   	constants["AmbulanceTeam", "PoliceTeam", "TowServiceTeam", "FireFighterTeam"]
+		   		constants["AmbulanceTeam", "PoliceTeam", "TowServiceTeam"]
 		   }
 	}
 }

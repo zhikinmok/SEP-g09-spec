@@ -6,18 +6,18 @@
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator
 @description "Is representing a tow service driver."
-//input events
-@inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.inactTowServiceCoordinator.ieReceiveNewCrisisEvent
-""
-
-@endInputEvents
-//output events
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeMessage
-""
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus
-""
-
-@endOutputEvents
+////input events
+//@inputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.inactTowServiceCoordinator.ieReceiveNewCrisisEvent
+//""
+//
+//@endInputEvents
+////output events
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeMessage
+//""
+//@outputEvent
+//lu.uni.lassy.excalibur.group09.spec.environment.actTowServiceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus
+//""
+//
+//@endOutputEvents

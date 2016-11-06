@@ -4,29 +4,29 @@
 */
 
 
-@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator
 @description "Is representing the person that receives the victim's or witness' call in the emergency central."
 //input events
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.inactEmergencyCoordinator.ieReceiveCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentralCoordinator.ieReceiveCrisisEventLocation
 ""
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.inactEmergencyCoordinator.ieMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentralCoordinator.ieMessage
 ""
 
 @endInputEvents
 //output events
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation
 ""
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage
 ""
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent
 ""
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation
 ""
 
 @endOutputEvents

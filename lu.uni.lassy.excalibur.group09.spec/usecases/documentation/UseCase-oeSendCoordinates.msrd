@@ -4,9 +4,9 @@
 */
 
 
-@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeSendCoordinates
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation
 @description ""
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeSendCoordinates.AdtCoordinates ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation.AdtMapWithPin ""
 @endParameters
 @protocolCondition
 "

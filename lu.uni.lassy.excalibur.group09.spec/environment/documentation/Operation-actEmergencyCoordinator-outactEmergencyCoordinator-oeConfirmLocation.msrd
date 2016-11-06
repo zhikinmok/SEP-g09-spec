@@ -5,7 +5,7 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actEmergencyCoordinator.outactEmergencyCoordinator.oeConfirmLocation
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation
 @description "
  "
 //preProtocol descriptions

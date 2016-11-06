@@ -16,21 +16,22 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 Environment Model {
 			
-			actor actEmergencyCoordinator role rnactEmergencyCoordinator cardinality [1..*] {
+			actor actCentralCoordinator role rnactCentralCoordinator cardinality [1..*] {
 				
 				operation init():ptBoolean
 			
-				input interface inactEmergencyCoordinator {
-					operation ieReceiveCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
+				input interface inactCentralCoordinator {
+					operation ieReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) : ptBoolean
+					operation ieConfirmCrisisEventLocation(AdMessage:ptString) : ptBoolean
 					operation ieMessage(AMessage:ptString) : ptBoolean
 				}
 				
 				
-				output interface outactEmergencyCoordinator {
-					operation oeRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
+				output interface outactCentralCoordinator {
+					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtCrisisEventLocation:dtAddress) : ptBoolean
-					operation oeConfirmLocation() : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+					operation oeConfirmCrisisEventLocation() : ptBoolean
 				}
 			}
 			
@@ -40,57 +41,63 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactCommunicationCompany {
-					operation ieRequestCoordinates(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
+					operation ieRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 				}
 				
 				output interface outactCommunicationCompany {
-					operation oeSendCoordinates(AdtCoordinates:dtCoordinates) : ptBoolean
+					operation oeReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) : ptBoolean
+				}
+			}
+			
+			actor actAbstractCoordinator role rnactAbstractCoordinator cardinality [1..*] {
+				
+				operation init() : ptBoolean
+			
+				input interface inactAbstractCoordinator {
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+					operation ieMessage(AMessage: ptString) : ptBoolean
+				}
+				
+				output interface outactAbstractCoordinator {
+					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 				}
 			}
 			
 			
-			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] {
+			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] extends actAbstractCoordinator {
 				
 				operation init() : ptBoolean
 			
 				input interface inactFiremenCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactFiremenCoordinator {
-					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 					operation oeRequestHelp(AdtVehicleType: enTeamType, ARequestedNumber:ptInteger) : ptBoolean
 					operation oeRefreshMap() : ptBoolean
 				}
 			}
 			
 			
-			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] {
+			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] extends actAbstractCoordinator {
 				
 				operation init() : ptBoolean
 			
 				input interface inactPoliceCoordinator {
-					operation ieReceiveNewCrisisEvent(AAdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactPoliceCoordinator {
-					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 				}
 			}
 			
-			actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] {
+			actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] extends actAbstractCoordinator {
 				
 				operation init() : ptBoolean
 			
 				input interface inactTowServiceCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, 					AdtCrisisEventLocation:dtAddress) : ptBoolean
 				}
 				
 				output interface outactTowServiceCoordinator {
-					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
 				}
 			}
 			

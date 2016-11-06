@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Sun Nov 06 22:51:32 CET 2016
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMap
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMap.value
+""
+@endAttributes
