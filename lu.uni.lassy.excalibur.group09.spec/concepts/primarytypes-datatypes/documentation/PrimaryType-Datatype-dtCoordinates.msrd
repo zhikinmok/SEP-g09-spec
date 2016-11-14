@@ -4,12 +4,12 @@
 */
 
 
-@@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtCoordinates
-@description ""
+@@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtPin
+@description "Two coordinates (X and Y being real numbers) used to identify a pin on a map."
 @attribute
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtCoordinates.X
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtPin.X
 ""
 @attribute
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtCoordinates.Y
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtPin.Y
 ""
 @endAttributes

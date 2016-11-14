@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:08 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtPin.is
+@description "used to determine which real numbers are considered as valid coordinates for a pin."
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

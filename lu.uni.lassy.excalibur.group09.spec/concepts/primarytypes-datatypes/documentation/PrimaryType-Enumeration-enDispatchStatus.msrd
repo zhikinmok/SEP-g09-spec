@@ -4,5 +4,5 @@
 */
 
 
-@@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.enDispatchStatus
-@description ""
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etDispatchStatus
+@description "A String used to identify a dispatch status."

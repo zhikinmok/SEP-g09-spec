@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtAddress
-@description ""
+@description "A string used to identify location addresses."
 @attribute
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtAddress.value
 ""

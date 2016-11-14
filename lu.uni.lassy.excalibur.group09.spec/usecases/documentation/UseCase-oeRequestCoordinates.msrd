@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation
-@description ""
+@description "sent to request a crisis event's location."
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation.AdtPhoneNumber ""
 @endParameters
 @protocolCondition

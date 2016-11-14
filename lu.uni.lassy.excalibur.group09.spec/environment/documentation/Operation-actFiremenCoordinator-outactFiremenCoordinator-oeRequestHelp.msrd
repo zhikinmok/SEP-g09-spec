@@ -8,15 +8,14 @@
 lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp.AdtVehicleType
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp.AetTeamType
 ""
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp.ARequestedNumber
 ""
 @endParameters
 
-@description "
- "
+@description "sent to request help from the corresponding team type."
 //preProtocol descriptions
 @preP
 " "

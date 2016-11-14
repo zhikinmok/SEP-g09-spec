@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:03 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtAddress.is
+@description "used to determine which strings are considered as valid addresses."
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

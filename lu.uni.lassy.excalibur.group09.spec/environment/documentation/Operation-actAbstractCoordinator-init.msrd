@@ -5,12 +5,12 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.init
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.init
 @description "
-used to initialize the current object as a new instance of the actAbstractCoordinator type. "
+used to initialize the current object as a new instance of the actAbstractDispatchCoordinator type. "
 //postFunctional descriptions
 @postF 
-"true iff the system poststate includes the current object as a new actAbstractCoordinator instance having its attributes equal to the ones provided as parameters. "
+"true iff the system poststate includes the current object as a new actAbstractDispatchCoordinator instance having its attributes equal to the ones provided as parameters. "
 @endPostF
 //example
 @example" "

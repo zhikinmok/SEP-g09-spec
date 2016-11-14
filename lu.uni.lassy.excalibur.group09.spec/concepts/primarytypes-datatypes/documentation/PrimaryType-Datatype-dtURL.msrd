@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtURL
-@description ""
+@description "A String used to identify URLs."
 @attribute
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtURL.value
 ""

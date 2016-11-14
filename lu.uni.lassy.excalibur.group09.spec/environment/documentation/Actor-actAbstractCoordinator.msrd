@@ -4,23 +4,23 @@
 */
 
 
-@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator
-@description ""
+@@Actor lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator
+@description "An abstract Actor which brings together the common operations of the FiremanCoordinator, the PoliceCoordinator and the TowServiceCoordinator."
 //input events
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.inactAbstractCoordinator.ieReceiveNewCrisisEvent
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieReceiveNewCrisisEvent
 ""
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.inactAbstractCoordinator.ieMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieMessage
 ""
 
 @endInputEvents
 //output events
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage
 ""
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeUpdateDispatchStatus
 ""
 
 @endOutputEvents

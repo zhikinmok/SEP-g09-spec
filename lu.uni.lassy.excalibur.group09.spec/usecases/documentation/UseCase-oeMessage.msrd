@@ -1,0 +1,26 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:14 CET 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeMessage
+@description "sent to transmit a message."
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeMessage.AMessage ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

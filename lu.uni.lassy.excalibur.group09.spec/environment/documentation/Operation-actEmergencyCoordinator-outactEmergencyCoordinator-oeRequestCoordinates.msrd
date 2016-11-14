@@ -12,8 +12,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 ""
 @endParameters
 
-@description "
- "
+@description "sent to request a crisis event's location."
 //preProtocol descriptions
 @preP
 " "

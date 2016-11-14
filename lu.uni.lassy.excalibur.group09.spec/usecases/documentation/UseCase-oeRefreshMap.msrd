@@ -1,0 +1,26 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:15 CET 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeRefreshMap
+@description "sent to refresh the map."
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRefreshMap.AdtCrisisID ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

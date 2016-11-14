@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:06 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtURL.is
+@description "used to determine which strings are considered as valid URL."
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

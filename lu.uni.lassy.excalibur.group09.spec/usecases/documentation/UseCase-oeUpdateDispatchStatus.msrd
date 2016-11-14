@@ -5,8 +5,8 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeUpdateDispatchStatus
-@description ""
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeUpdateDispatchStatus.AenDispatchStatus ""
+@description "sent to update the dispatch status."
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeUpdateDispatchStatus.AetDispatchStatus ""
 @endParameters
 @protocolCondition
 "

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2016.10.12)  1 NOV 2016 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2016.10.12)  14 NOV 2016 21:14
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -2890,7 +2890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
 
 
 ] (./report.toc
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 17.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 19.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -2900,7 +2900,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 [2]
-Overfull \hbox (28.96965pt too wide) in paragraph at lines 69--69
+Overfull \hbox (28.96965pt too wide) in paragraph at lines 67--67
  [][][] [] []  
  []
 
@@ -2908,7 +2908,12 @@ Overfull \hbox (28.96965pt too wide) in paragraph at lines 69--69
 \tf@toc=\write13
 \openout13 = `report.toc'.
 
- [3] (./report.lof)
+ [3] (./report.lof
+Overfull \hbox (10.32256pt too wide) in paragraph at lines 7--7
+ [][][] [] []  
+ []
+
+)
 \tf@lof=\write14
 \openout14 = `report.lof'.
 
@@ -2974,17 +2979,131 @@ LaTeX Warning: Citation `messirbook' on page 10 undefined on input line 19.
 LaTeX Warning: Citation `armour01usecase' on page 10 undefined on input line 5.
 
 
+(./doc-gen/usecase-model/summary/RE-use-case-suGlobalManagementOfEvent.tex
+Overfull \hbox (24.79997pt too wide) in alignment at lines 9--10
+ [] [] 
+ []
 
+LaTeX Font Info:    Try loading font information for T1+phv on input line 10.
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 10.
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--37
+ [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+[]|\T1/cmr/m/n/10.95 the ac-tor  \T1/pcr/m/n/10.95 act-Com-mu-ni-ca-tion-Com-pa
+ny \T1/cmr/m/n/10.95 ex-e-cutes the
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 37--63
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 63--73
+ [] [] 
+ []
+
+[10]
+File: ./images-report-gen/usecase-model/summary/uc-suGlobalManagementOfEvent.ep
+s Graphic file (type eps)
+
+<./images-report-gen/usecase-model/summary/uc-suGlobalManagementOfEvent.eps>
+Overfull \hbox (725.8219pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 57.98965pt on input line 88.
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
-(./doc-gen/environment-model/environment-model.tex [11] [12
+ [11]
+[12]
+(./doc-gen/usecase-model/summary/RE-use-case-instance-suGlobalManagementOfEvent
+-ucisuGlobalManagementOfEvent.tex
+Overfull \hbox (18.58484pt too wide) in paragraph at lines 2--2
+[]\T1/cmr/bx/n/10.95 Use-Case In-stance - ucisu-G-lob-al-Man-age-mentOfEvent:su
+GlobalManagementOfEvent 
+ []
 
-]
+
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--6
+ [] [] 
+ []
+
+
+Overfull \hbox (12.79999pt too wide) in alignment at lines 6--6
+ [] [] 
+ []
+
+
+Overfull \hbox (12.79999pt too wide) in alignment at lines 6--6
+ [] [] 
+ []
+
+
+Overfull \hbox (12.79999pt too wide) in alignment at lines 6--6
+ [] [] 
+ []
+
+
+Overfull \hbox (12.79999pt too wide) in alignment at lines 6--10
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 10
+ []
+
+File: ./images-report-gen/usecase-model/summary/uci-ucisuGlobalManagementOfEven
+t.eps Graphic file (type eps)
+
+<./images-report-gen/usecase-model/summary/uci-ucisuGlobalManagementOfEvent.eps
+>
+Overfull \hbox (1394.3194pt too wide) in paragraph at lines 21--22
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 792.73465pt on input line 25.
+
+)) (./doc-gen/environment-model/environment-model.tex [13] [14]
 Chapter 3.
 
-(./doc-gen/environment-model/comments-tables/actor-comment-table-actCommunicati
-onCompany.tex
+(./doc-gen/environment-model/comments-tables/actor-comment-table-actCentralCoor
+dinator.tex
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
 
@@ -3001,20 +3120,6 @@ Overfull \hbox (24.79997pt too wide) in alignment at lines 4--5
  [] [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 5.
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 5.
 
 Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
  [] [] 
@@ -3033,17 +3138,40 @@ Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 17.
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--23
+Overfull \hbox (14.2161pt too wide) in paragraph at lines 17--17
+[]|[][][][][] \T1/pcr/b/n/10.95 oeRequestCri-si-sEv-ent-Lo-ca-tion(AdtPhoneNumb
+er:dtPhoneNumber):ptBoolean| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|[][][][][] \T1/pcr/b/n/10.95 oe-Cre-at-e-NewCri-si-sEv-ent(AdtCrisisID:dtCri
+sisID, Adt-Name:ptString,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/pcr/b/n/10.95 AetHu-man-Type:etHumanType, Adt-Pho-neNum-ber:dtPhoneNumber,
+ []
+
+
+Overfull \hbox (1.07611pt too wide) in paragraph at lines 30--30
+[]| \T1/pcr/b/n/10.95 ieRe-ceive-Cri-si-sEv-ent-Lo-ca-tion(AdtMapWithPin:dtMapW
+ithPin):ptBoolean| 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 5--34
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 23
+Underfull \vbox (badness 10000) detected at line 34
  []
 
 )
-(./doc-gen/environment-model/comments-tables/actor-comment-table-actEmergencyCo
-ordinator.tex
+(./doc-gen/environment-model/comments-tables/actor-comment-table-actCommunicati
+onCompany.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\hyphenchar' on input line 1.
@@ -3073,27 +3201,29 @@ Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|[][][][][] \T1/pcr/b/n/10.95 oe-Cre-at-e-NewCri-si-sEv-ent(AdtCrisisID:dtCri
-sisID, Adt-Name:ptString,
+Overfull \hbox (1.07611pt too wide) in paragraph at lines 17--17
+[]|[][][][][] \T1/pcr/b/n/10.95 oeRe-ceive-Cri-si-sEv-ent-Lo-ca-tion(AdtMapWith
+Pin:dtMapWithPin):ptBoolean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-\T1/pcr/b/n/10.95 Aen-Hu-man-Type:enHumanType, Adt-Pho-neNum-ber:dtPhoneNumber,
-
+Overfull \hbox (14.2161pt too wide) in paragraph at lines 21--21
+[]| \T1/pcr/b/n/10.95 ieRequestCri-si-sEv-ent-Lo-ca-tion(AdtPhoneNumber:dtPhone
+Number):ptBoolean| 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--34
+Overfull \hbox (24.79997pt too wide) in alignment at lines 5--23
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 34
+Underfull \vbox (badness 10000) detected at line 23
  []
 
-[13])
+[15
+
+])
 (./doc-gen/environment-model/comments-tables/actor-comment-table-actFiremenCoor
 dinator.tex
 
@@ -3125,36 +3255,18 @@ Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
  []
 
 
-Overfull \hbox (14.2161pt too wide) in paragraph at lines 20--20
-[]|[][][][][] \T1/pcr/b/n/10.95 oe-Up-date-Dis-patch-Sta-tus(AenDispatchStatus:
-enDispatchStatus):ptBoolean| 
+Overfull \hbox (60.20604pt too wide) in paragraph at lines 20--20
+[]|[][][][][] \T1/pcr/b/n/10.95 oeReques-tHelp(AetTeamType:etTeamType, ARe-ques
+t-ed-Num-ber:ptInteger):ptBoolean| 
  []
 
 
-Overfull \hbox (79.91602pt too wide) in paragraph at lines 23--23
-[]|[][][][][] \T1/pcr/b/n/10.95 oeReques-tHelp(AdtVehicleType:enTeamType, ARe-q
-uest-ed-Num-ber:ptInteger):ptBoolean| 
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 30--30
-[]| \T1/pcr/b/n/10.95 ieRe-ceive-NewCri-si-sEv-ent(AdtCrisisID:dtCrisisID, Adt-
-Name:ptString,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-\T1/pcr/b/n/10.95 Aen-Hu-man-Type:enHumanType, Adt-Pho-neNum-ber:dtPhoneNumber,
-
- []
-
-
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--32
+Overfull \hbox (24.79997pt too wide) in alignment at lines 5--26
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 32
+Underfull \vbox (badness 10000) detected at line 26
  []
 
 )
@@ -3169,44 +3281,32 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\font' on input line 1.
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 4--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 4--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (14.2161pt too wide) in paragraph at lines 20--20
-[]|[][][][][] \T1/pcr/b/n/10.95 oe-Up-date-Dis-patch-Sta-tus(AenDispatchStatus:
-enDispatchStatus):ptBoolean| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-\T1/pcr/b/n/10.95 Aen-Hu-man-Type:enHumanType, Adt-Pho-neNum-ber:dtPhoneNumber,
-
- []
-
-
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--26
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--19
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 26
+Underfull \vbox (badness 10000) detected at line 19
  []
 
 )
@@ -3221,61 +3321,77 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\font' on input line 1.
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 4--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 4--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--5
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--5
  [] [] 
  []
 
 
-Overfull \hbox (14.2161pt too wide) in paragraph at lines 20--20
-[]|[][][][][] \T1/pcr/b/n/10.95 oe-Up-date-Dis-patch-Sta-tus(AenDispatchStatus:
-enDispatchStatus):ptBoolean| 
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 24--24
-[]| \T1/pcr/b/n/10.95 ieRe-ceive-NewCri-si-sEv-ent(AdtCrisisID:dtCrisisID, Adt-
-Name:ptString,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-\T1/pcr/b/n/10.95 Aen-Hu-man-Type:enHumanType, Adt-Pho-neNum-ber:dtPhoneNumber,
-
- []
-
-
-Overfull \hbox (24.79997pt too wide) in alignment at lines 5--26
+Overfull \hbox (12.79999pt too wide) in alignment at lines 5--19
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 26
+Underfull \vbox (badness 10000) detected at line 19
  []
 
-[14])) (./doc-gen/concept-model/concept-model.tex [15] [16
-
-]
+)) (./doc-gen/concept-model/concept-model.tex [16]
 Chapter 4.
 
 (./doc-gen/concept-model/comments-tables/primaryTypesClasses-comments-table.tex
 )
 (./doc-gen/concept-model/comments-tables/primaryTypesDatatypes-comments-table.t
-ex)
+ex
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--22
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 22
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 22--25
+ [] [] 
+ []
+
+[17
+
+])
 (./doc-gen/concept-model/comments-tables/primaryTypesAssociations-comments-tabl
 e.tex)
 (./doc-gen/concept-model/comments-tables/primaryTypesAggregations-comments-tabl
@@ -3289,7 +3405,7 @@ ex)
 (./doc-gen/concept-model/comments-tables/secondaryTypesAssociations-comments-ta
 ble.tex)
 (./doc-gen/concept-model/comments-tables/secondaryTypesAggregations-comments-ta
-ble.tex [17])
+ble.tex)
 (./doc-gen/concept-model/comments-tables/secondaryTypesCompositions-comments-ta
 ble.tex)) (./doc-gen/operation-model/operation-model.tex [18]
 Chapter 5.
@@ -3309,81 +3425,64 @@ Chapter 7.
 ]
 Appendix A.
 [25]
-Overfull \hbox (152.74905pt too wide) in paragraph at lines 87--88
+Overfull \hbox (154.57332pt too wide) in paragraph at lines 81--82
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actAbstra
+ctDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage 
+ []
+
+
+Overfull \hbox (222.77394pt too wide) in paragraph at lines 82--83
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actAbstra
+ctDispatchCoordinator.outactAbstractDispatchCoordinator.oeUpdateDispatchStatus 
+
+ []
+
+
+Overfull \hbox (172.50543pt too wide) in paragraph at lines 83--84
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actAbstra
+ctDispatchCoordinator.outactAbstractDispatchCoordinator.oeRefreshMap 
+ []
+
+
+Overfull \hbox (204.37695pt too wide) in paragraph at lines 84--85
 [][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCommun
-icationCompany.outactCommunicationCompany.oeSendCoordinates 
+icationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation 
  []
 
 
-Overfull \hbox (133.79489pt too wide) in paragraph at lines 88--89
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
-ncyCoordinator.outactEmergencyCoordinator.oeConfirmLocation 
+Overfull \hbox (154.04205pt too wide) in paragraph at lines 85--86
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCentra
+lCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation 
  []
 
 
-Overfull \hbox (159.93188pt too wide) in paragraph at lines 89--90
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
-ncyCoordinator.outactEmergencyCoordinator.oeCreateNewCrisisEvent 
+Overfull \hbox (125.76764pt too wide) in paragraph at lines 86--87
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCentra
+lCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent 
  []
 
 
-Overfull \hbox (92.6296pt too wide) in paragraph at lines 90--91
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
-ncyCoordinator.outactEmergencyCoordinator.oeMessage 
+Overfull \hbox (58.46535pt too wide) in paragraph at lines 87--88
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCentra
+lCoordinator.outactCentralCoordinator.oeMessage 
  []
 
 
-Overfull \hbox (148.73647pt too wide) in paragraph at lines 91--92
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actEmerge
-ncyCoordinator.outactEmergencyCoordinator.oeRequestCoordinates 
+Overfull \hbox (153.34543pt too wide) in paragraph at lines 88--89
+[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actCentra
+lCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation 
  []
 
 
-Overfull \hbox (66.0182pt too wide) in paragraph at lines 92--93
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
-nCoordinator.outactFiremenCoordinator.oeMessage 
- []
-
-
-Overfull \hbox (83.95032pt too wide) in paragraph at lines 93--94
+Overfull \hbox (83.95032pt too wide) in paragraph at lines 89--90
 [][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
 nCoordinator.outactFiremenCoordinator.oeRefreshMap 
  []
 
 
-Overfull \hbox (86.97641pt too wide) in paragraph at lines 94--95
+Overfull \hbox (86.97641pt too wide) in paragraph at lines 90--91
 [][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
 nCoordinator.outactFiremenCoordinator.oeRequestHelp 
- []
-
-
-Overfull \hbox (134.21883pt too wide) in paragraph at lines 95--96
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actFireme
-nCoordinator.outactFiremenCoordinator.oeUpdateDispatchStatus 
- []
-
-
-Overfull \hbox (44.24995pt too wide) in paragraph at lines 96--97
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actPolice
-Coordinator.outactPoliceCoordinator.oeMessage 
- []
-
-
-Overfull \hbox (112.45058pt too wide) in paragraph at lines 97--98
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actPolice
-Coordinator.outactPoliceCoordinator.oeUpdateDispatchStatus 
- []
-
-
-Overfull \hbox (94.75572pt too wide) in paragraph at lines 98--99
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actTowSer
-viceCoordinator.outactTowServiceCoordinator.oeMessage 
- []
-
-
-Overfull \hbox (162.95634pt too wide) in paragraph at lines 99--100
-[][]\T1/cmr/m/n/10.95 lu.uni.lassy.excalibur.group09.spec.environment.actTowSer
-viceCoordinator.outactTowServiceCoordinator.oeUpdateDispatchStatus 
  []
 
 ) (./doc-gen/appendix/appendix-msrSpecFilesListings.tex [26]
@@ -3404,14 +3503,14 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (./src-gen/messir-spec/environment/environment.msr [27
 
 ])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/primarytypes-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
 (./src-gen/messir-spec/concepts/primarytypes-associations/primarytypes-associat
 ions.msr)
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
@@ -3426,13 +3525,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
 (./src-gen/messir-spec/concepts/primarytypes-datatypes/primarytypes-datatypes.m
 sr [29])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
  []
 
 
 (./src-gen/messir-spec/concepts/secondarytypes-associations/secondarytypes-asso
-ciations.msr) [30]
+ciations.msr)
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
  []
@@ -3446,7 +3548,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--38
 
 
 (./src-gen/messir-spec/concepts/secondarytypes-datatypes/secondarytypes-datatyp
-es.msr) (./src-gen/messir-spec/tests/tests.msr [31])
+es.msr
+Overfull \hbox (15.17636pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 B.6.  FILE /SRC-GEN/MESSIR-SPEC/CONCEPTS.../SECONDARYTYPES-A
+SSOCIATIONS.MSR \T1/cmr/m/n/10.95 31
+ []
+
+[31]) (./src-gen/messir-spec/tests/tests.msr)
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/usecases/usecaseinstance-
  []
@@ -3459,11 +3567,13 @@ Overfull \hbox (33.8293pt too wide) in paragraph at lines 48--48
 
 (./src-gen/messir-spec/usecases/usecaseinstance-suGlobalManagementOfEvent-ucisu
 GlobalManagementOfEvent.msr [32]) (./src-gen/messir-spec/usecases/usecases.msr
-[33]))) [34]
-No file report.gls.
-[35] [36
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [34])))
+[35]
+No file report.gls.
+[36]
 No file report.bbl.
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -3481,14 +3591,16 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the report.log file.
 
 Package atenddvi Info: Last page = 37.
-[37]
+[37
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 84.
  (./report.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 24C6965A2727235E275A79059D027E45;6124.
+(rerunfilecheck)             Checksum: 0F9988A46B356CFDA94B25756D4E8A2B;5722.
 
 
 LaTeX Warning: There were undefined references.
@@ -3496,12 +3608,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 58386 strings out of 493014
- 1256237 string characters out of 6137018
- 1795373 words of memory out of 5000000
- 60368 multiletter control sequences out of 15000+600000
- 44025 words of font info for 117 fonts, out of 8000000 for 9000
+ 58420 strings out of 493014
+ 1257509 string characters out of 6137018
+ 1832511 words of memory out of 5000000
+ 60391 multiletter control sequences out of 15000+600000
+ 44714 words of font info for 118 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 69i,16n,98p,10506b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,16n,98p,10506b,2034s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (37 pages, 287224 bytes).
+Output written on report.dvi (37 pages, 351728 bytes).

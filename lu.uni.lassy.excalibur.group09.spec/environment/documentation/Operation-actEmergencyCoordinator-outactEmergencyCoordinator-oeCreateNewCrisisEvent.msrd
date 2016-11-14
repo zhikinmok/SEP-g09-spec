@@ -14,7 +14,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtName
 ""
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AenHumanType
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AetHumanType
 ""
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtPhoneNumber
@@ -24,8 +24,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 ""
 @endParameters
 
-@description "
- "
+@description "sent to create an new crisis event and to alert the corresponding coordinators."
 //preProtocol descriptions
 @preP
 " "

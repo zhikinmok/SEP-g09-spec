@@ -12,8 +12,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 ""
 @endParameters
 
-@description "
- "
+@description "sent to return a map with pin."
 //preProtocol descriptions
 @preP
 " "

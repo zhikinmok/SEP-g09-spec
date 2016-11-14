@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:09 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMapWithPin.is
+@description "used to determine which maps including pins are considered as a valid combination."
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

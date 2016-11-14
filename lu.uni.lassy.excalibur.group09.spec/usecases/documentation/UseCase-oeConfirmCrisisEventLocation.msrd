@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeConfirmCrisisEventLocation
-@description ""
+@description "sent to confirm the crisis event's location."
 @protocolCondition
 "
 "

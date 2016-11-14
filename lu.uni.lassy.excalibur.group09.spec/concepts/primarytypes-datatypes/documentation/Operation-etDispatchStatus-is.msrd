@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 14 21:14:10 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etDispatchStatus.is
+@description "used to determine which strings are considered as valid dispatch status'. "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

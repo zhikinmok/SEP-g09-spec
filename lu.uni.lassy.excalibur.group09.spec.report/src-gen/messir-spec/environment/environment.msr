@@ -15,7 +15,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 
 Environment Model {
-			
+							
 			actor actCentralCoordinator role rnactCentralCoordinator cardinality [1..*] {
 				
 				operation init():ptBoolean
@@ -30,7 +30,7 @@ Environment Model {
 				output interface outactCentralCoordinator {
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
 					operation oeConfirmCrisisEventLocation() : ptBoolean
 				}
 			}
@@ -49,23 +49,25 @@ Environment Model {
 				}
 			}
 			
-			actor actAbstractCoordinator role rnactAbstractCoordinator cardinality [1..*] {
+			actor actAbstractDispatchCoordinator role rnactAbstractDispatchCoordinator cardinality [1..*] {
 				
 				operation init() : ptBoolean
 			
-				input interface inactAbstractCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+				input interface inactAbstractDispatchCoordinator {
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
 					operation ieMessage(AMessage: ptString) : ptBoolean
+					operation ieReceiveMap(AdtMapWithPin: dtMapWithPin) : ptBoolean
 				}
 				
-				output interface outactAbstractCoordinator {
+				output interface outactAbstractDispatchCoordinator {
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus): ptBoolean
+					operation oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus): ptBoolean
+					operation oeRefreshMap(AdtCrisisID:dtCrisisID) : ptBoolean
 				}
 			}
 			
 			
-			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] extends actAbstractCoordinator {
+			actor actFiremenCoordinator role rnactFiremenCoordinator cardinality [1..*] extends actAbstractDispatchCoordinator {
 				
 				operation init() : ptBoolean
 			
@@ -73,13 +75,13 @@ Environment Model {
 				}
 				
 				output interface outactFiremenCoordinator {
-					operation oeRequestHelp(AdtVehicleType: enTeamType, ARequestedNumber:ptInteger) : ptBoolean
+					operation oeRequestHelp(AetTeamType: etTeamType, ARequestedNumber:ptInteger) : ptBoolean
 					operation oeRefreshMap() : ptBoolean
 				}
 			}
 			
 			
-			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] extends actAbstractCoordinator {
+			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] extends actAbstractDispatchCoordinator {
 				
 				operation init() : ptBoolean
 			
@@ -90,7 +92,7 @@ Environment Model {
 				}
 			}
 			
-			actor actTowServiceCoordinator role rnTowSericeCoordinator cardinality [1..*] extends actAbstractCoordinator {
+			actor actTowServiceCoordinator role rnTowServiceCoordinator cardinality [1..*] extends actAbstractDispatchCoordinator {
 				
 				operation init() : ptBoolean
 			

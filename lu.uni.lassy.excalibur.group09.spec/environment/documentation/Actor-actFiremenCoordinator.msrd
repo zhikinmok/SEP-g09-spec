@@ -22,8 +22,4 @@
 @outputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRequestHelp
 ""
-@outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeRefreshMap
-""
-
 @endOutputEvents

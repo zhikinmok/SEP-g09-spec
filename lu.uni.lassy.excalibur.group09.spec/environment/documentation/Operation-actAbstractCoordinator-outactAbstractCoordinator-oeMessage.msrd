@@ -5,14 +5,14 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeMessage.AMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage.AMessage
 ""
 @endParameters
 
-@description "
+@description "sent to transmit a message.
  "
 //preProtocol descriptions
 @preP

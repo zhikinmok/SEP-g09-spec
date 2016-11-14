@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation
-@description "
- "
+@description "sent to confirm the crisis event's location."
 //preProtocol descriptions
 @preP
 " "

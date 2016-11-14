@@ -33,17 +33,21 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 				step c: actCentralCoordinator executes oeConfirmCrisisEventLocation
 				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
 				step e: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step f: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step g: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step h: actFiremenCoordinator executes oeRequestHelp
-				step i: actPoliceCoordinator executes oeUpdateDispatchStatus
-				step j: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step f: actTowServiceCoordinator executes oeRefreshMap
+				step g: actTowServiceCoordinator executes oeMessage
+				step h: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step i: actFiremenCoordinator executes oeUpdateDispatchStatus
+				step j: actFiremenCoordinator executes oeRequestHelp
 				step k: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step l: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step m: actPoliceCoordinator executes oeUpdateDispatchStatus
 				
 				ordering constraint "if (b) then previously (a)"
 				ordering constraint "step (c) must be executed before step (d)"
 				ordering constraint "step (d) must be executed before the step (e) to (k)"				
 		}
+		
+		
 		
 		use case system subfunction oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) {
 			actor actCentralCoordinator[primary,active]
@@ -71,39 +75,61 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 		}
 		
 		
-		use case system subfunction oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AenHumanType:enHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin) {
+		use case system subfunction oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AMessage:ptString) {
 			actor actCentralCoordinator[primary,active]
-			actor actAbstractCoordinator[secondary,passive]
+			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actAbstractCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
 			}
 		}
 		
+		use case system subfunction oeMessage(AMessage:ptString) {
+			actor actAbstractDispatchCoordinator[primary,active]
+			actor actCentralCoordinator[secondary, passive]
+			actor actAbstractDispatchCoordinator[secondary, multiple]
+			returned messages{
+				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
+//				ieMessage(AMessage) returned to actCentralCoordinator													//PROBLEME DE IE DEUX FOIS SANS SOUS-TYPAGE
+			}
+		}
+						
 		
-		use case system subfunction oeUpdateDispatchStatus(AenDispatchStatus:enDispatchStatus){
-			actor actAbstractCoordinator[primary,active]
+		
+		use case system subfunction oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus){
+			actor actAbstractDispatchCoordinator[primary,active]
 //			actor actFiremenCoordinator[primary,active]
 //			actor actPoliceCoordinator[primary,active]
 //			actor actTowServiceCoordinator[primary,active]
 			returned messages{
-				ieMessage(AMessage) returned to actAbstractCoordinator
+				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
 			}
 		}
 		
 		
-		use case system subfunction oeRequestHelp(AenTeamType: enTeamType, RequestedNumber:ptInteger) {
+		use case system subfunction oeRefreshMap(AdtCrisisID:dtCrisisID){
+			actor actAbstractDispatchCoordinator[primary,active]
+//			actor actFiremenCoordinator[primary,active]
+//			actor actPoliceCoordinator[primary,active]
+//			actor actTowServiceCoordinator[primary,active]
+			returned messages{
+				ieReceiveMap(AdtMapWithPin) returned to actAbstractDispatchCoordinator
+			}
+		}
+		
+		
+		use case system subfunction oeRequestHelp(AetTeamType: etTeamType, RequestedNumber:ptInteger) {
 			actor actFiremenCoordinator[primary,active]
-			actor actAbstractCoordinator[secondary,passive]
+			actor actAbstractDispatchCoordinator[secondary,passive]
 //			actor actPoliceCoordinator[secondary,passive]
 //			actor actTowServiceCoordinator[secondary,passive]
 			
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actAbstractCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AenHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowPoliceCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
+//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowPoliceCoordinator
 			}
 		}
 		

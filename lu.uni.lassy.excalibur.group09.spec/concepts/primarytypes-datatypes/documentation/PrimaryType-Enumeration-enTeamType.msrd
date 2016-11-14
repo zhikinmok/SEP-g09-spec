@@ -4,5 +4,5 @@
 */
 
 
-@@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.enTeamType
-@description ""
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etTeamType
+@description "A String used to identify a team type."

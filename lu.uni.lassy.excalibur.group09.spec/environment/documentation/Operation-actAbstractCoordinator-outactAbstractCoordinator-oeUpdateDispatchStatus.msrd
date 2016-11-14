@@ -5,15 +5,14 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeUpdateDispatchStatus
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractCoordinator.outactAbstractCoordinator.oeUpdateDispatchStatus.AenDispatchStatus
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeUpdateDispatchStatus.AetDispatchStatus
 ""
 @endParameters
 
-@description "
- "
+@description "sent to update the dispatch status."
 //preProtocol descriptions
 @preP
 " "
