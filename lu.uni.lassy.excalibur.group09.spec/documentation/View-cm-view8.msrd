@@ -1,0 +1,13 @@
+/*
+@author zhikin
+@date Tue Nov 15 11:03:13 CET 2016
+*/
+
+
+@@view cm-dtv-map
+@model Concept
+@level Local
+@sublevel Secondary Datatype
+@number 8
+@description "Is representing the map data type."
+@caption ""

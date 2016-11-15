@@ -1,0 +1,19 @@
+/*
+@author zhikin
+@date Tue Nov 15 11:00:28 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPin
+@description "Two coordinates (X and Y being real numbers) used to identify a pin on a map."
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPin.X
+""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPin.Y
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPin.is
+""
+@endOperations

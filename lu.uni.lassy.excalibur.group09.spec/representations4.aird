@@ -274,6 +274,23 @@
   <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeMessage.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeUpdateDispatchStatus.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeConfirmCrisisEventLocation.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtMap.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtURL-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMap-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtPin-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtPin.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtURL.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view1.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view2.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view3.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view4.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view5.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view6.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view7.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view8.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view9.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view10.msrd</semanticResources>
+  <semanticResources>operations/environment/environment-actCentralCoordinator-oeRequestCrisisEventLocation.msr</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

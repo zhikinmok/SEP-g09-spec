@@ -1,0 +1,16 @@
+/*
+@author zhikin
+@date Tue Nov 15 11:00:55 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtURL
+@description "A String used to identify URLs."
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtURL.value
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtURL.is
+""
+@endOperations

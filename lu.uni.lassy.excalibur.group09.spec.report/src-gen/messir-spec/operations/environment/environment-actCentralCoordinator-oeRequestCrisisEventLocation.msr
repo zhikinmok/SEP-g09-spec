@@ -1,0 +1,34 @@
+package lu.uni.lassy.excalibur.group09.spec.environment.operations.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+	preP {
+	    let AvpStarted: ptBoolean in
+	    self.rnActor.rnSystem.vpStarted = AvpStarted
+	    and AvpStarted = true
+	}
+
+	preF { true }
+
+	postF {
+		let TheactYou:lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator in
+		let AptString:ptString in
+		/* Post Functional:*/
+		/* PostF01 */
+		AptString = 'Hello World !'
+		and TheactYou.InterfaceIN = self.rnActor.InterfaceIN
+		and TheactYou.InterfaceIN^ieHelloWorld(AptString)
+	}
+	
+	postP { true }
+		}
+	}
+}

@@ -1,0 +1,28 @@
+\subsection{\msrcode{actAbstractDispatchCoordinator} Actor}
+
+
+\begin{actortable}
+	\addheading{Actor}
+	
+	\adddoublerow{actAbstractDispatchCoordinator}{An abstract Actor which brings together the common operations of the FiremanCoordinator, the PoliceCoordinator and the TowServiceCoordinator.}
+	
+	
+	
+	
+	
+
+	\addrowheading{OutputInterfaces}
+	\addnumbereddoublerow{OUT}{\hypertarget{actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage}
+			{\msrcode{oeMessage(AMessage:ptString):ptBoolean}}}
+			{}
+	\addnumbereddoublerow{OUT}{\hypertarget{actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeUpdateDispatchStatus}
+			{\msrcode{oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus):ptBoolean}}}
+			{}
+	
+	\addrowheading{InputInterfaces}
+	\addnumbereddoublerow{IN}{\msrcode{ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AMessage:ptString):ptBoolean}}
+							 {}
+	\addnumbereddoublerow{IN}{\msrcode{ieMessage(AMessage:ptString):ptBoolean}}
+							 {}
+	
+\end{actortable}

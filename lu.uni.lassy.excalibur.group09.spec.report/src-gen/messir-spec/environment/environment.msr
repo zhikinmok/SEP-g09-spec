@@ -30,7 +30,7 @@ Environment Model {
 				output interface outactCentralCoordinator {
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress,AMessage:ptString) : ptBoolean
 					operation oeConfirmCrisisEventLocation() : ptBoolean
 				}
 			}
@@ -54,7 +54,7 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactAbstractDispatchCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AMessage:ptString) : ptBoolean
 					operation ieMessage(AMessage: ptString) : ptBoolean
 					operation ieReceiveMap(AdtMapWithPin: dtMapWithPin) : ptBoolean
 				}
@@ -76,7 +76,6 @@ Environment Model {
 				
 				output interface outactFiremenCoordinator {
 					operation oeRequestHelp(AetTeamType: etTeamType, ARequestedNumber:ptInteger) : ptBoolean
-					operation oeRefreshMap() : ptBoolean
 				}
 			}
 			

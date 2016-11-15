@@ -1,0 +1,13 @@
+/*
+@author zhikin
+@date Tue Nov 15 11:03:04 CET 2016
+*/
+
+
+@@view cm-etv-teamType
+@model Concept
+@level Local
+@sublevel Primary Datatype
+@number 7
+@description "Is representing the team type enumeration type."
+@caption ""
