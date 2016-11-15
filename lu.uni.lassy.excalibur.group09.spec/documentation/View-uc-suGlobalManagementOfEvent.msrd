@@ -8,3 +8,5 @@
 @model Use-Case lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent 
 @description "Shows the suGlobaManagementOfEvent use-case and its actors."
 @caption ""
+@scale MaxHeight
+@orientation Landscape
