@@ -1,0 +1,8 @@
+/*
+@author Kira
+@date Wed Nov 16 13:01:19 CET 2016
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctDispatchedCoordinatorctCrisisEvent
+@description "Association of a dispatched coordinator to a crisis event."

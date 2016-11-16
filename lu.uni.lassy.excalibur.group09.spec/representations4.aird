@@ -291,6 +291,15 @@
   <semanticResources>documentation/View-cm-view9.msrd</semanticResources>
   <semanticResources>documentation/View-cm-view10.msrd</semanticResources>
   <semanticResources>operations/environment/environment-actCentralCoordinator-oeRequestCrisisEventLocation.msr</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctDispatchedCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctHuman.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctHuman-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisisEvent-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCrisisEventctHuman.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctDispatchedCoordinatoractAbstractDispatchCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctDispatchedCoordinatorctCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctDispatchedCoordinator-init.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

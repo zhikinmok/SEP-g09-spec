@@ -9,7 +9,7 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 
 
@@ -24,6 +24,42 @@ Concept Model {
 
 			operation init(AvpStarted:ptBoolean): ptBoolean
 		}	
+		
+		
+		class ctHuman role rnHuman cardinality [1..*] {
+			attribute id: dtPhoneNumber
+			attribute name: ptString
+			attribute type: etHumanType
+			
+			operation init(	Aid:dtPhoneNumber,
+							Aname:ptString,
+							Atype:etHumanType
+			): ptBoolean
+			
+		}
+		
+		class ctCrisisEvent role rnCrisisEvent cardinality [1..*] {
+			attribute id: ptInteger
+			attribute location: dtMapWithPin
+			attribute isLocationConfirmed: ptBoolean
+			attribute comment: ptString					//Multiple Comments?
+			
+			operation init(	Aid:ptInteger,
+							Alocation:dtMapWithPin,
+							AisLocationConfirmed:ptBoolean,
+							Acomment:ptString
+			): ptBoolean
+			
+		}
+		
+		class ctDispatchedCoordinator role rnroleName cardinality [1..*] {
+			attribute type: etTeamType
+			attribute status: etDispatchStatus
+			
+			operation init(	Atype:etTeamType,
+							Astatus:etDispatchStatus
+			): ptBoolean
+		}
 
 	}
 }

@@ -1,6 +1,26 @@
 \subsection{Primary types - Class types descriptions}
 
 
-There are no elements in this category in the system analysed.
 
 
+The table below is providing comments on the graphical views given for the class types of the primary types. Type logical operations are precisely specified in the operation model.
+
+\begin{datadictionary}
+\addheading{Classes}
+
+\adddoublerow{ctCrisisEvent}{A class containing the attributes identifying a crisis event.}
+\adddoubletwocolumnrow{attribute}{\msrcode{comment: ptString}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{id: ptInteger}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{isLocationConfirmed: ptBoolean}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{location: dtMapWithPin}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(Aid:ptInteger, Alocation:dtMapWithPin, AisLocationConfirmed:ptBoolean, Acomment:ptString):ptBoolean}}{}
+\adddoublerow{ctDispatchedCoordinator}{A class containing the attributes identifying a dispatched team.}
+\adddoubletwocolumnrow{attribute}{\msrcode{status: etDispatchStatus}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{type: etTeamType}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(Atype:etTeamType, Astatus:etDispatchStatus):ptBoolean}}{}
+\adddoublerow{ctHuman}{A class containing the attributes identifying an human.}
+\adddoubletwocolumnrow{attribute}{\msrcode{id: dtPhoneNumber}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{name: ptString}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{type: etHumanType}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(Aid:dtPhoneNumber, Aname:ptString, Atype:etHumanType):ptBoolean}}{}
+\end{datadictionary}

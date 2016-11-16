@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Wed Nov 16 12:59:30 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctHuman.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctHuman.init.Aid
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctHuman.init.Aname
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctHuman.init.Atype
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctHuman type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctHuman instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

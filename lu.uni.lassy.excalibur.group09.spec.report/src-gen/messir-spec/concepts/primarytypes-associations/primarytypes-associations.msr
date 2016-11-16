@@ -9,13 +9,27 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group09.spec.environment 
 
 
 Concept Model {
 	
 	Primary Types {
-	
+		
+		association assctCrisisEventctHuman
+			ctCrisisEvent(rnctCrisisEvent)[1..*] 
+			ctHuman(rnctHuman)[1..*]
+			
+		association assctDispatchedCoordinatoractAbstractDispatchCoordinator
+			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
+			actAbstractDispatchCoordinator(rnactAbstractDispatchCoordinator)[1..1]
+			 
+		association assctDispatchedCoordinatorctCrisisEvent
+			ctDispatchedCoordinator(rnctDispatchedCoordinator2)[1..*] 
+			ctCrisisEvent(rnctCrisisEvent2)[1..*] 
+			
+			
 	}
 }
 }

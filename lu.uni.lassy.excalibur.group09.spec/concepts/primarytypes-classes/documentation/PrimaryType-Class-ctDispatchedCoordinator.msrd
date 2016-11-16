@@ -1,0 +1,19 @@
+/*
+@author Kira
+@date Wed Nov 16 12:56:56 CET 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctDispatchedCoordinator
+@description "A class containing the attributes identifying a dispatched team."
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctDispatchedCoordinator.type
+""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctDispatchedCoordinator.status
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctDispatchedCoordinator.init
+""
+@endOperations

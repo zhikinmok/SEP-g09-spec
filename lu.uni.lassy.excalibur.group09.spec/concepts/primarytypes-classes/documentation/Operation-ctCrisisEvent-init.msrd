@@ -1,0 +1,31 @@
+/*
+@author Kira
+@date Wed Nov 16 12:59:50 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Aid
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Alocation
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.AisLocationConfirmed
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Acomment
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctCrisisEvent type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctCrisisEvent instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "
