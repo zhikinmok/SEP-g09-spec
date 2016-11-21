@@ -31,7 +31,7 @@ Shows the suGlobaManagementOfEvent use-case and its actors.
 \addnumberedsinglerow{}{\msrucname{oeReceiveCrisisEventLocation [0..*]}}
 \addnumberedsinglerow{}{\msrucname{oeConfirmCrisisEventLocation [1..*]}}
 \addnumberedsinglerow{}{\msrucname{oeCreateNewCrisisEvent [1..*]}}
-\addnumberedsinglerow{}{\msrucname{oeUpdateDispatchStatus [2..*]}}
+\addnumberedsinglerow{}{\msrucname{oeUpdateDispatchStatus [4..*]}}
 \addnumberedsinglerow{}{\msrucname{oeRequestHelp [0..*]}}
 
 \addrowheading{Protocol condition(s)}
@@ -55,15 +55,16 @@ Shows the suGlobaManagementOfEvent use-case and its actors.
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeRefreshMap} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeMessage} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeRequestHelp} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
 \addrowheading{Steps Ordering Constraints}
 \addnumberedsinglerow{}{if (b) then previously (a)}
 \addnumberedsinglerow{}{step (c) must be executed before step (d)}
-\addnumberedsinglerow{}{step (d) must be executed before the step (e) to (k)}
+\addnumberedsinglerow{}{step (d) must be executed before the step (e) to (j)}
+\addnumberedsinglerow{}{step (e) must be executed at least two times}
+\addnumberedsinglerow{}{step (h) must be executed at least two times}
+\addnumberedsinglerow{}{step (j) can only be executed if step (i) has at least been executed once previously}
+\addnumberedsinglerow{}{step (j) must be executed at least two times}
 
 \addrowheading{Additional Information}
 \addsinglerow{
@@ -80,8 +81,8 @@ Shows the suGlobaManagementOfEvent use-case and its actors.
 \begin{center}
 
 \includegraphics[
-angle=90
-,height=1.0\textheight
+angle=0
+,width=1.0\textwidth
 ]{./images-report-gen/usecase-model/summary/uc-suGlobalManagementOfEvent.eps}
 \end{center}
 \caption[lu.uni.lassy.excalibur.group09.spec Use Case Diagram: uc-suGlobalManagementOfEvent]{}

@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Mon Nov 21 21:49:21 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage.value
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage.is
+""
+@endOperations

@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Mon Nov 21 21:49:11 CET 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.mapWithPin
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.init
+""
+@endOperations

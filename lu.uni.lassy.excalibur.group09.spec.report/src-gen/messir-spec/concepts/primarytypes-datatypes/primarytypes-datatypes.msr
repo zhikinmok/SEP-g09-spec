@@ -32,8 +32,14 @@ Concept Model {
 		   }
 		   
 		   datatype dtMapWithPin{
-		   		attribute map : dtURL
-		   		attribute pin : dtPin
+		   		attribute image : dtImage
+		   		operation is() : ptBoolean
+		   		external operation isMapRepresentation() : ptBoolean
+		   }
+		   
+		   datatype dtGeoPos{
+		   		attribute latitude: dtLatitude
+		   		attribute longitude: dtLongitude
 		   		operation is() : ptBoolean
 		   }
 		   

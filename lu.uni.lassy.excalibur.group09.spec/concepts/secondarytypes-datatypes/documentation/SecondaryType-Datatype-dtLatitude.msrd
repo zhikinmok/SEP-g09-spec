@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Mon Nov 21 21:49:19 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtLatitude
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtLatitude.value
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtLatitude.is
+""
+@endOperations

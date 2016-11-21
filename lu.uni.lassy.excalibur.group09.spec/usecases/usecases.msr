@@ -25,7 +25,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 				reuse oeReceiveCrisisEventLocation[0..*]
 				reuse oeConfirmCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
-				reuse oeUpdateDispatchStatus[2..*]
+				reuse oeUpdateDispatchStatus[4..*]
 				reuse oeRequestHelp[0..*]
 				
 				step a: actCentralCoordinator executes oeRequestCrisisEventLocation
@@ -36,15 +36,17 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 				step f: actTowServiceCoordinator executes oeRefreshMap
 				step g: actTowServiceCoordinator executes oeMessage
 				step h: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step i: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step j: actFiremenCoordinator executes oeRequestHelp
-				step k: actPoliceCoordinator executes oeUpdateDispatchStatus
-				step l: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step m: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step i: actFiremenCoordinator executes oeRequestHelp
+				step j: actPoliceCoordinator executes oeUpdateDispatchStatus
+
 				
 				ordering constraint "if (b) then previously (a)"
 				ordering constraint "step (c) must be executed before step (d)"
-				ordering constraint "step (d) must be executed before the step (e) to (k)"				
+				ordering constraint "step (d) must be executed before the step (e) to (j)"
+				ordering constraint "step (e) must be executed at least two times"
+				ordering constraint "step (h) must be executed at least two times"
+				ordering constraint "step (j) can only be executed if step (i) has at least been executed once previously"
+				ordering constraint "step (j) must be executed at least two times"			
 		}
 		
 		
@@ -80,8 +82,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
 				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
 			}
 		}
 		
@@ -91,7 +91,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 			actor actAbstractDispatchCoordinator[secondary, multiple]
 			returned messages{
 				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
-//				ieMessage(AMessage) returned to actCentralCoordinator													//PROBLEME DE IE DEUX FOIS SANS SOUS-TYPAGE
+//				ieMessage(AMessage) returned to actCentralCoordinator		6											//PROBLEME DE IE DEUX FOIS SANS SOUS-TYPAGE
 			}
 		}
 						
@@ -99,9 +99,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 		
 		use case system subfunction oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus){
 			actor actAbstractDispatchCoordinator[primary,active]
-//			actor actFiremenCoordinator[primary,active]
-//			actor actPoliceCoordinator[primary,active]
-//			actor actTowServiceCoordinator[primary,active]
 			returned messages{
 				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
 			}
@@ -110,9 +107,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 		
 		use case system subfunction oeRefreshMap(AdtCrisisID:dtCrisisID){
 			actor actAbstractDispatchCoordinator[primary,active]
-//			actor actFiremenCoordinator[primary,active]
-//			actor actPoliceCoordinator[primary,active]
-//			actor actTowServiceCoordinator[primary,active]
 			returned messages{
 				ieReceiveMap(AdtMapWithPin) returned to actAbstractDispatchCoordinator
 			}
@@ -122,14 +116,8 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 		use case system subfunction oeRequestHelp(AetTeamType: etTeamType, RequestedNumber:ptInteger) {
 			actor actFiremenCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
-//			actor actPoliceCoordinator[secondary,passive]
-//			actor actTowServiceCoordinator[secondary,passive]
-			
 			returned messages{
 				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actFiremenCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowServiceCoordinator
-//				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin) returned to actTowPoliceCoordinator
 			}
 		}
 		

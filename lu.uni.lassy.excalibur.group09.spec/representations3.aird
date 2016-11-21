@@ -276,7 +276,6 @@
   <semanticResources>usecases/documentation/UseCase-oeConfirmCrisisEventLocation.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtMap.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtURL-is.msrd</semanticResources>
-  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMap-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtPin-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtPin.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtURL.msrd</semanticResources>
@@ -287,8 +286,6 @@
   <semanticResources>documentation/View-cm-view5.msrd</semanticResources>
   <semanticResources>documentation/View-cm-view6.msrd</semanticResources>
   <semanticResources>documentation/View-cm-view7.msrd</semanticResources>
-  <semanticResources>documentation/View-cm-view8.msrd</semanticResources>
-  <semanticResources>documentation/View-cm-view9.msrd</semanticResources>
   <semanticResources>documentation/View-cm-view10.msrd</semanticResources>
   <semanticResources>operations/environment/environment-actCentralCoordinator-oeRequestCrisisEventLocation.msr</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctCrisisEvent.msrd</semanticResources>
@@ -300,6 +297,21 @@
   <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctDispatchedCoordinatoractAbstractDispatchCoordinator.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctDispatchedCoordinatorctCrisisEvent.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctDispatchedCoordinator-init.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-ctAssociations.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assDispatchedCoordinatortdtMapWithPin.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCrisisEventctMapWithPin.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMapWithPin.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtMapWithPin-isMapRepresentation.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtGeoPos.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtGeoPos-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtLongitude.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtLongitude-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtLatitude.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtLatitude-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtImage.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtImage-is.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-dtv-url.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jBwxAJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

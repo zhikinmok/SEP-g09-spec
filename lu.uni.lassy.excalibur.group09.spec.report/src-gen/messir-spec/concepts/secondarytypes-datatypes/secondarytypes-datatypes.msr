@@ -15,19 +15,20 @@ import lu.uni.lassy.messir.libraries.string
 Concept Model {
 
 	Secondary Types {
-		datatype dtURL {
+		
+		   		   
+		datatype dtLongitude {
+		   		attribute value : ptReal
+		   		operation is() : ptBoolean
+		   }
+		   
+		datatype dtLatitude {
+			   	attribute value : ptReal
+			   	operation is() : ptBoolean
+		   }
+		   
+		datatype dtImage {
 		   		attribute value : ptString
-		   		operation is() : ptBoolean
-		   }
-		   
-		   datatype dtMap{
-		   		attribute value : dtURL
-		   		operation is() : ptBoolean
-		   }
-		   
-		   datatype dtPin {
-		   		attribute X : ptReal
-		   		attribute Y : ptReal
 		   		operation is() : ptBoolean
 		   }
 	}

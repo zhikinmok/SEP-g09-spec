@@ -43,24 +43,37 @@ Concept Model {
 			attribute location: dtMapWithPin
 			attribute isLocationConfirmed: ptBoolean
 			attribute comment: ptString					//Multiple Comments?
+			attribute geoPos: dtGeoPos
 			
 			operation init(	Aid:ptInteger,
 							Alocation:dtMapWithPin,
 							AisLocationConfirmed:ptBoolean,
-							Acomment:ptString
+							Acomment:ptString,
+							AgeoPos:dtGeoPos
 			): ptBoolean
 			
 		}
 		
-		class ctDispatchedCoordinator role rnroleName cardinality [1..*] {
+		class ctDispatchedCoordinator role rnDispatchedCoordinator cardinality [1..*] {
 			attribute type: etTeamType
 			attribute status: etDispatchStatus
+			attribute geoPos: dtGeoPos
 			
 			operation init(	Atype:etTeamType,
-							Astatus:etDispatchStatus
+							Astatus:etDispatchStatus,
+							AgeoPos:dtGeoPos
 			): ptBoolean
+		}
+		
+		class ctMapWithPin role rnMapWithPin cardinality [1..*] {
+			attribute mapWithPin: dtMapWithPin
+			
+			operation init( AmapWithPin:dtMapWithPin
+			) : ptBoolean
 		}
 
 	}
 }
 }
+
+

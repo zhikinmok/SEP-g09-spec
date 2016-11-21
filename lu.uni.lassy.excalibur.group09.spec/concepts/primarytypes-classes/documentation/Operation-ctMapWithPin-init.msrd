@@ -1,0 +1,22 @@
+/*
+@author Kira
+@date Mon Nov 21 21:49:12 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.init.AmapWithPin
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctMapWithPin type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctMapWithPin instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

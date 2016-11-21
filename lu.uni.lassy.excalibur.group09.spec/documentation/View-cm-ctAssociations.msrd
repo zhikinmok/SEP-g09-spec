@@ -1,0 +1,15 @@
+/*
+@author Kira
+@date Mon Nov 21 20:23:16 CET 2016
+*/
+
+
+@@view cm-ctAssociations
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 12
+@description "Illustration of all the associations."
+@caption ""
+@scale MaxHeight
+@orientation Landscape
