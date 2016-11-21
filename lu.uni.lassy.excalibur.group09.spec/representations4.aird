@@ -312,6 +312,12 @@
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtImage.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtImage-is.msrd</semanticResources>
   <semanticResources>documentation/View-cm-dtv-url.msrd</semanticResources>
+  <semanticResources>usecases/usecaseinstance-ugCreateNewCrisisEvent-uciugCreateNewCrisisEvent.msr</semanticResources>
+  <semanticResources>usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr</semanticResources>
+  <semanticResources>documentation/View-uc-ugCreateNewCrisisEvent.msrd</semanticResources>
+  <semanticResources>documentation/View-uc-ugGlobalDispatchManagement.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-ugCreateNewCrisisEvent.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-ugGlobalDispatchManagement.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

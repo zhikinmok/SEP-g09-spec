@@ -1,0 +1,11 @@
+/*
+@author Kira
+@date Tue Nov 22 00:01:56 CET 2016
+*/
+
+
+@@view uc-ugGlobalDispatchManagement
+@model Use-Case lu.uni.lassy.excalibur.group09.spec.usecases.ugGlobalDispatchManagement 
+@description "Shows the ugGlobalDispatchManagement use-case and its actors."
+@caption ""
+@scale MaxWidth

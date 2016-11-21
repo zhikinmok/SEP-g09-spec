@@ -20,19 +20,12 @@ Shows the suGlobaManagementOfEvent use-case and its actors.
 \addrowheading{Secondary actor(s)}
 \addnumberedsinglerow{}{\msrcode{actCommunicationCompany[active]}}
 \addnumberedsinglerow{}{\msrcode{actFiremenCoordinator[active]}}
-\addnumberedsinglerow{}{\msrcode{actPoliceCoordinator[active]}}
 \addnumberedsinglerow{}{\msrcode{actTowServiceCoordinator[active]}}
+\addnumberedsinglerow{}{\msrcode{actPoliceCoordinator[active]}}
 
 \addrowheading{Goal(s) description}
 \addsinglerow{Shows the suGlobaManagementOfEvent use-case and its actors.}
 
-\addrowheading{Reuse}
-\addnumberedsinglerow{}{\msrucname{oeRequestCrisisEventLocation [0..*]}}
-\addnumberedsinglerow{}{\msrucname{oeReceiveCrisisEventLocation [0..*]}}
-\addnumberedsinglerow{}{\msrucname{oeConfirmCrisisEventLocation [1..*]}}
-\addnumberedsinglerow{}{\msrucname{oeCreateNewCrisisEvent [1..*]}}
-\addnumberedsinglerow{}{\msrucname{oeUpdateDispatchStatus [4..*]}}
-\addnumberedsinglerow{}{\msrucname{oeRequestHelp [0..*]}}
 
 \addrowheading{Protocol condition(s)}
 \addnumberedsinglerow{}{
@@ -47,24 +40,12 @@ Shows the suGlobaManagementOfEvent use-case and its actors.
 }
 
 \addrowheading{Main Steps}
-\addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeRequestCrisisEventLocation} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actCommunicationCompany} executes the \msrucname{oeReceiveCrisisEventLocation} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeConfirmCrisisEventLocation} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeCreateNewCrisisEvent} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeRefreshMap} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeMessage} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeRequestHelp} use case}
-\addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{ugCreateNewCrisisEvent} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{ugGlobalDispatchManagement} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{ugGlobalDispatchManagement} use case}
 \addrowheading{Steps Ordering Constraints}
-\addnumberedsinglerow{}{if (b) then previously (a)}
-\addnumberedsinglerow{}{step (c) must be executed before step (d)}
-\addnumberedsinglerow{}{step (d) must be executed before the step (e) to (j)}
-\addnumberedsinglerow{}{step (e) must be executed at least two times}
-\addnumberedsinglerow{}{step (h) must be executed at least two times}
-\addnumberedsinglerow{}{step (j) can only be executed if step (i) has at least been executed once previously}
-\addnumberedsinglerow{}{step (j) must be executed at least two times}
+\addnumberedsinglerow{}{step (a) must be executed before step (b) or step (c)}
+\addnumberedsinglerow{}{step (b) XOR step (c)}
 
 \addrowheading{Additional Information}
 \addsinglerow{

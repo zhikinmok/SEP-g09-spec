@@ -14,41 +14,62 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 	Use Case Model {
 		
+	
+		
 		use case system summary suGlobalManagementOfEvent() {
 				actor actCentralCoordinator[primary, active]
 				actor actCommunicationCompany[secondary, active]
-				actor actFiremenCoordinator[secondary, active]
-				actor actPoliceCoordinator[secondary, active]
-				actor actTowServiceCoordinator[secondary, active]
+				actor actFiremenCoordinator[secondary,active]
+				actor actTowServiceCoordinator[secondary,active]
+				actor actPoliceCoordinator[secondary,active]
+
+				step a: actCentralCoordinator executes ugCreateNewCrisisEvent
+				step b: actFiremenCoordinator executes ugGlobalDispatchManagement
+				step c: actTowServiceCoordinator executes ugGlobalDispatchManagement
+				
+				ordering constraint "step (a) must be executed before step (b) or step (c)"
+				ordering constraint "step (b) XOR step (c)"
+
+		}
+		
+		
+			use case system usergoal ugCreateNewCrisisEvent() {
+				actor actCentralCoordinator[primary, active]
+				actor actCommunicationCompany[secondary, active]
 				
 				reuse oeRequestCrisisEventLocation[0..*]
 				reuse oeReceiveCrisisEventLocation[0..*]
 				reuse oeConfirmCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
-				reuse oeUpdateDispatchStatus[4..*]
-				reuse oeRequestHelp[0..*]
 				
 				step a: actCentralCoordinator executes oeRequestCrisisEventLocation
 				step b: actCommunicationCompany executes oeReceiveCrisisEventLocation
 				step c: actCentralCoordinator executes oeConfirmCrisisEventLocation
 				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
-				step e: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step f: actTowServiceCoordinator executes oeRefreshMap
-				step g: actTowServiceCoordinator executes oeMessage
-				step h: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step i: actFiremenCoordinator executes oeRequestHelp
-				step j: actPoliceCoordinator executes oeUpdateDispatchStatus
-
 				
 				ordering constraint "if (b) then previously (a)"
 				ordering constraint "step (c) must be executed before step (d)"
-				ordering constraint "step (d) must be executed before the step (e) to (j)"
-				ordering constraint "step (e) must be executed at least two times"
-				ordering constraint "step (h) must be executed at least two times"
-				ordering constraint "step (j) can only be executed if step (i) has at least been executed once previously"
-				ordering constraint "step (j) must be executed at least two times"			
+				
 		}
 		
+		use case system usergoal ugGlobalDispatchManagement() {
+				actor actFiremenCoordinator[primary, active]
+				actor actFiremenCoordinator[secondary,active]
+				actor actTowServiceCoordinator[secondary,active]
+				actor actPoliceCoordinator[secondary,active]
+				
+				step a: actFiremenCoordinator executes oeUpdateDispatchStatus
+				step b: actTowServiceCoordinator executes oeRefreshMap
+				step c: actTowServiceCoordinator executes oeMessage
+				step d: actTowServiceCoordinator executes oeUpdateDispatchStatus
+				step e: actFiremenCoordinator executes oeRequestHelp
+				step f: actPoliceCoordinator executes oeUpdateDispatchStatus
+			
+				ordering constraint "step (a) must be executed at least two times"
+				ordering constraint "step (d) must be executed at least two times"
+				ordering constraint "step (f) can only be executed if step (e) has at least been executed once previously"
+				ordering constraint "step (f) must be executed at least two times"					
+		}
 		
 		
 		use case system subfunction oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) {

@@ -1,0 +1,11 @@
+package usecases.uciugGlobalDispatchManagement {
+	import lu.uni.lassy.excalibur.group09.spec.usecases
+	import lu.uni.lassy.excalibur.group09.spec.usecases
+	import lu.uni.lassy.excalibur.group09.spec.environment
+	import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+
+	Use Case Model {
+
+		
+	}
+}
