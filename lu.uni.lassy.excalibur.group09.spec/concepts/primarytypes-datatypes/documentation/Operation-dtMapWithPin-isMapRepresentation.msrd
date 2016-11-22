@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMapWithPin.isMapRepresentation
-@description "
- "
+@description "An operation of the datatype MapWithPin to generate an image which is a map including pins."
 //postFunctional descriptions
 @postF 
 " "

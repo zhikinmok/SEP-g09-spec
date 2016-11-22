@@ -5,11 +5,7 @@
 
 
 @@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage
-@description ""
-@attribute
-lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage.value
-""
-@endAttributes
+@description "A String used to identify an image."
 @operation
 lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage.is
 ""

@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtLatitude.is
-@description "
- "
+@description "used to determine which real numbers are considered as a valid latitude coordinate."
 //postFunctional descriptions
 @postF 
 " "

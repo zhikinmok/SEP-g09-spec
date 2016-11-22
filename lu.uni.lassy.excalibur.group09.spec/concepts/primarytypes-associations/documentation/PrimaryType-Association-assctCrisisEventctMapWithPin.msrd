@@ -5,4 +5,4 @@
 
 
 @@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCrisisEventctMapWithPin
-@description ""
+@description "Association of a crisis event with a MapWithPin image."

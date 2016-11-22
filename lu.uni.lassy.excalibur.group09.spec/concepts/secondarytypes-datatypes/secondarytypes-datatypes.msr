@@ -9,28 +9,35 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
-
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 Concept Model {
 
 	Secondary Types {
-		
+				
+		datatype dtPhoneNumber extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+				operation is() : ptBoolean
+			}
+		   
+		datatype dtAddress extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+				operation is() : ptBoolean
+			}
+		   
+		datatype dtCrisisID extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtInteger {
+				operation is() : ptBoolean
+			}
 		   		   
-		datatype dtLongitude {
-		   		attribute value : ptReal
+		datatype dtLongitude extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtReal {
 		   		operation is() : ptBoolean
-		   }
+		   	}
 		   
-		datatype dtLatitude {
-			   	attribute value : ptReal
+		datatype dtLatitude extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtReal {
 			   	operation is() : ptBoolean
-		   }
+			}
 		   
-		datatype dtImage {
-		   		attribute value : ptString
+		datatype dtImage extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
 		   		operation is() : ptBoolean
-		   }
+			}
 	}
 
 }

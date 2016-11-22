@@ -1,0 +1,22 @@
+/*
+@author Kira
+@date Tue Nov 22 21:51:13 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.myStringConcat
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.myStringConcat.AdtString2IN
+""
+@endParameters
+
+@description "An operation to concatenate two Strings.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

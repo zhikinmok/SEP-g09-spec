@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Tue Nov 22 21:24:15 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPhoneNumber
+@description "A String used to store a phone number."
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtPhoneNumber.is
+""
+@endOperations

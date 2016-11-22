@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Tue Nov 22 21:11:44 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtAddress
+@description "A String used to identify an address."
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtAddress.is
+""
+@endOperations

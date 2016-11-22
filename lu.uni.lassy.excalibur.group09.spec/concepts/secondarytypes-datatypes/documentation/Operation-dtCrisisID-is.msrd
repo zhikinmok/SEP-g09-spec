@@ -1,12 +1,12 @@
 /*
 @author Kira
-@date Mon Nov 14 21:14:05 CET 2016
+@date Tue Nov 22 21:51:16 CET 2016
 */
 
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtCrisisID.is
-@description "used to determine which integers are considered as valid crisis ids."
+@description "used to determine which integers are considered as a valid crisis id."
 //postFunctional descriptions
 @postF 
 " "

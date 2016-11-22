@@ -1,0 +1,14 @@
+/*
+@author Kira
+@date Tue Nov 22 21:29:54 CET 2016
+*/
+
+
+@@view cm-dt
+@model Concept
+@level Local
+@sublevel Primary Datatype
+@number 15
+@description "View of all the datatypes"
+@caption ""
+@scale MaxWidth

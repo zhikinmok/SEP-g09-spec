@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage.is
-@description "
- "
+@description "used to determine which strings are considered as a valid image output."
 //postFunctional descriptions
 @postF 
 " "

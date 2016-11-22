@@ -1,0 +1,22 @@
+/*
+@author Kira
+@date Tue Nov 22 21:26:09 CET 2016
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString
+@description "A primary type String incuding some basic String operations."
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.value
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.is
+""
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.length
+""
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString.myStringConcat
+""
+@endOperations
