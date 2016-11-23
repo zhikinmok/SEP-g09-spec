@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Wed Nov 23 23:46:19 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin
+@description "An image which is a map including pins."
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.is
+""
+@endOperations

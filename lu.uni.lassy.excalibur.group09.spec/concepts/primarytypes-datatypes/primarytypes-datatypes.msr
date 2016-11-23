@@ -32,12 +32,6 @@ Concept Model {
 				attribute value : ptReal
 			}
 		   
-		   datatype dtMapWithPin{
-		   		attribute image : dtImage
-		   		operation is() : ptBoolean
-		   		external operation isMapRepresentation() : ptBoolean
-		   }
-		   
 		   datatype dtGeoPos{
 		   		attribute latitude: dtLatitude
 		   		attribute longitude: dtLongitude
@@ -55,7 +49,7 @@ Concept Model {
 		   }
 		   
 		   enum etTeamType {
-		   		constants["AmbulanceTeam", "PoliceTeam", "TowServiceTeam"]
+		   		constants["Ambulance", "Police", "TowService"]
 		   		operation is() : ptBoolean
 		   }
 	}

@@ -21,16 +21,16 @@ package usecases.uciugCreateNewCrisisEvent {
 				}
 				
 				Orange executed instanceof subfunction oeReceiveCrisisEventLocation("Latitude=75.08, Longitude=23.03") {
-					ieReceiveCrisisEventLocation("environment.rndtMapWithPin.image.value") returned to Camille
+					ieReceiveCrisisEventLocation("A string for the image with the pins") returned to Camille
 				}
 				
 				Camille executed instanceof subfunction oeConfirmCrisisEventLocation() {
 					ieConfirmCrisisEventLocation("Done") returned to Camille
 				}
 				
-				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtCrisisID=1", "AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumberX=691123456", "environment.rndtMapWithPin.image.value", "No additional comments") {
-					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","environment.rndtMapWithPin.image.value","No additional comments") returned to Fabio
-					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","environment.rndtMapWithPin.image.value","No additional comments") returned to Ted
+				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtCrisisID=1", "AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691123456", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
+					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Fabio
+					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Ted
 				}						
 							
 			}	

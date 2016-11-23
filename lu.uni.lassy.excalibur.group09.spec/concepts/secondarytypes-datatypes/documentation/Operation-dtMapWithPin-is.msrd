@@ -1,11 +1,11 @@
 /*
 @author Kira
-@date Mon Nov 14 21:14:09 CET 2016
+@date Wed Nov 23 23:46:20 CET 2016
 */
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtMapWithPin.is
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.is
 @description "used to determine which images are valid maps including pins."
 //postFunctional descriptions
 @postF 

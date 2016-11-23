@@ -38,6 +38,10 @@ Concept Model {
 		datatype dtImage extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
 		   		operation is() : ptBoolean
 			}
+				   
+		datatype dtMapWithPin extends lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage {
+				operation is() : ptBoolean
+			}
 	}
 
 }

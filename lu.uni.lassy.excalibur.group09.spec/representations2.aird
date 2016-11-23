@@ -294,7 +294,6 @@
   <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCrisisEventctMapWithPin.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctMapWithPin.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtMapWithPin-isMapRepresentation.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtGeoPos.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtGeoPos-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtLongitude.msrd</semanticResources>
@@ -327,6 +326,8 @@
   <semanticResources>documentation/View-uci-uciugGlobalDispatchManagement.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCaseInstance-uciugCreateNewCrisiEvent.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCaseInstance-uciugGlobalDispatchManagement.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtMapWithPin.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-is.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jBsfkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

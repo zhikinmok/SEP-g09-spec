@@ -11,7 +11,7 @@
 lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieReceiveNewCrisisEvent
 ""
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieMessageAbstractDispatchCoordinator
 ""
 
 @endInputEvents

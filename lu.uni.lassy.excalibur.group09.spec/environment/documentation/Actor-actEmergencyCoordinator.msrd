@@ -11,7 +11,7 @@
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentralCoordinator.ieReceiveCrisisEventLocation
 ""
 @inputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentralCoordinator.ieMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentralCoordinator.ieMessageCentralCoordinator
 ""
 
 @endInputEvents

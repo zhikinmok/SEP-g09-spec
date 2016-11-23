@@ -7,47 +7,47 @@ package usecases.uciugGlobalDispatchManagement {
 	Use Case Model {
 		use case instance uciugGlobalDispatchManagement : ugGlobalDispatchManagement {
 			actors {
-				Camille : actCentralCoordinator
-				Fabio : actFiremenCoordinator
-				Ted : actTowServiceCoordinator
-				Polo : actPoliceCoordinator				
+				Camille : 	actCentralCoordinator
+				Fabio 	: 	actFiremenCoordinator
+				Ted 	: 	actTowServiceCoordinator
+				Polo 	: 	actPoliceCoordinator				
 			}
 			use case steps {
-					Fabio executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatus="InTransit") {
+					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
 						ieMessage("Dispatch Status Updated.") returned to Fabio
 					}
 					
-					Ted executed instanceof subfunction oeRefreshMap("AdtCrisisID=1") {
-						ieReceiveMap("environment.rndtMapWithPin.image.value") returned to Ted
+					Ted executed instanceof subfunction oeRefreshMap("Latitude=80.57, Longitude=50.23") {
+						ieReceiveMap("A string for the image with the pin") returned to Ted
 					}
 					
 					Ted executed instanceof subfunction oeMessage("AMessage=I will arrive in 30 minutes") {
-						ieMessage("I will arrive in 30 minutes") returned to Camille
-						ieMessage("I will arrive in 30 minutes") returned to Fabio
-						ieMessage("I will arrive in 30 minutes") returned to Ted
+						ieMessageCentralCoordinator("I will arrive in 30 minutes") returned to Camille
+						ieMessageAbstractDispatchCoordinator("I will arrive in 30 minutes") returned to Fabio
+						ieMessageAbstractDispatchCoordinator("I will arrive in 30 minutes") returned to Ted
 					}
 						
-					Ted executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusX="InTransit") {
+					Ted executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
 						ieMessage("Dispatch Status Updated.") returned to Ted
 					}
 						
-					Fabio executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXX="Arrived") {
+					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
 						ieMessage("Dispatch Status Updated.") returned to Fabio			
 					}
 	
-					Fabio executed instanceof subfunction oeRequestHelp(AenTeamType="Police", RequestedNumber="1") {
-						ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","environment.rndtMapWithPin.image.value") returned to Polo
+					Fabio executed instanceof subfunction oeRequestHelp("AenTeamType=Police", "RequestedNumber=1") {
+						ieReceiveNewCrisisEvent("1","Walter","Witness","691 12 34 56","A string for the image with the pins") returned to Polo
 					}
 	
-					Polo executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXX="InTransit") {
+					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
 						ieMessage("Dispatch Status Updated.") returned to Polo	
 					}
 						
-					Ted executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXXX="Arrived") {
+					Ted executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
 						ieMessage("Dispatch Status Updated.") returned to Ted			
 					}
 						
-					Polo executed instanceof subfunction oeUpdateDispatchStatus(AenDispatchStatusXXXXX="Arrived") {
+					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
 						ieMessage("Dispatch Status Updated.") returned to Polo			
 					}	
 								

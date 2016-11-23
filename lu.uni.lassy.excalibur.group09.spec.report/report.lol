@@ -5,7 +5,7 @@
 \contentsline {lstlisting}{\numberline {B.5}Messir Spec. file primarytypes-classes.msr.}{48}{lstlisting.B.5}
 \contentsline {lstlisting}{\numberline {B.6}Messir Spec. file primarytypes-datatypes.msr.}{49}{lstlisting.B.6}
 \contentsline {lstlisting}{\numberline {B.7}Messir Spec. file secondarytypes-associations.msr.}{50}{lstlisting.B.7}
-\contentsline {lstlisting}{\numberline {B.8}Messir Spec. file secondarytypes-classes.msr.}{51}{lstlisting.B.8}
+\contentsline {lstlisting}{\numberline {B.8}Messir Spec. file secondarytypes-classes.msr.}{50}{lstlisting.B.8}
 \contentsline {lstlisting}{\numberline {B.9}Messir Spec. file secondarytypes-datatypes.msr.}{51}{lstlisting.B.9}
 \contentsline {lstlisting}{\numberline {B.10}Messir Spec. file tests.msr.}{52}{lstlisting.B.10}
 \contentsline {lstlisting}{\numberline {B.11}Messir Spec. file usecaseinstance-suGlobalManagementOfEvent-ucisuGlobalManagementOfEvent.msr.}{52}{lstlisting.B.11}
