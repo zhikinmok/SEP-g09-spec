@@ -1,0 +1,11 @@
+/*
+@author Kira
+@date Wed Nov 23 00:33:16 CET 2016
+*/
+
+
+@@view uci-uciugGlobalDispatchManagement
+@instance Use-Case usecases.uciugGlobalDispatchManagement.uciugGlobalDispatchManagement 
+@description "Shows the ugGlobalDispatchManagement instance."
+@caption "ugGlobalDispatchManagement"
+@scale MaxWidth

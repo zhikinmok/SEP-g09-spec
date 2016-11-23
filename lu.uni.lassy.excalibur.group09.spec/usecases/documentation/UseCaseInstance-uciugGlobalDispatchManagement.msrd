@@ -1,0 +1,8 @@
+/*
+@author Kira
+@date Wed Nov 23 00:39:00 CET 2016
+*/
+
+
+@@Instance Use Case usecases.uciugGlobalDispatchManagement.uciugGlobalDispatchManagement
+@description "Shows the ugGlobalDispatchManagement instance."

@@ -37,6 +37,8 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			use case system usergoal ugCreateNewCrisisEvent() {
 				actor actCentralCoordinator[primary, active]
 				actor actCommunicationCompany[secondary, active]
+				actor actFiremenCoordinator[secondary, passive]
+				actor actTowServiceCoordinator[secondary, passive]
 				
 				reuse oeRequestCrisisEventLocation[0..*]
 				reuse oeReceiveCrisisEventLocation[0..*]
@@ -55,7 +57,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		
 		use case system usergoal ugGlobalDispatchManagement() {
 				actor actFiremenCoordinator[primary, active]
-				actor actFiremenCoordinator[secondary,active]
+				actor actCentralCoordinator[secondary,active]
 				actor actTowServiceCoordinator[secondary,active]
 				actor actPoliceCoordinator[secondary,active]
 				
@@ -113,7 +115,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			actor actAbstractDispatchCoordinator[secondary, multiple]
 			returned messages{
 				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
-//				ieMessage(AMessage) returned to actCentralCoordinator		6											//PROBLEME DE IE DEUX FOIS SANS SOUS-TYPAGE
+//				ieMessage(AMessage) returned to actCentralCoordinator													//PROBLEME DE IE DEUX FOIS SANS SOUS-TYPAGE
 			}
 		}
 						

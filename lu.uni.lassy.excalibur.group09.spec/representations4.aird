@@ -323,6 +323,10 @@
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtAddress-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtCrisisID-is.msrd</semanticResources>
+  <semanticResources>documentation/View-uci-uciugCreateNewCrisiEvent.msrd</semanticResources>
+  <semanticResources>documentation/View-uci-uciugGlobalDispatchManagement.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCaseInstance-uciugCreateNewCrisiEvent.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCaseInstance-uciugGlobalDispatchManagement.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

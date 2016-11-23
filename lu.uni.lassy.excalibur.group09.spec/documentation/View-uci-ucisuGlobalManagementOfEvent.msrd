@@ -6,6 +6,6 @@
 @@view uci-ucisuGlobalManagementOfEvent
 @instance Use-Case usecases.ucisuGlobalManagementOfEvent.ucisuGlobalManagementOfEvent 
 @description "Shows the suGlobaManagementOfEvent instance."
-@caption ""
+@caption "suGlobaManagementOfEvent"
 @scale MaxHeight
 @orientation Landscape

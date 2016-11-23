@@ -1,0 +1,11 @@
+/*
+@author Kira
+@date Wed Nov 23 00:32:58 CET 2016
+*/
+
+
+@@view uci-uciugCreateNewCrisiEvent
+@instance Use-Case usecases.uciugCreateNewCrisisEvent.uciugCreateNewCrisiEvent 
+@description "Shows the ugCreateNewCrisisEvent instance."
+@caption "ugCreateNewCrisisEvent"
+@scale MaxWidth
