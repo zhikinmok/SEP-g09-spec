@@ -107,7 +107,7 @@
         <path d="M-1 -1 L1143 -1 L1143 801 L-1 801 L-1 -1 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath35">
-        <path d="M54 71 L458 71 L458 89 L54 89 L54 71 Z" />
+        <path d="M48 71 L464 71 L464 89 L48 89 L48 71 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath36">
         <path d="M43 85 L55 85 L55 96 L43 96 L43 85 Z" />
@@ -131,13 +131,13 @@
         <path d="M43 534 L55 534 L55 545 L43 545 L43 534 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath43">
-        <path d="M197 141 L467 141 L467 159 L197 159 L197 141 Z" />
+        <path d="M191 141 L473 141 L473 159 L191 159 L191 141 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath44">
         <path d="M635 155 L647 155 L647 166 L635 166 L635 155 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath45">
-        <path d="M68 261 L443 261 L443 279 L68 279 L68 261 Z" />
+        <path d="M28 261 L484 261 L484 279 L28 279 L28 261 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath46">
         <path d="M455 275 L467 275 L467 286 L455 286 L455 275 Z" />
@@ -155,7 +155,7 @@
         <path d="M828 615 L840 615 L840 626 L828 626 L828 615 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath51">
-        <path d="M157 680 L848 680 L848 698 L157 698 L157 680 Z" />
+        <path d="M117 680 L889 680 L889 698 L117 698 L117 680 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath52">
         <path d="M1021 695 L1033 695 L1033 706 L1021 706 L1021 695 Z" />
@@ -236,12 +236,12 @@
     <g stroke-width="0.1" font-size="13" font-family="'Lucida Sans Unicode'" stroke-linecap="butt">
       <text xml:space="preserve" x="1051" y="715" clip-path="url(#clipPath33)" stroke="none">in05</text>
       <line clip-path="url(#clipPath34)" fill="none" x1="464" x2="45" y1="90" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <text x="55" y="87" clip-path="url(#clipPath35)" stroke="none" stroke-width="2.1" xml:space="preserve">oeRequestCrisisEventLocation("AdtPhoneNumber=691123456")</text>
+      <text x="49" y="87" clip-path="url(#clipPath35)" stroke="none" stroke-width="2.1" xml:space="preserve">oeRequestCrisisEventLocation("AdtPhoneNumber=691 12 34 56")</text>
       <line clip-path="url(#clipPath36)" fill="none" x1="52" x2="45" y1="87" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath36)" fill="none" x1="45" x2="52" y1="90" y2="93" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath34)" fill="none" x1="644" x2="45" y1="226" y2="226" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <text x="204" y="204" clip-path="url(#clipPath37)" stroke="none" stroke-width="2.1" xml:space="preserve">oeReceiveCrisisEventLocation</text>
-      <text x="146" y="220" clip-path="url(#clipPath37)" stroke="none" stroke-width="2.1" xml:space="preserve">("AdtMapWithPin=http://..., X=75.08, Y=23.03")</text>
+      <text x="148" y="204" clip-path="url(#clipPath37)" stroke="none" stroke-width="2.1" xml:space="preserve">oeReceiveCrisisEventLocation("Latitude=75.08, </text>
+      <text x="239" y="220" clip-path="url(#clipPath37)" stroke="none" stroke-width="2.1" xml:space="preserve">Longitude=23.03")</text>
       <line clip-path="url(#clipPath38)" fill="none" x1="52" x2="45" y1="223" y2="226" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath38)" fill="none" x1="45" x2="52" y1="226" y2="229" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath34)" fill="none" x1="464" x2="45" y1="350" y2="350" stroke="rgb(136,136,136)" stroke-width="2.1" />
@@ -251,18 +251,18 @@
       <line clip-path="url(#clipPath34)" fill="none" x1="464" x2="45" y1="539" y2="539" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <text x="71" y="488" clip-path="url(#clipPath41)" stroke="none" stroke-width="2.1" xml:space="preserve">oeCreateNewCrisisEvent("AdtCrisisID=1","AdtName=Walter","</text>
       <text x="71" y="504" clip-path="url(#clipPath41)" stroke="none" stroke-width="2.1" xml:space="preserve">AenHumanType=Witness","AdtPhoneNumberX=691123456","</text>
-      <text x="70" y="520" clip-path="url(#clipPath41)" stroke="none" stroke-width="2.1" xml:space="preserve">AdtMapWithPin=http://..., X=75.08, Y=23.03","No additional </text>
+      <text x="82" y="520" clip-path="url(#clipPath41)" stroke="none" stroke-width="2.1" xml:space="preserve">environment.rndtMapWithPin.image.value","No additional </text>
       <text x="226" y="536" clip-path="url(#clipPath41)" stroke="none" stroke-width="2.1" xml:space="preserve">comments")</text>
       <line clip-path="url(#clipPath42)" fill="none" x1="52" x2="45" y1="536" y2="539" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath42)" fill="none" x1="45" x2="52" y1="539" y2="542" stroke="rgb(136,136,136)" stroke-width="2.1" />
     </g>
     <g stroke-linecap="butt" font-size="13" fill="rgb(136,136,136)" font-family="'Lucida Sans Unicode'" stroke-dasharray="5,5" stroke="rgb(136,136,136)" stroke-width="2.1">
       <line clip-path="url(#clipPath34)" fill="none" x1="644" x2="45" y1="160" y2="160" />
-      <text x="198" y="157" clip-path="url(#clipPath43)" fill="black" stroke="none" xml:space="preserve">ieRequestCrisisEventLocation(691123456)</text>
+      <text x="192" y="157" clip-path="url(#clipPath43)" fill="black" stroke="none" xml:space="preserve">ieRequestCrisisEventLocation(691 12 34 56)</text>
       <line clip-path="url(#clipPath44)" fill="none" x1="637" x2="644" y1="163" y2="160" stroke-dasharray="none" />
       <line clip-path="url(#clipPath44)" fill="none" x1="644" x2="637" y1="160" y2="157" stroke-dasharray="none" />
       <line clip-path="url(#clipPath34)" fill="none" x1="464" x2="45" y1="280" y2="280" />
-      <text x="69" y="277" clip-path="url(#clipPath45)" fill="black" stroke="none" xml:space="preserve">ieReceiveCrisisEventLocation(http://..., X=75.08, Y=23.03)</text>
+      <text x="29" y="277" clip-path="url(#clipPath45)" fill="black" stroke="none" xml:space="preserve">ieReceiveCrisisEventLocation(environment.rndtMapWithPin.image.value)</text>
       <line clip-path="url(#clipPath46)" fill="none" x1="457" x2="464" y1="283" y2="280" stroke-dasharray="none" />
       <line clip-path="url(#clipPath46)" fill="none" x1="464" x2="457" y1="280" y2="277" stroke-dasharray="none" />
       <line clip-path="url(#clipPath34)" fill="none" x1="464" x2="45" y1="423" y2="423" />
@@ -270,11 +270,11 @@
       <line clip-path="url(#clipPath48)" fill="none" x1="457" x2="464" y1="426" y2="423" stroke-dasharray="none" />
       <line clip-path="url(#clipPath48)" fill="none" x1="464" x2="457" y1="423" y2="420" stroke-dasharray="none" />
       <line clip-path="url(#clipPath34)" fill="none" x1="837" x2="45" y1="620" y2="620" />
-      <text x="112" y="618" clip-path="url(#clipPath49)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,Walter,Witness,691123456,http://..., X=75.08, Y=23.03,No additional comments)</text>
+      <text x="72" y="618" clip-path="url(#clipPath49)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,Walter,Witness,691123456,environment.rndtMapWithPin.image.value,No additional comments)</text>
       <line clip-path="url(#clipPath50)" fill="none" x1="830" x2="837" y1="623" y2="620" stroke-dasharray="none" />
       <line clip-path="url(#clipPath50)" fill="none" x1="837" x2="830" y1="620" y2="617" stroke-dasharray="none" />
       <line clip-path="url(#clipPath34)" fill="none" x1="1030" x2="45" y1="700" y2="700" />
-      <text x="158" y="696" clip-path="url(#clipPath51)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,Walter,Witness,691123456,http://..., X=75.08, Y=23.03,No additional comments)</text>
+      <text x="118" y="696" clip-path="url(#clipPath51)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,Walter,Witness,691123456,environment.rndtMapWithPin.image.value,No additional comments)</text>
       <line clip-path="url(#clipPath52)" fill="none" x1="1023" x2="1030" y1="703" y2="700" stroke-dasharray="none" />
       <line clip-path="url(#clipPath52)" fill="none" x1="1030" x2="1023" y1="700" y2="697" stroke-dasharray="none" />
     </g>

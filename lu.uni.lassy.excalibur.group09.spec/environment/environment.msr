@@ -45,7 +45,7 @@ Environment Model {
 				}
 				
 				output interface outactCommunicationCompany {
-					operation oeReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) : ptBoolean
+					operation oeReceiveCrisisEventLocation(AdtGeoPos:dtGeoPos) : ptBoolean
 				}
 			}
 			

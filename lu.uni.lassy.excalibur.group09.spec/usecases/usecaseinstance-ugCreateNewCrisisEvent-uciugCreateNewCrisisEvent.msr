@@ -16,21 +16,21 @@ package usecases.uciugCreateNewCrisisEvent {
 			
 			use case steps {
 				
-				Camille executed instanceof subfunction oeRequestCrisisEventLocation("AdtPhoneNumber=691123456") {
-					ieRequestCrisisEventLocation("691123456") returned to Orange
+				Camille executed instanceof subfunction oeRequestCrisisEventLocation("AdtPhoneNumber=691 12 34 56") {
+					ieRequestCrisisEventLocation("691 12 34 56") returned to Orange
 				}
 				
-				Orange executed instanceof subfunction oeReceiveCrisisEventLocation("AdtMapWithPin=http://..., X=75.08, Y=23.03") {
-					ieReceiveCrisisEventLocation("http://..., X=75.08, Y=23.03") returned to Camille			
+				Orange executed instanceof subfunction oeReceiveCrisisEventLocation("Latitude=75.08, Longitude=23.03") {
+					ieReceiveCrisisEventLocation("environment.rndtMapWithPin.image.value") returned to Camille
 				}
 				
 				Camille executed instanceof subfunction oeConfirmCrisisEventLocation() {
 					ieConfirmCrisisEventLocation("Done") returned to Camille
 				}
 				
-				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtCrisisID=1", "AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumberX=691123456", "AdtMapWithPin=http://..., X=75.08, Y=23.03", "No additional comments") {
-					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","http://..., X=75.08, Y=23.03","No additional comments") returned to Fabio
-					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","http://..., X=75.08, Y=23.03","No additional comments") returned to Ted
+				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtCrisisID=1", "AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumberX=691123456", "environment.rndtMapWithPin.image.value", "No additional comments") {
+					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","environment.rndtMapWithPin.image.value","No additional comments") returned to Fabio
+					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","environment.rndtMapWithPin.image.value","No additional comments") returned to Ted
 				}						
 							
 			}	

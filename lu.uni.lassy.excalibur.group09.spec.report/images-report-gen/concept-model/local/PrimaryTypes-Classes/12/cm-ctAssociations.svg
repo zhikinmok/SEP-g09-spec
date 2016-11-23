@@ -320,7 +320,7 @@
         <path d="M432 446 L564 446 L564 464 L432 464 L432 446 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath98">
-        <path d="M432 326 L579 326 L579 344 L432 344 L432 326 Z" />
+        <path d="M436 326 L576 326 L576 344 L436 344 L436 326 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath99">
         <path d="M720 300 L982 300 L982 318 L720 318 L720 300 Z" />
@@ -329,7 +329,7 @@
         <path d="M780 350 L988 350 L988 368 L780 368 L780 350 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath101">
-        <path d="M720 266 L867 266 L867 284 L720 284 L720 266 Z" />
+        <path d="M724 266 L864 266 L864 284 L724 284 L724 266 Z" />
       </clipPath>
     </defs>
     <g font-size="13" fill="rgb(131,122,133)" font-family="'Lucida Sans Unicode'" stroke-linejoin="round" stroke="rgb(131,122,133)" stroke-width="0" stroke-miterlimit="0">
@@ -473,12 +473,12 @@
       <line clip-path="url(#clipPath71)" fill="none" x1="421" x2="421" y1="467" y2="317" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <text x="433" y="402" clip-path="url(#clipPath96)" stroke="none" stroke-width="2.1" xml:space="preserve">assctCrisisEventctMapWithPin</text>
       <text x="433" y="462" clip-path="url(#clipPath97)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1]rnctCrisisEvent</text>
-      <text x="433" y="342" clip-path="url(#clipPath98)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1] rncdtMapWithPin</text>
+      <text x="437" y="342" clip-path="url(#clipPath98)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1] rndtMapWithPin</text>
       <line clip-path="url(#clipPath71)" fill="none" x1="997" x2="997" y1="375" y2="291" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath71)" fill="none" x1="997" x2="706" y1="291" y2="291" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <text x="721" y="316" clip-path="url(#clipPath99)" stroke="none" stroke-width="2.1" xml:space="preserve">assDispatchedCoordinatortctMapWithPin</text>
       <text x="781" y="366" clip-path="url(#clipPath100)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1]rnctDispatchedCoordinator</text>
-      <text x="721" y="282" clip-path="url(#clipPath101)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1] rncdtMapWithPin</text>
+      <text x="725" y="282" clip-path="url(#clipPath101)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1] rndtMapWithPin</text>
     </g>
   </g>
 </svg>

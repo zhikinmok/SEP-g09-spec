@@ -84,7 +84,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		}
 		
 		
-		use case system subfunction oeReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) {
+		use case system subfunction oeReceiveCrisisEventLocation(AdtGeoPos:dtGeoPos) {
 			actor actCommunicationCompany[primary, active]
 			actor actCentralCoordinator[secondary, passive]
 			returned messages{

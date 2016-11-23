@@ -6,7 +6,7 @@
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation
 @description "sent to return a map with pin."
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation.AdtMapWithPin ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeReceiveCrisisEventLocation.AdtGeoPos ""
 @endParameters
 @protocolCondition
 "

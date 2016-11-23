@@ -23,11 +23,11 @@ Concept Model {
 			
 		association assctCrisisEventctMapWithPin
 			ctCrisisEvent(rnctCrisisEvent)[1..1] 
-			ctMapWithPin(rncdtMapWithPin)[1..1]
+			ctMapWithPin(rndtMapWithPin)[1..1]
 
 		association assDispatchedCoordinatortctMapWithPin
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
-			ctMapWithPin(rncdtMapWithPin)[1..1]			
+			ctMapWithPin(rndtMapWithPin)[1..1]			
 			
 		association assClassActorDisptachCoordinator
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
