@@ -8,9 +8,6 @@
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtCrisisID
-""
-@parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtName
 ""
 @parameter

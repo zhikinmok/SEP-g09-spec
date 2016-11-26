@@ -23,14 +23,15 @@ Environment Model {
 				input interface inactCentralCoordinator {
 					operation ieReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) : ptBoolean
 					operation ieConfirmCrisisEventLocation(AdMessage:ptString) : ptBoolean
-					operation ieMessageCentralCoordinator(AMessage:ptString) : ptBoolean
+					operation ieMessageCentralCoordinator(AdtComment:dtComment) : ptBoolean
 				}
 				
 				
 				output interface outactCentralCoordinator {
+					operation oeInitialiseNewCrisisEvent() : ptBoolean
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
-					operation oeMessage(AMessage:ptString) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress,AMessage:ptString) : ptBoolean
+					operation oeMessage(AdtComment:dtComment) : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AdtComment:dtComment) : ptBoolean
 					operation oeConfirmCrisisEventLocation() : ptBoolean
 				}
 			}
@@ -54,13 +55,13 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactAbstractDispatchCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AMessage:ptString) : ptBoolean
-					operation ieMessageAbstractDispatchCoordinator(AMessage: ptString) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AdtComment:dtComment) : ptBoolean
+					operation ieMessageAbstractDispatchCoordinator(AdtComment: dtComment) : ptBoolean
 					operation ieReceiveMap(AdtMapWithPin: dtMapWithPin) : ptBoolean
 				}
 				
 				output interface outactAbstractDispatchCoordinator {
-					operation oeMessage(AMessage:ptString) : ptBoolean
+					operation oeMessage(AdtComment:dtComment) : ptBoolean
 					operation oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus): ptBoolean
 					operation oeRefreshMap(AdtGeoPos:dtGeoPos) : ptBoolean
 				}

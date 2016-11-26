@@ -1,0 +1,8 @@
+/*
+@author Kira
+@date Sat Nov 26 22:13:24 CET 2016
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCommentctCentralCoordinator
+@description "Association of a comment to a central coordinator actor."

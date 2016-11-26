@@ -8,7 +8,7 @@
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage.AMessage
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage.AdtComment
 ""
 @endParameters
 

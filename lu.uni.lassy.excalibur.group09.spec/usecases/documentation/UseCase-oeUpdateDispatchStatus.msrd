@@ -10,15 +10,17 @@
 @endParameters
 @protocolCondition
 "
-"
+The dispatch status has to be updated in exactly the following two steps : 
+From 'In Station' to 'In Transit' then
+From 'In Transit' to 'Arrived'"
 @endProtocolConditions
 @preCondition
 "
-"
+the sender is associated to a crisis event."
 @endPreConditions
 @postCondition
 "
-"
+Any other coordinator associated to the crisis event is informed of the updated status."
 @endPostConditions
 @additionalInformation
 "

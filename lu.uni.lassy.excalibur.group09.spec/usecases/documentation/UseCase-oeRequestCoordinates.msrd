@@ -6,19 +6,19 @@
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation
 @description "sent to request a crisis event's location."
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation.AdtPhoneNumber ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeRequestCrisisEventLocation.AdtPhoneNumber "sent to the respective communication company to use to get the geographical position of the human."
 @endParameters
 @protocolCondition
 "
-"
+the phone number is a valid phone number of Luxembourg."
 @endProtocolConditions
 @preCondition
 "
-"
+the communication company is the provider of the given phone number."
 @endPreConditions
 @postCondition
 "
-"
+none."
 @endPostConditions
 @additionalInformation
 "

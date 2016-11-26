@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Sat Nov 26 23:47:17 CET 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctComment
+@description "A class containing a comment."
+@attribute
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctComment.comment
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctComment.init
+""
+@endOperations

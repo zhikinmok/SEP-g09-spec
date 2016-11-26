@@ -5,18 +5,18 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent
-@description "Shows the suGlobaManagementOfEvent use-case and its actors."
+@description "\msrcode{suGlobaManagementOfEvent} is the summary level use-case that covers most of the operation that the system provides."
 @protocolCondition
 "
-"
+none."
 @endProtocolConditions
 @preCondition
 "
-"
+none."
 @endPreConditions
 @postCondition
 "
-"
+modifications have been made to the system and its environment concerning a crisis event."
 @endPostConditions
 @additionalInformation
 "

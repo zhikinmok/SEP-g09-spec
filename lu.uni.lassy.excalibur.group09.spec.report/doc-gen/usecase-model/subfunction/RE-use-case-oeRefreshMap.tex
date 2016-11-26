@@ -13,7 +13,7 @@ sent to refresh the map.
   \addsingletwocolumnrow{Level}{subfunction}
   
 \addrowheading{Parameters}
-\addnumberedsinglerow{AdtCrisisID: dtCrisisID}{}
+\addnumberedsinglerow{AdtGeoPos: dtGeoPos}{used to calculate the new pin location of the sender.}
 
 \addrowheading{Primary actor(s)}
 \addnumberedsinglerow{}{\msrcode{actAbstractDispatchCoordinator[active]}}
@@ -29,11 +29,11 @@ sent to refresh the map.
 
 \addrowheading{Pre-condition(s)}
 \addnumberedsinglerow{}{
-}
+the sender is associated to a crisis event.}
 
 \addrowheading{Main post-condition(s)}
 \addnumberedsinglerow{}{
-}
+an image that is the map including the pins must be returned correctly.}
 
 \addrowheading{Additional Information}
 \addsinglerow{

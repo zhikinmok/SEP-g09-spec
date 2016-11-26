@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Sat Nov 26 23:49:28 CET 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtComment
+@description "A String used to identify a comment."
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtComment.is
+""
+@endOperations

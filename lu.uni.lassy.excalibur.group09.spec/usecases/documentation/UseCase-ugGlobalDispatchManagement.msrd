@@ -8,15 +8,15 @@
 @description "Shows the ugGlobalDispatchManagement use-case and its actors."
 @protocolCondition
 "
-"
+none."
 @endProtocolConditions
 @preCondition
 "
-"
+the sender is associated to a crisis event."
 @endPreConditions
 @postCondition
 "
-"
+modifications have been made to the system and its environment concerning a crisis event."
 @endPostConditions
 @additionalInformation
 "

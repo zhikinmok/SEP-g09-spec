@@ -4,5 +4,5 @@
 */
 
 
-@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assClassActorDisptachCoordinator
+@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assClassActorDispatchCoordinator
 @description "Association of a dispatched coordinator to an actor of the same type."

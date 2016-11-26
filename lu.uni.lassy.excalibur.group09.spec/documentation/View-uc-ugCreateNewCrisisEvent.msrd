@@ -7,5 +7,5 @@
 @@view uc-ugCreateNewCrisisEvent
 @model Use-Case lu.uni.lassy.excalibur.group09.spec.usecases.ugCreateNewCrisisEvent 
 @description "Shows the ugCreateNewCrisisEvent use-case and its actors."
-@caption ""
+@caption "ugCreateNewCrisisEvent"
 @scale MaxWidth

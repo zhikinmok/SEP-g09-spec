@@ -21,18 +21,18 @@ package usecases.uciugGlobalDispatchManagement {
 						ieReceiveMap("A string for the image with the pin") returned to Ted
 					}
 					
-					Ted executed instanceof subfunction oeMessage("AMessage=I will arrive in 30 minutes") {
+					Ted executed instanceof subfunction oeMessage("AdtComment=I will arrive in 30 minutes") {
 						ieMessageCentralCoordinator("I will arrive in 30 minutes") returned to Camille
 						ieMessageAbstractDispatchCoordinator("I will arrive in 30 minutes") returned to Fabio
 						ieMessageAbstractDispatchCoordinator("I will arrive in 30 minutes") returned to Ted
 					}
 						
 					Ted executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
-						ieMessage("Dispatch Status Updated.") returned to Ted
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Ted
 					}
 						
 					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
-						ieMessage("Dispatch Status Updated.") returned to Fabio			
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Fabio			
 					}
 	
 					Fabio executed instanceof subfunction oeRequestHelp("AenTeamType=Police", "RequestedNumber=1") {
@@ -40,15 +40,15 @@ package usecases.uciugGlobalDispatchManagement {
 					}
 	
 					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
-						ieMessage("Dispatch Status Updated.") returned to Polo	
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Polo	
 					}
 						
 					Ted executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
-						ieMessage("Dispatch Status Updated.") returned to Ted			
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Ted			
 					}
 						
 					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
-						ieMessage("Dispatch Status Updated.") returned to Polo			
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Polo			
 					}	
 								
 			}	

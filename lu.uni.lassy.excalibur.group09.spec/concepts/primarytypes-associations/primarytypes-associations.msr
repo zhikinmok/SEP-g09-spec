@@ -29,15 +29,28 @@ Concept Model {
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
 			ctMapWithPin(rndtMapWithPin)[1..1]			
 			
-		association assClassActorDisptachCoordinator
+		association assClassActorDispatchCoordinator
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
 			actAbstractDispatchCoordinator(rnactAbstractDispatchCoordinator)[1..1]
 			 
 		association assctDispatchedCoordinatorctCrisisEvent
-			ctDispatchedCoordinator(rnctDispatchedCoordinator2)[2..*] 
-			ctCrisisEvent(rnctCrisisEvent2)[1..1] 
+			ctDispatchedCoordinator(rnctDispatchedCoordinator)[2..*] 
+			ctCrisisEvent(rnctCrisisEvent)[1..1] 
 			
+		association assctCommentctCrisisEvent
+			ctComment(rnctComment)[0..*] 
+			ctCrisisEvent(rnctCrisisEvent)[1..1] 
 			
+		association assctCommentctDispatchedCoordinator
+			ctComment(rnctComment)[0..*] 
+			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
+
+			
+		association assctCommentctCentralCoordinator
+			ctComment(rnctComment)[0..*] 
+			actCentralCoordinator(rnactCentralCoordinator)[1..1] 
+
+	
 	}
 }
 }

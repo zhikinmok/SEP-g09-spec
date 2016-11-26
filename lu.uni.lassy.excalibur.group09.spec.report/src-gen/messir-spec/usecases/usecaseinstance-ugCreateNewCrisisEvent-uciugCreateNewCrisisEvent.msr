@@ -15,6 +15,10 @@ package usecases.uciugCreateNewCrisisEvent {
 			
 			
 			use case steps {
+				Camille executed instanceof subfunction oeInitialiseNewCrisisEvent() {
+			
+					}
+
 				
 				Camille executed instanceof subfunction oeRequestCrisisEventLocation("AdtPhoneNumber=691 12 34 56") {
 					ieRequestCrisisEventLocation("691 12 34 56") returned to Orange
@@ -28,7 +32,7 @@ package usecases.uciugCreateNewCrisisEvent {
 					ieConfirmCrisisEventLocation("Done") returned to Camille
 				}
 				
-				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtCrisisID=1", "AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691123456", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
+				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691123456", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
 					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Fabio
 					ieReceiveNewCrisisEvent("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Ted
 				}						

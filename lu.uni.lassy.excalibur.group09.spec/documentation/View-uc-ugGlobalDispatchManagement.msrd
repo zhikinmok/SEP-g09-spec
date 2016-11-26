@@ -7,5 +7,5 @@
 @@view uc-ugGlobalDispatchManagement
 @model Use-Case lu.uni.lassy.excalibur.group09.spec.usecases.ugGlobalDispatchManagement 
 @description "Shows the ugGlobalDispatchManagement use-case and its actors."
-@caption ""
+@caption "ugGlobalDispatchManagement"
 @scale MaxWidth

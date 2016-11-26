@@ -328,6 +328,16 @@
   <semanticResources>usecases/documentation/UseCaseInstance-uciugGlobalDispatchManagement.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtMapWithPin.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-is.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-view16.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCommentctCentralCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCommentctCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCommentctDispatchedCoordinator.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeInitialiseNewCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctComment.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtComment.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctComment-init.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeInitialiseNewCrisisEvent.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jB2QkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

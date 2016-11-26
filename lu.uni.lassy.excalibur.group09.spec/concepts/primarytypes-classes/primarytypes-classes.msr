@@ -22,8 +22,10 @@ Concept Model {
 	
 		state class ctState {
 			attribute vpStarted: ptBoolean
-
-			operation init(AvpStarted:ptBoolean): ptBoolean
+			attribute nextValueForAlertID:ptInteger
+			operation init(	ANextValueForAlertID:ptInteger,
+							AvpStarted:ptBoolean	
+			): ptBoolean
 		}	
 		
 		
@@ -40,13 +42,12 @@ Concept Model {
 		}
 		
 		class ctCrisisEvent role rnCrisisEvent cardinality [1..*] {
-			attribute id: ptInteger
+			attribute id: dtCrisisID
 			attribute location: dtMapWithPin
 			attribute isLocationConfirmed: ptBoolean
-			attribute comment: ptString					//Multiple Comments?
 			attribute geoPos: dtGeoPos
 			
-			operation init(	Aid:ptInteger,
+			operation init(	Aid:dtCrisisID,
 							Alocation:dtMapWithPin,
 							AisLocationConfirmed:ptBoolean,
 							Acomment:ptString,
@@ -55,10 +56,19 @@ Concept Model {
 			
 		}
 		
+		class ctComment role rnComment cardinality [0..*] {
+			attribute comment: dtComment
+			
+			operation init( AComment: dtComment
+				
+			) : ptBoolean
+		}
+		
 		class ctDispatchedCoordinator role rnDispatchedCoordinator cardinality [1..*] {
 			attribute type: etTeamType
 			attribute status: etDispatchStatus
 			attribute geoPos: dtGeoPos
+			attribute isFree: ptBoolean
 			
 			operation init(	Atype:etTeamType,
 							Astatus:etDispatchStatus,

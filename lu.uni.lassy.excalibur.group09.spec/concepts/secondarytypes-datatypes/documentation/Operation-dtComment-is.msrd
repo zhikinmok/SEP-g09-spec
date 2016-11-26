@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Sat Nov 26 23:50:22 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtComment.is
+@description "used to determine which strings are considered as a valid comment.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

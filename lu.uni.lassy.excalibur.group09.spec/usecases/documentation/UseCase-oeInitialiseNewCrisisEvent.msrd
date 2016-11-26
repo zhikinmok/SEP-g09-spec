@@ -1,0 +1,24 @@
+/*
+@author Kira
+@date Sat Nov 26 22:27:19 CET 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeInitialiseNewCrisisEvent
+@description "sent at the beginning of \msrcode{ugCreateNewCrisisEvent} to initialise a new crisis event."
+@protocolCondition
+"
+none."
+@endProtocolConditions
+@preCondition
+"
+none."
+@endPreConditions
+@postCondition
+"
+a new crisis event including an unique crisis id has been stored in the system's state."
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Sat Nov 26 23:50:51 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeInitialiseNewCrisisEvent
+@description "sent to initialise an new crisis event including an unique id.
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

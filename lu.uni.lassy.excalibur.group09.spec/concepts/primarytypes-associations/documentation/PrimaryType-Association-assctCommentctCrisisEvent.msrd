@@ -1,0 +1,8 @@
+/*
+@author Kira
+@date Sat Nov 26 22:14:37 CET 2016
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCommentctCrisisEvent
+@description "Association of a comment to a crisis event."

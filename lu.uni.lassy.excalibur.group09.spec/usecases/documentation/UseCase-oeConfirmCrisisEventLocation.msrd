@@ -8,15 +8,15 @@
 @description "sent to confirm the crisis event's location."
 @protocolCondition
 "
-"
+none."
 @endProtocolConditions
 @preCondition
 "
-"
+none."
 @endPreConditions
 @postCondition
 "
-"
+the boolean \msrcode{isLocationConfirmed} of this newly initialised crisis event is set to true."
 @endPostConditions
 @additionalInformation
 "

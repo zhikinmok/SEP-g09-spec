@@ -5,20 +5,20 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeMessage
-@description "sent to transmit a message."
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeMessage.AMessage ""
+@description "sent to transmit a message, comment."
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeMessage.AdtComment ""
 @endParameters
 @protocolCondition
 "
-"
+none."
 @endProtocolConditions
 @preCondition
 "
-"
+the sender is associated to a crisis event."
 @endPreConditions
 @postCondition
 "
-"
+none."
 @endPostConditions
 @additionalInformation
 "

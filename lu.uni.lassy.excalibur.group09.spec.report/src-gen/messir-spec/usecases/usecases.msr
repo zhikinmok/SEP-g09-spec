@@ -39,15 +39,17 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				actor actFiremenCoordinator[secondary, passive]
 				actor actTowServiceCoordinator[secondary, passive]
 				
+				reuse oeInitialiseNewCrisisEvent[1..*]
 				reuse oeRequestCrisisEventLocation[0..*]
 				reuse oeReceiveCrisisEventLocation[0..*]
 				reuse oeConfirmCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
 				
-				step a: actCentralCoordinator executes oeRequestCrisisEventLocation
-				step b: actCommunicationCompany executes oeReceiveCrisisEventLocation
-				step c: actCentralCoordinator executes oeConfirmCrisisEventLocation
-				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
+				step a: actCentralCoordinator executes oeInitialiseNewCrisisEvent
+				step b: actCentralCoordinator executes oeRequestCrisisEventLocation
+				step c: actCommunicationCompany executes oeReceiveCrisisEventLocation
+				step d: actCentralCoordinator executes oeConfirmCrisisEventLocation
+				step e: actCentralCoordinator executes oeCreateNewCrisisEvent
 				
 				ordering constraint "if (b) then previously (a)"
 				ordering constraint "step (c) must be executed before step (d)"
@@ -57,7 +59,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		use case system usergoal ugGlobalDispatchManagement() {
 				actor actFiremenCoordinator[primary, active]
 				actor actTowServiceCoordinator[primary,active]				
-				actor actCentralCoordinator[secondary,active]
+				actor actCentralCoordinator[secondary,passive]
 				actor actPoliceCoordinator[secondary,active]
 				
 				step a: actFiremenCoordinator executes oeUpdateDispatchStatus
@@ -73,6 +75,11 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				ordering constraint "step (f) must be executed at least two times"					
 		}
 		
+		
+		use case system subfunction oeInitialiseNewCrisisEvent() {
+			actor actCentralCoordinator[primary,active]
+			//RETURN ADD EVENT NEW WINDOW ??
+		}
 		
 		use case system subfunction oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) {
 			actor actCentralCoordinator[primary,active]
@@ -100,21 +107,21 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		}
 		
 		
-		use case system subfunction oeCreateNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AMessage:ptString) {
+		use case system subfunction oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) {
 			actor actCentralCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AdtComment) returned to actAbstractDispatchCoordinator
 			}
 		}
 		
-		use case system subfunction oeMessage(AMessage:ptString) {
+		use case system subfunction oeMessage(AdtComment:dtComment) {
 			actor actAbstractDispatchCoordinator[primary,active]
 			actor actCentralCoordinator[secondary, passive]
 			actor actAbstractDispatchCoordinator[secondary, multiple]
 			returned messages{
-				ieMessageAbstractDispatchCoordinator(AMessage) returned to actAbstractDispatchCoordinator
-				ieMessageCentralCoordinator(AMessage) returned to actCentralCoordinator
+				ieMessageAbstractDispatchCoordinator(AdtComment) returned to actAbstractDispatchCoordinator
+				ieMessageCentralCoordinator(AdtComment) returned to actCentralCoordinator
 			}
 		}
 						
@@ -123,12 +130,12 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		use case system subfunction oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus){
 			actor actAbstractDispatchCoordinator[primary,active]
 			returned messages{
-				ieMessage(AMessage) returned to actAbstractDispatchCoordinator
+				ieMessageAbstractDispatchCoordinator(AdtComment) returned to actAbstractDispatchCoordinator
 			}
 		}
 		
 		
-		use case system subfunction oeRefreshMap(AdtCrisisID:dtCrisisID){
+		use case system subfunction oeRefreshMap(AdtGeoPos:dtGeoPos){
 			actor actAbstractDispatchCoordinator[primary,active]
 			returned messages{
 				ieReceiveMap(AdtMapWithPin) returned to actAbstractDispatchCoordinator
@@ -140,7 +147,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			actor actFiremenCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AMessage) returned to actAbstractDispatchCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AdtComment) returned to actAbstractDispatchCoordinator
 			}
 		}
 		

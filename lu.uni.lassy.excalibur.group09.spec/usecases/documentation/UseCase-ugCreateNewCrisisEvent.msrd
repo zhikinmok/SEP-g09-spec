@@ -8,15 +8,15 @@
 @description "Shows the ugCreateNewCrisisEvent use-case and its actors."
 @protocolCondition
 "
-"
+none."
 @endProtocolConditions
 @preCondition
 "
-"
+none."
 @endPreConditions
 @postCondition
 "
-"
+a dispatch order including the crisis event's information such as the id, map with pins, witness's phone number, etc. is sent to nearest, free Firemen Team and Tow Service Team."
 @endPostConditions
 @additionalInformation
 "

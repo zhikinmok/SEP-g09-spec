@@ -8,12 +8,14 @@ The table below is providing comments on the graphical views given for the class
 \begin{datadictionary}
 \addheading{Classes}
 
+\adddoublerow{ctComment}{A class containing a comment.}
+\adddoubletwocolumnrow{attribute}{\msrcode{comment: dtComment}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(AComment:dtComment):ptBoolean}}{}
 \adddoublerow{ctCrisisEvent}{A class containing the attributes identifying a crisis event.}
-\adddoubletwocolumnrow{attribute}{\msrcode{comment: ptString}}{}
-\adddoubletwocolumnrow{attribute}{\msrcode{id: ptInteger}}{}
+\adddoubletwocolumnrow{attribute}{\msrcode{id: dtCrisisID}}{}
 \adddoubletwocolumnrow{attribute}{\msrcode{isLocationConfirmed: ptBoolean}}{}
 \adddoubletwocolumnrow{attribute}{\msrcode{location: dtMapWithPin}}{}
-\adddoubletwocolumnrow{operation}{\msrcode{init(Aid:ptInteger, Alocation:dtMapWithPin, AisLocationConfirmed:ptBoolean, Acomment:ptString, AgeoPos:dtGeoPos):ptBoolean}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(Aid:dtCrisisID, Alocation:dtMapWithPin, AisLocationConfirmed:ptBoolean, Acomment:ptString, AgeoPos:dtGeoPos):ptBoolean}}{}
 \adddoublerow{ctDispatchedCoordinator}{A class containing the attributes identifying a dispatched team.}
 \adddoubletwocolumnrow{attribute}{\msrcode{status: etDispatchStatus}}{}
 \adddoubletwocolumnrow{attribute}{\msrcode{type: etTeamType}}{}
@@ -26,4 +28,7 @@ The table below is providing comments on the graphical views given for the class
 \adddoublerow{ctMapWithPin}{A class containing an image which is the map including the pins.}
 \adddoubletwocolumnrow{attribute}{\msrcode{mapWithPin: dtMapWithPin}}{}
 \adddoubletwocolumnrow{operation}{\msrcode{init(AmapWithPin:dtMapWithPin):ptBoolean}}{}
+\adddoublerow{ctState}{used to model the system.}
+\adddoubletwocolumnrow{attribute}{\msrcode{vpStarted: ptBoolean}}{}
+\adddoubletwocolumnrow{operation}{\msrcode{init(ANextValueForAlertID:ptInteger, AvpStarted:ptBoolean):ptBoolean}}{}
 \end{datadictionary}

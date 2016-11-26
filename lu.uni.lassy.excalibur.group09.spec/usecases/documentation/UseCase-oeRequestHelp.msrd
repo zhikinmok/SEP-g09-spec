@@ -11,15 +11,15 @@
 @endParameters
 @protocolCondition
 "
-"
+the requested number of at least one team type is greater than 0."
 @endProtocolConditions
 @preCondition
 "
-"
+the sender is associated to a crisis event."
 @endPreConditions
 @postCondition
 "
-"
+a dispatch order including the crisis event's information such as the id, map with pins, witness's phone number, etc. is sent to nearest, free requested team(s)."
 @endPostConditions
 @additionalInformation
 "

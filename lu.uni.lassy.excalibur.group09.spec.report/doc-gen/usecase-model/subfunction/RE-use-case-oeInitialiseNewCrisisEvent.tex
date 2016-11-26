@@ -1,14 +1,14 @@
-\subsubsection{subfunction-oeConfirmCrisisEventLocation}
+\subsubsection{subfunction-oeInitialiseNewCrisisEvent}
 
-\label{RE-use-case-oeConfirmCrisisEventLocation}
+\label{RE-use-case-oeInitialiseNewCrisisEvent}
 
 
-sent to confirm the crisis event's location.		  
+sent at the beginning of \msrcode{ugCreateNewCrisisEvent} to initialise a new crisis event.		  
 
 
 \begin{usecase}
   \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeConfirmCrisisEventLocation}
+  \addsingletwocolumnrow{Name}{oeInitialiseNewCrisisEvent}
   \addsingletwocolumnrow{Scope}{system}
   \addsingletwocolumnrow{Level}{subfunction}
   
@@ -19,7 +19,7 @@ sent to confirm the crisis event's location.
 
 
 \addrowheading{Goal(s) description}
-\addsinglerow{sent to confirm the crisis event's location.}
+\addsinglerow{sent at the beginning of \msrcode{ugCreateNewCrisisEvent} to initialise a new crisis event.}
 
 \addrowheading{Protocol condition(s)}
 \addnumberedsinglerow{}{
@@ -31,7 +31,7 @@ none.}
 
 \addrowheading{Main post-condition(s)}
 \addnumberedsinglerow{}{
-the boolean \msrcode{isLocationConfirmed} of this newly initialised crisis event is set to true.}
+a new crisis event including an unique crisis id has been stored in the system's state.}
 
 \addrowheading{Additional Information}
 \addsinglerow{
