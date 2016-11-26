@@ -474,11 +474,15 @@
                 <styles xmi:type="notation:FontStyle" xmi:id="_K1d4F7AlEeaUrMXMefa14g" fontName="Lucida Sans Unicode" fontHeight="14"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_K1d4GLAlEeaUrMXMefa14g"/>
               </children>
+              <children xmi:type="notation:Node" xmi:id="_wnGd4LQuEeamkp8rqD9ojw" type="3010" element="_wmCt8LQuEeamkp8rqD9ojw">
+                <styles xmi:type="notation:FontStyle" xmi:id="_wnGd4bQuEeamkp8rqD9ojw" fontName="Lucida Sans Unicode" fontHeight="10"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wnGd4rQuEeamkp8rqD9ojw"/>
+              </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_1019-bAkEeaUrMXMefa14g"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_1019-rAkEeaUrMXMefa14g"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_10199bAkEeaUrMXMefa14g" fontName="Lucida Sans Unicode" fontHeight="10"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_10199rAkEeaUrMXMefa14g" x="360" y="240"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_10199rAkEeaUrMXMefa14g" x="324" y="216"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_mRN34LQdEeamkp8rqD9ojw" type="2003" element="_mRMpwLQdEeamkp8rqD9ojw">
             <children xmi:type="notation:Node" xmi:id="_mROe8LQdEeamkp8rqD9ojw" type="5007"/>
@@ -593,17 +597,17 @@
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_K1efLLAlEeaUrMXMefa14g" type="4001" element="_K1JvBLAlEeaUrMXMefa14g" source="_85aJu7AgEeaUrMXMefa14g" target="_10199LAkEeaUrMXMefa14g">
             <children xmi:type="notation:Node" xmi:id="_K1efMLAlEeaUrMXMefa14g" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efMbAlEeaUrMXMefa14g" x="554" y="24"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efMbAlEeaUrMXMefa14g" x="389" y="24"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_K1efMrAlEeaUrMXMefa14g" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efM7AlEeaUrMXMefa14g" x="-222" y="-13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efM7AlEeaUrMXMefa14g" x="-231" y="11"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_K1efNLAlEeaUrMXMefa14g" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efNbAlEeaUrMXMefa14g" x="118" y="-194"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1efNbAlEeaUrMXMefa14g" x="138" y="-164"/>
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_K1efLbAlEeaUrMXMefa14g" routing="Rectilinear"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_K1efLrAlEeaUrMXMefa14g" fontName="Lucida Sans Unicode" fontHeight="10"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K1efL7AlEeaUrMXMefa14g" points="[127, 1, 873, 425]$[186, 1, 932, 425]$[186, -665, 932, -241]$[-609, -665, 137, -241]$[-609, -455, 137, -31]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K1efL7AlEeaUrMXMefa14g" points="[127, 3, 733, 443]$[162, 3, 768, 443]$[162, -659, 768, -219]$[-607, -659, -1, -219]$[-607, -479, -1, -39]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K1fGMLAlEeaUrMXMefa14g" id="(0.660857908847185,0.5)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K1fGMbAlEeaUrMXMefa14g" id="(0.5,0.5)"/>
           </edges>
@@ -625,49 +629,49 @@
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_jQApcLAnEeaUrMXMefa14g" type="4001" element="_jP5UsLAnEeaUrMXMefa14g" source="_85aJtLAgEeaUrMXMefa14g" target="_10199LAkEeaUrMXMefa14g">
             <children xmi:type="notation:Node" xmi:id="_jQApdLAnEeaUrMXMefa14g" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApdbAnEeaUrMXMefa14g" x="-3" y="106"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApdbAnEeaUrMXMefa14g" x="30" y="68"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_jQApdrAnEeaUrMXMefa14g" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApd7AnEeaUrMXMefa14g" x="-11" y="75"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApd7AnEeaUrMXMefa14g" x="13" y="75"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_jQApeLAnEeaUrMXMefa14g" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApebAnEeaUrMXMefa14g" x="4" y="83"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQApebAnEeaUrMXMefa14g" x="34" y="-74"/>
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_jQApcbAnEeaUrMXMefa14g" routing="Rectilinear"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_jQApcrAnEeaUrMXMefa14g" fontName="Lucida Sans Unicode" fontHeight="10"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jQApc7AnEeaUrMXMefa14g" points="[-64, -71, -124, 181]$[-64, -221, -124, 31]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jQApc7AnEeaUrMXMefa14g" points="[8, -63, -192, 197]$[8, -143, -192, 117]$[161, -143, -39, 117]$[161, -221, -39, 39]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jQAperAnEeaUrMXMefa14g" id="(0.8068391866913124,0.5)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jQApe7AnEeaUrMXMefa14g" id="(0.5,0.5)"/>
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_ePsfULApEeaUrMXMefa14g" type="4001" element="_ePlKkLApEeaUrMXMefa14g" source="_7DwPoLAgEeaUrMXMefa14g" target="_10199LAkEeaUrMXMefa14g">
             <children xmi:type="notation:Node" xmi:id="_ePsfVLApEeaUrMXMefa14g" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfVbApEeaUrMXMefa14g" x="44" y="-18"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfVbApEeaUrMXMefa14g" x="-44" y="-137"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_ePsfVrApEeaUrMXMefa14g" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfV7ApEeaUrMXMefa14g" x="-40" y="-115"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfV7ApEeaUrMXMefa14g" x="-13" y="-115"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_ePsfWLApEeaUrMXMefa14g" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfWbApEeaUrMXMefa14g" x="-30" y="16"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePsfWbApEeaUrMXMefa14g" x="-50" y="16"/>
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_ePsfUbApEeaUrMXMefa14g" routing="Rectilinear"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_ePsfUrApEeaUrMXMefa14g" fontName="Lucida Sans Unicode" fontHeight="10"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ePsfU7ApEeaUrMXMefa14g" points="[-33, -47, 452, 89]$[-33, -131, 452, 5]$[-324, -131, 161, 5]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ePsfU7ApEeaUrMXMefa14g" points="[88, -63, 432, 105]$[88, -159, 432, 9]$[-8, -159, 336, 9]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ePsfWrApEeaUrMXMefa14g" id="(0.604327999626796,0.5)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ePsfW7ApEeaUrMXMefa14g" id="(0.5,0.5)"/>
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_iJV5ALQcEeamkp8rqD9ojw" type="4001" element="_iIsYwLQcEeamkp8rqD9ojw" source="_7DwPoLAgEeaUrMXMefa14g" target="_85ZioLAgEeaUrMXMefa14g">
             <children xmi:type="notation:Node" xmi:id="_iJWgELQcEeamkp8rqD9ojw" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJWgEbQcEeamkp8rqD9ojw" x="-24" y="17"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJWgEbQcEeamkp8rqD9ojw" x="138" y="17"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_iJWgErQcEeamkp8rqD9ojw" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJWgE7QcEeamkp8rqD9ojw" x="-45" y="55"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJWgE7QcEeamkp8rqD9ojw" x="19" y="19"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_iJXHILQcEeamkp8rqD9ojw" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJXHIbQcEeamkp8rqD9ojw" x="44" y="134"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iJXHIbQcEeamkp8rqD9ojw" x="-101" y="46"/>
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_iJV5AbQcEeamkp8rqD9ojw" routing="Rectilinear"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_iJV5ArQcEeamkp8rqD9ojw" fontName="Lucida Sans Unicode" fontHeight="10"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iJV5A7QcEeamkp8rqD9ojw" points="[88, -63, 204, 266]$[88, -173, 204, 156]$[-100, -173, 16, 156]$[-100, -282, 16, 47]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iJV5A7QcEeamkp8rqD9ojw" points="[185, 1, 301, 330]$[220, 1, 336, 330]$[220, -219, 336, 110]$[-100, -219, 16, 110]$[-100, -282, 16, 47]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iJXHIrQcEeamkp8rqD9ojw" id="(0.604327999626796,0.5)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iJXHI7QcEeamkp8rqD9ojw" id="(0.4986225895316805,0.5)"/>
           </edges>
@@ -965,7 +969,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@edgeMappings[name='Fake_Agregation_StateClass_Class_RelationBased']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_DRjXgLAhEeaUrMXMefa14g" name="assctDispatchedCoordinatorctCrisisEvent" sourceNode="_66TYsLAgEeaUrMXMefa14g" targetNode="_85WfULAgEeaUrMXMefa14g" beginLabel="[2..*]rnctDispatchedCoordinator" endLabel="[1..1] rnctCrisisEvent2">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_DRjXgLAhEeaUrMXMefa14g" name="assctDispatchedCoordinatorctCrisisEvent" sourceNode="_66TYsLAgEeaUrMXMefa14g" targetNode="_85WfULAgEeaUrMXMefa14g" beginLabel="[2..*]rnctDispatchedCoordinator" endLabel="[1..1] rnctCrisisEvent">
         <target xmi:type="messir:UndirectedAssociation" href="concepts/primarytypes-associations/primarytypes-associations.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctDispatchedCoordinatorctCrisisEvent"/>
         <semanticElements xmi:type="messir:UndirectedAssociation" href="concepts/primarytypes-associations/primarytypes-associations.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctDispatchedCoordinatorctCrisisEvent"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_DRjXgbAhEeaUrMXMefa14g" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
@@ -1054,6 +1058,14 @@
           <target xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.init"/>
           <semanticElements xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.init"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_K1BzNbAlEeaUrMXMefa14g" labelSize="10" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/operation.png" labelAlignment="LEFT">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='Class']/@subNodeMappings[name='Class_Operations']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='Class']/@subNodeMappings[name='Class_Operations']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_wmCt8LQuEeamkp8rqD9ojw" name="isMapWithPin(AGeoPos1: dtGeoPos, AGeoPos2: dtGeoPos, AdtMapWithPin: dtMapWithPin): ptBoolean    ">
+          <target xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin"/>
+          <semanticElements xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_wmD8ELQuEeamkp8rqD9ojw" labelSize="10" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/operation.png" labelAlignment="LEFT">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='Class']/@subNodeMappings[name='Class_Operations']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='Class']/@subNodeMappings[name='Class_Operations']"/>
@@ -1229,7 +1241,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@edgeMappings[name='Fake_Agregation_StateClass_Class_RelationBased']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_omSR0LQdEeamkp8rqD9ojw" name="assctCommentctCrisisEvent" sourceNode="_mRMpwLQdEeamkp8rqD9ojw" targetNode="_85WfULAgEeaUrMXMefa14g" beginLabel="[0..*]rnctComment" endLabel="[1..1] rnctCrisisEvent2">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_omSR0LQdEeamkp8rqD9ojw" name="assctCommentctCrisisEvent" sourceNode="_mRMpwLQdEeamkp8rqD9ojw" targetNode="_85WfULAgEeaUrMXMefa14g" beginLabel="[0..*]rnctComment" endLabel="[1..1] rnctCrisisEvent">
         <target xmi:type="messir:UndirectedAssociation" href="concepts/primarytypes-associations/primarytypes-associations.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCommentctCrisisEvent"/>
         <semanticElements xmi:type="messir:UndirectedAssociation" href="concepts/primarytypes-associations/primarytypes-associations.msr#lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCommentctCrisisEvent"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_omSR0bQdEeamkp8rqD9ojw" targetArrow="NoDecoration" size="2" routingStyle="manhattan">

@@ -81,6 +81,8 @@ Concept Model {
 			
 			operation init( AmapWithPin:dtMapWithPin
 			) : ptBoolean
+			
+			operation isMapWithPin(AGeoPos1:dtGeoPos, AGeoPos2:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
 		}
 
 	}

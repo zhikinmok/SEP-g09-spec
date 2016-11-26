@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Sun Nov 27 00:25:38 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin.AGeoPos1
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin.AGeoPos2
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.isMapWithPin.AdtMapWithPin
+""
+@endParameters
+
+@description "
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "
