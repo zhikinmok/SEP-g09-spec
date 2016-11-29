@@ -320,7 +320,6 @@
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtReal.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
   <semanticResources>documentation/View-cm-view15.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-length.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-myStringConcat.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
@@ -342,6 +341,7 @@
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctComment-init.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeInitialiseNewCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-isMapWithPin.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_i0ZDYJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>
