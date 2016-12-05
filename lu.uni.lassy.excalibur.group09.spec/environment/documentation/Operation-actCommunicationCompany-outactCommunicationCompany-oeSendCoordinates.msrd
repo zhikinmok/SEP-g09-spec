@@ -12,10 +12,10 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 ""
 @endParameters
 
-@description "sent to return a map with pin."
+@description "sent to get a map with pin."
 //preProtocol descriptions
 @preP
-" "
+"the \msrcode{GeoPos} given by the communication company is a valid one."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -23,7 +23,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the map with pins returned to the \msrcode{CentralCoordinator} includes a pin of the crisis event's location."
 @endPostF
 //postProtocol descriptions
 @postP 

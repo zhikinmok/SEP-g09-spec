@@ -15,35 +15,35 @@ Concept Model {
 
 	Secondary Types {
 				
-		datatype dtPhoneNumber extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+		datatype dtPhoneNumber extends dtString {
 				operation is() : ptBoolean
 			}
 		   
-		datatype dtAddress extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+		datatype dtAddress extends dtString {
 				operation is() : ptBoolean
 			}
 		   
-		datatype dtCrisisID extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtInteger {
+		datatype dtCrisisID extends dtInteger {
 				operation is() : ptBoolean
 			}
 		   		   
-		datatype dtLongitude extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtReal {
+		datatype dtLongitude extends dtReal {
 		   		operation is() : ptBoolean
 		   	}
 		   
-		datatype dtLatitude extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtReal {
+		datatype dtLatitude extends dtReal {
 			   	operation is() : ptBoolean
 			}
 		   
-		datatype dtImage extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+		datatype dtImage extends dtString {
 		   		operation is() : ptBoolean
 			}
 				   
-		datatype dtMapWithPin extends lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtImage {
+		datatype dtMapWithPin extends dtImage {
 				operation is() : ptBoolean
 			}
 		
-		datatype dtComment extends lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.dtString {
+		datatype dtComment extends dtString {
 				operation is() : ptBoolean
 			}
 	}

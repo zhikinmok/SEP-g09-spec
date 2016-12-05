@@ -3,7 +3,7 @@
 \label{RE-use-case-suGlobalManagementOfEvent}
 
 
-\msrcode{suGlobaManagementOfEvent} is the summary level use-case that covers most of the operation that the system provides.		  
+The goal is to manage the creation of a new crisis event including all the necessary information and to have the requested coordinators arrive on the crisis event's location.		  
 
 
 \begin{usecase}
@@ -23,8 +23,11 @@
 \addnumberedsinglerow{}{\msrcode{actTowServiceCoordinator[active]}}
 
 \addrowheading{Goal(s) description}
-\addsinglerow{\msrcode{suGlobaManagementOfEvent} is the summary level use-case that covers most of the operation that the system provides.}
+\addsinglerow{The goal is to manage the creation of a new crisis event including all the necessary information and to have the requested coordinators arrive on the crisis event's location.}
 
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{ugCreateNewCrisisEvent [1..*]}}
+\addnumberedsinglerow{}{\msrucname{ugGlobalDispatchManagement [1..*]}}
 
 \addrowheading{Protocol condition(s)}
 \addnumberedsinglerow{}{
@@ -36,7 +39,7 @@ none.}
 
 \addrowheading{Main post-condition(s)}
 \addnumberedsinglerow{}{
-modifications have been made to the system and its environment concerning a crisis event.}
+a new crisis event has been created and modifications have been made by the coordinators to the system and its environment concerning a crisis event.}
 
 \addrowheading{Main Steps}
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{ugCreateNewCrisisEvent} use case}

@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeRefreshMap}
+
+\label{OM-oeRefreshMap}
+
+
+The \msrcode{oeRefreshMap} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeRefreshMap}{sent to refresh the map.}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{the \msrcode{GeoPos} given by the coordinator is a valid one.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{the map with pins returned to the coordinator includes a pin of the actor's current position and another one of the crisis event's location.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

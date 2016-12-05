@@ -20,9 +20,6 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.inactCentr
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation
 ""
 @outputEvent
-lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMessage
-""
-@outputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent
 ""
 @outputEvent

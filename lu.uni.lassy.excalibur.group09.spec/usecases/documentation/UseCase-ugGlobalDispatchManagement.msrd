@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group09.spec.usecases.ugGlobalDispatchManagement
-@description "Shows the ugGlobalDispatchManagement use-case and its actors."
+@description "The goal is to have the requested coordinators arrive on the crisis event's location."
 @protocolCondition
 "
 none."

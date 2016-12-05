@@ -3,7 +3,7 @@
 \label{RE-use-case-ugCreateNewCrisisEvent}
 
 
-Shows the ugCreateNewCrisisEvent use-case and its actors.		  
+The goal is to manage the creation of a new crisis event including all the necessary information.		  
 
 
 \begin{usecase}
@@ -23,7 +23,7 @@ Shows the ugCreateNewCrisisEvent use-case and its actors.
 \addnumberedsinglerow{}{\msrcode{actTowServiceCoordinator[passive]}}
 
 \addrowheading{Goal(s) description}
-\addsinglerow{Shows the ugCreateNewCrisisEvent use-case and its actors.}
+\addsinglerow{The goal is to manage the creation of a new crisis event including all the necessary information.}
 
 \addrowheading{Reuse}
 \addnumberedsinglerow{}{\msrucname{oeInitialiseNewCrisisEvent [1..*]}}
@@ -51,8 +51,9 @@ a dispatch order including the crisis event's information such as the id, map wi
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeConfirmCrisisEventLocation} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeCreateNewCrisisEvent} use case}
 \addrowheading{Steps Ordering Constraints}
-\addnumberedsinglerow{}{if (b) then previously (a)}
-\addnumberedsinglerow{}{step (c) must be executed before step (d)}
+\addnumberedsinglerow{}{step (a) must be executed first}
+\addnumberedsinglerow{}{if step (c) then previously step (b)}
+\addnumberedsinglerow{}{step (d) must be executed before step (e)}
 
 \addrowheading{Additional Information}
 \addsinglerow{

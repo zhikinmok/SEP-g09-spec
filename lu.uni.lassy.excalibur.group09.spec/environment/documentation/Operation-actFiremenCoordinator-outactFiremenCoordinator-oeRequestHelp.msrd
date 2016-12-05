@@ -18,19 +18,19 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 @description "sent to request help from the corresponding team type."
 //preProtocol descriptions
 @preP
-" "
+"the coordinator is associated to a crisis event."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"An alert message is sent to the nearest and free requested coordinator type."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
 @endPostP
 //example
 @example" "

@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Sun Dec 04 16:41:44 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeCloseCrisisEvent
+@description "sent to close up the associated event.
+ "
+//preProtocol descriptions
+@preP
+"the coordinator is associated to a crisis event."
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+"The coordinator's attribute \msrcode{isFree} is set back to true and can thus be associated to another crisis event."
+@endPostP
+//example
+@example" "

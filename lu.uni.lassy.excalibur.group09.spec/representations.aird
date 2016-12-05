@@ -342,6 +342,20 @@
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeInitialiseNewCrisisEvent.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-isMapWithPin.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeCloseCrisisEvent.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeGetCrisisEventInformation.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeCloseCrisisEvent.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeGetCrisisEventInformation.msrd</semanticResources>
+  <semanticResources>operations/environment/environment-actCentralCoordinator-oeConfirmCrisisEventLocation.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actCentralCoordinator-oeCreateNewCrisisEvent.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actCentralCoordinator-oeInitialiseNewCrisisEvent.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actCommunicationCompany-oeReceiveCrisisEventLocation.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeGetCrisisEventInformation.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeMessage.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeUpdateDispatchStatus.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeRefreshMap.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeCloseCrisisEvent.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actFiremenCoordinator-oeRequestHelp.msr</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_i0ZDYJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

@@ -1,0 +1,41 @@
+\subsection{Operation Model for oeReceiveCrisisEventLocation}
+
+\label{OM-oeReceiveCrisisEventLocation}
+
+
+The \msrcode{oeReceiveCrisisEventLocation} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeReceiveCrisisEventLocation}{sent to get a map with pin.}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the \msrcode{GeoPos} given by the communication company is a valid one.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{the map with pins returned to the \msrcode{CentralCoordinator} includes a pin of the crisis event's location.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

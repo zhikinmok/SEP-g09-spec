@@ -1,0 +1,39 @@
+\subsection{Operation Model for oeConfirmCrisisEventLocation}
+
+\label{OM-oeConfirmCrisisEventLocation}
+
+
+The \msrcode{oeConfirmCrisisEventLocation} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeConfirmCrisisEventLocation}{sent to confirm the crisis event's location.}
+
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not created yet.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{the attribute \msrcode{isLocationConfirmed} of the newly initialised \msrcode{ctCrisisEvent} is set to true.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

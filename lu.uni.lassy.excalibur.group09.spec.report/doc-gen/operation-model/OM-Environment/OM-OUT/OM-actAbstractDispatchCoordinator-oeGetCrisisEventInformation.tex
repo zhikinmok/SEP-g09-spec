@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeGetCrisisEventInformation}
+
+\label{OM-oeGetCrisisEventInformation}
+
+
+The \msrcode{oeGetCrisisEventInformation} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeGetCrisisEventInformation}{sent to get the information stored in the current state of the crisis event.}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{a geographical position that identifies the actor's current position.} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{the \msrcode{GeoPos} given by the coordinator is a valid one.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{the map with pins returned to coordinator includes a pin of the actor's current position and another one of the crisis event's location.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group09.spec.usecases.suGlobalManagementOfEvent
-@description "\msrcode{suGlobaManagementOfEvent} is the summary level use-case that covers most of the operation that the system provides."
+@description "The goal is to manage the creation of a new crisis event including all the necessary information and to have the requested coordinators arrive on the crisis event's location."
 @protocolCondition
 "
 none."
@@ -16,7 +16,7 @@ none."
 @endPreConditions
 @postCondition
 "
-modifications have been made to the system and its environment concerning a crisis event."
+a new crisis event has been created and modifications have been made by the coordinators to the system and its environment concerning a crisis event."
 @endPostConditions
 @additionalInformation
 "

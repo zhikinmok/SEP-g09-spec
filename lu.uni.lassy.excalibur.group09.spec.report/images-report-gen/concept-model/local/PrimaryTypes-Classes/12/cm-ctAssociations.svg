@@ -379,10 +379,10 @@
         <path d="M216 165 L325 165 L325 183 L216 183 L216 165 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath115">
-        <path d="M504 420 L697 420 L697 438 L504 438 L504 420 Z" />
+        <path d="M504 372 L697 372 L697 390 L504 390 L504 372 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath116">
-        <path d="M504 372 L636 372 L636 390 L504 390 L504 372 Z" />
+        <path d="M504 420 L636 420 L636 438 L504 438 L504 420 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath117">
         <path d="M504 288 L644 288 L644 306 L504 306 L504 288 Z" />
@@ -617,8 +617,8 @@
       <line clip-path="url(#clipPath93)" fill="none" x1="493" x2="493" y1="441" y2="361" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath93)" fill="none" x1="493" x2="646" y1="361" y2="361" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath93)" fill="none" x1="646" x2="646" y1="361" y2="283" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <text x="505" y="436" clip-path="url(#clipPath115)" stroke="none" stroke-width="2.1" xml:space="preserve">assctCrisisEventctMapWithPin</text>
-      <text x="505" y="388" clip-path="url(#clipPath116)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1]rnctCrisisEvent</text>
+      <text x="505" y="388" clip-path="url(#clipPath115)" stroke="none" stroke-width="2.1" xml:space="preserve">assctCrisisEventctMapWithPin</text>
+      <text x="505" y="436" clip-path="url(#clipPath116)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1]rnctCrisisEvent</text>
       <text x="505" y="304" clip-path="url(#clipPath117)" stroke="none" stroke-width="2.1" xml:space="preserve">[1..1] rndtMapWithPin</text>
       <line clip-path="url(#clipPath93)" fill="none" x1="1117" x2="1117" y1="349" y2="253" stroke="rgb(136,136,136)" stroke-width="2.1" />
       <line clip-path="url(#clipPath93)" fill="none" x1="1117" x2="1021" y1="253" y2="253" stroke="rgb(136,136,136)" stroke-width="2.1" />

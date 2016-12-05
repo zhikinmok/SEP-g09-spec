@@ -1,0 +1,40 @@
+\subsection{Operation Model for oeInitialiseNewCrisisEvent}
+
+\label{OM-oeInitialiseNewCrisisEvent}
+
+
+The \msrcode{oeInitialiseNewCrisisEvent} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeInitialiseNewCrisisEvent}{sent to initialise a new crisis event with a new unique id that is the id of the previous crisis event incremented by one.
+	 }
+
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{ }
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{ctState instance should be equal to the one @pre incremented by one : self.rnActor.rnSystem.nextValueForAlertID = self.rnActor.rnSystem.nextValueForAlertID@pre+1}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

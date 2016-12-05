@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeMessage}
+
+\label{OM-oeMessage}
+
+
+The \msrcode{oeMessage} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeMessage}{sent to transmit a message.
+	 }
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtComment: dtComment}{} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{ }
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

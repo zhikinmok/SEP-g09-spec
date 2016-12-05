@@ -15,15 +15,15 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @description "sent to update the dispatch status."
 //preProtocol descriptions
 @preP
-" "
+"the coordinator is associated to a crisis event."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the attribute \msrcode{status} of the coordinator is modified either from 'InStation' to 'InTransit' or from 'InTransit' to 'Arrived'"
 @endPostF
 //postProtocol descriptions
 @postP 

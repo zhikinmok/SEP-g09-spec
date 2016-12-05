@@ -19,11 +19,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to correct communication company."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the phone number can be identified by the communication company."
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -1,0 +1,45 @@
+\subsection{Operation Model for oeCreateNewCrisisEvent}
+
+\label{OM-oeCreateNewCrisisEvent}
+
+
+The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeCreateNewCrisisEvent}{sent to create an new crisis event and to alert the corresponding coordinators.}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtName: ptString}{the name of the notifier that informed the Central Coordinator of the crisis event.} 
+	\addnumbereddoublerow{}{AetHumanType: etHumanType}{the notifier can be either a victim or a witness.} 
+	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{the phone number of the notifier.} 
+	\addnumbereddoublerow{}{AdtMapWithPin: dtAddress}{a map with pins showing the crisis event's location.} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not created yet.}
+	\addnumberedsinglerow{PreP}{the attribute \msrcode{isLocationConfirmed} is set to true.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{An alert message is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

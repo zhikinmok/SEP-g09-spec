@@ -9,22 +9,26 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtName
-""
+"the name of the notifier that informed the Central Coordinator of the crisis event."
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AetHumanType
-""
+"the notifier can be either a victim or a witness."
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtPhoneNumber
-""
+"the phone number of the notifier."
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent.AdtMapWithPin
-""
+"a map with pins showing the crisis event's location."
 @endParameters
 
 @description "sent to create an new crisis event and to alert the corresponding coordinators."
 //preProtocol descriptions
 @preP
-" "
+"the crisis event is supposed to be initialised, but not created yet."
+
+@preP
+"the attribute \msrcode{isLocationConfirmed} is set to true."
+
 @endPreP
 //preFunctional descriptions
 @preF
@@ -32,11 +36,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"An alert message is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
 @endPostP
 //example
 @example" "

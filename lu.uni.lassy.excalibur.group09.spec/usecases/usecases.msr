@@ -22,6 +22,9 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				actor actCommunicationCompany[secondary, active]
 				actor actFiremenCoordinator[secondary,active]
 				actor actTowServiceCoordinator[secondary,active]
+				
+				reuse ugCreateNewCrisisEvent[1..*]
+				reuse ugGlobalDispatchManagement[1..*]
 
 				step a: actCentralCoordinator executes ugCreateNewCrisisEvent
 				step b: actFiremenCoordinator executes ugGlobalDispatchManagement
@@ -51,8 +54,9 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				step d: actCentralCoordinator executes oeConfirmCrisisEventLocation
 				step e: actCentralCoordinator executes oeCreateNewCrisisEvent
 				
-				ordering constraint "if (b) then previously (a)"
-				ordering constraint "step (c) must be executed before step (d)"
+				ordering constraint "step (a) must be executed first"
+				ordering constraint "if step (c) then previously step (b)"
+				ordering constraint "step (d) must be executed before step (e)"
 				
 		}
 		
@@ -62,17 +66,33 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				actor actCentralCoordinator[secondary,passive]
 				actor actPoliceCoordinator[secondary,active]
 				
-				step a: actFiremenCoordinator executes oeUpdateDispatchStatus
-				step b: actTowServiceCoordinator executes oeRefreshMap
-				step c: actTowServiceCoordinator executes oeMessage
+				reuse oeGetCrisisEventInformation[2..*]
+				reuse oeUpdateDispatchStatus[4..*]
+				reuse oeRefreshMap[0..*]
+				reuse oeMessage[0..*]
+				reuse oeRequestHelp[0..*]
+				reuse oeCloseCrisisEvent[2..*]
+	
+				step a: actFiremenCoordinator executes oeGetCrisisEventInformation
+				step b: actFiremenCoordinator executes oeUpdateDispatchStatus
+				step c: actTowServiceCoordinator executes oeGetCrisisEventInformation
 				step d: actTowServiceCoordinator executes oeUpdateDispatchStatus
-				step e: actFiremenCoordinator executes oeRequestHelp
-				step f: actPoliceCoordinator executes oeUpdateDispatchStatus
-			
-				ordering constraint "step (a) must be executed at least two times"
-				ordering constraint "step (d) must be executed at least two times"
-				ordering constraint "step (f) can only be executed if step (e) has at least been executed once previously"
-				ordering constraint "step (f) must be executed at least two times"					
+				step e: actTowServiceCoordinator executes oeRefreshMap
+				step f: actTowServiceCoordinator executes oeMessage
+				step g: actFiremenCoordinator executes oeRequestHelp
+				step h: actPoliceCoordinator executes oeGetCrisisEventInformation
+				step i: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step j: actFiremenCoordinator executes oeCloseCrisisEvent
+				step k: actTowServiceCoordinator executes oeCloseCrisisEvent
+				step l: actPoliceCoordinator executes oeCloseCrisisEvent
+				
+				ordering constraint "if step (b) then previously step (a)"
+				ordering constraint "if step (d) then previously step (c)"
+				ordering constraint "step (h) can only be executed if step (g) has at least been executed once previously"
+				ordering constraint "if step (i) then previously step (h)"
+				ordering constraint "if step (j) then previously step (b) at least two times"	
+				ordering constraint "if step (k) then previously step (d) at least two times"
+				ordering constraint "if step (l) then previously step (i) at least two times"		
 		}
 		
 		
@@ -111,7 +131,14 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			actor actCentralCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AdtComment) returned to actAbstractDispatchCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtMessage) returned to actAbstractDispatchCoordinator
+			}
+		}
+		
+		use case system subfunction oeGetCrisisEventInformation(AdtGeoPos:dtGeoPos) {
+			actor actAbstractDispatchCoordinator[primary,active]
+			returned messages{
+				ieReceiveCrisisEventInformation (AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AdtComment) returned to actAbstractDispatchCoordinator
 			}
 		}
 		
@@ -124,8 +151,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				ieMessageCentralCoordinator(AdtComment) returned to actCentralCoordinator
 			}
 		}
-						
-		
 		
 		use case system subfunction oeUpdateDispatchStatus(AetDispatchStatus:etDispatchStatus){
 			actor actAbstractDispatchCoordinator[primary,active]
@@ -147,8 +172,12 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			actor actFiremenCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
-				ieReceiveNewCrisisEvent(AdtCrisisID, AdtName, AetHumanType, AdtPhoneNumber, AdtMapWithPin, AdtComment) returned to actAbstractDispatchCoordinator
+				ieReceiveNewCrisisEvent(AdtCrisisID, AdtMessage) returned to actAbstractDispatchCoordinator
 			}
+		}
+		
+		use case system subfunction oeCloseCrisisEvent() {
+			actor actAbstractDispatchCoordinator[primary,active]
 		}
 		
 	}

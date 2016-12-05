@@ -1,0 +1,17 @@
+package lu.uni.lassy.excalibur.group09.spec.environment.operations.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeGetCrisisEventInformation {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes 
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeGetCrisisEventInformation(AdtGeoPos:dtGeoPos):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+
+		}
+	}
+}

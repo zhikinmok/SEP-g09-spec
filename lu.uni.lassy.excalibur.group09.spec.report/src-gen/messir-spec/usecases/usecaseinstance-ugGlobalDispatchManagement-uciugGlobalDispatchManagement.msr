@@ -13,12 +13,20 @@ package usecases.uciugGlobalDispatchManagement {
 				Polo 	: 	actPoliceCoordinator				
 			}
 			use case steps {
+					Fabio executed instanceof subfunction oeGetCrisisEventInformation() {
+						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Fabio
+					}
+				
 					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
-						ieMessage("Dispatch Status Updated.") returned to Fabio
+						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Fabio
+					}
+					
+					Ted executed instanceof subfunction oeGetCrisisEventInformation() {
+						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Ted
 					}
 					
 					Ted executed instanceof subfunction oeRefreshMap("Latitude=80.57, Longitude=50.23") {
-						ieReceiveMap("A string for the image with the pin") returned to Ted
+						ieReceiveMap("A string for the image with the pins") returned to Ted
 					}
 					
 					Ted executed instanceof subfunction oeMessage("AdtComment=I will arrive in 30 minutes") {
@@ -36,7 +44,11 @@ package usecases.uciugGlobalDispatchManagement {
 					}
 	
 					Fabio executed instanceof subfunction oeRequestHelp("AenTeamType=Police", "RequestedNumber=1") {
-						ieReceiveNewCrisisEvent("1","Walter","Witness","691 12 34 56","A string for the image with the pins") returned to Polo
+						ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Polo
+					}
+					
+					Polo executed instanceof subfunction oeGetCrisisEventInformation() {
+						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Polo
 					}
 	
 					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
@@ -49,7 +61,16 @@ package usecases.uciugGlobalDispatchManagement {
 						
 					Polo executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
 						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Polo			
-					}	
+					}
+					
+					Fabio executed instanceof subfunction oeCloseCrisisEvent() {
+					}
+					
+					Ted executed instanceof subfunction oeCloseCrisisEvent() {
+					}
+
+					Polo executed instanceof subfunction oeCloseCrisisEvent() {
+					}
 								
 			}	
 		}	
