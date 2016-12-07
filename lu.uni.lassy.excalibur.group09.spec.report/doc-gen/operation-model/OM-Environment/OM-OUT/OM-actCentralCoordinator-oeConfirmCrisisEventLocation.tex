@@ -14,16 +14,16 @@ The \msrcode{oeConfirmCrisisEventLocation} operation has the following propertie
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not created yet.}
+	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not deployed yet.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{ }
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{the attribute \msrcode{isLocationConfirmed} of the newly initialised \msrcode{ctCrisisEvent} is set to true.}
+	\addnumberedsinglerow{PostF}{the attribute\msrcode{isLocationConfirmed} of the newly initialised\msrcode{ctCrisisEvent} is set to true.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeCreateNewCrisisEvent} is activated.}
 	\end{operationmodel}
 
 

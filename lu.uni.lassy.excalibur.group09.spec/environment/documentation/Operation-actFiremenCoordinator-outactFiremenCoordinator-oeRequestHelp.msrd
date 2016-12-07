@@ -18,7 +18,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 @description "sent to request help from the corresponding team type."
 //preProtocol descriptions
 @preP
-"the coordinator is associated to a crisis event."
+"the coordinator has been associated to a crisis event."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -30,7 +30,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 @endPostF
 //postProtocol descriptions
 @postP 
-"The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
+"The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
 @endPostP
 //example
 @example" "

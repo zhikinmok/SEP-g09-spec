@@ -16,17 +16,18 @@ The \msrcode{oeGetCrisisEventInformation} operation has the following properties
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
-	\addnumberedsinglerow{PreP}{the \msrcode{GeoPos} given by the coordinator is a valid one.}
+	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+	\addnumberedsinglerow{PreF}{the\msrcode{GeoPos} given by the coordinator is a valid one.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{the map with pins returned to coordinator includes a pin of the actor's current position and another one of the crisis event's location.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{The operations\msrcode{oeMessage},\msrcode{oeUpdateDispatchStatus},\msrcode{oeRefreshMap} are activated.}
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeGetCrisisEventInformation} is deactivated.}
 	\end{operationmodel}
 
 

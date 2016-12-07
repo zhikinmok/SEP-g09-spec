@@ -15,13 +15,14 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @description "sent to refresh the map."
 //preProtocol descriptions
 @preP
-"the coordinator is associated to a crisis event."
-@preP
-"the \msrcode{GeoPos} given by the coordinator is a valid one."
+"the coordinator has been associated to a crisis event."
+
 @endPreP
 //preFunctional descriptions
 @preF
 "it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+@preF
+"the\msrcode{GeoPos} given by the coordinator is a valid one."
 @endPreF
 //postFunctional descriptions
 @postF 

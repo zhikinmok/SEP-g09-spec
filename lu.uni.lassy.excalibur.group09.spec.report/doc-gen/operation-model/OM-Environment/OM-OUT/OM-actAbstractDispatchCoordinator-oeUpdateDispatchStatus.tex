@@ -16,16 +16,16 @@ The \msrcode{oeUpdateDispatchStatus} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{the attribute \msrcode{status} of the coordinator is modified either from 'InStation' to 'InTransit' or from 'InTransit' to 'Arrived'}
+	\addnumberedsinglerow{PostF}{the attribute\msrcode{status} of the coordinator is modified either from 'InStation' to 'InTransit' or from 'InTransit' to 'Arrived'}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{the operation\msrcode{oeCloseCrisisEvent} is activated when this operation is called twice.}
 	\end{operationmodel}
 
 

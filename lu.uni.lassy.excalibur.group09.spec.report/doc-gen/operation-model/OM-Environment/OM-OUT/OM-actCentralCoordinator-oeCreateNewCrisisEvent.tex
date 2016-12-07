@@ -19,17 +19,19 @@ The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not created yet.}
-	\addnumberedsinglerow{PreP}{the attribute \msrcode{isLocationConfirmed} is set to true.}
+	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not deployed yet.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{ }
+	\addnumberedsinglerow{PreF}{the attribute\msrcode{isLocationConfirmed} is set to true.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{An alert message is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\addnumberedsinglerow{PostP}{The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeCreateNewCrisisEvent},\msrcode{oeConfirmCrisisEventLocation},\msrcode{oeRequestCrisisEventLocation} are deactivated.}
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeInitialiseNewCrisisEvent} is activated.}
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeGetCrisisEventInformation} for the selected DispatchCoordinators is activated.}
 	\end{operationmodel}
 
 

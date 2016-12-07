@@ -18,11 +18,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPreF
 //postFunctional descriptions
 @postF 
-"ctState instance should be equal to the one @pre incremented by one : self.rnActor.rnSystem.nextValueForAlertID = self.rnActor.rnSystem.nextValueForAlertID@pre+1"
+"the attribute\msrcode{nextValueForAltertID}of the ctState instance should be equal to the one @pre incremented by one."
 @endPostF
 //postProtocol descriptions
+@postP
+"The operation \msrcode{oeConfirmCrisisEventLocation},\msrcode{oeRequestCrisisEventLocation} are activated."
 @postP 
-" "
+"The operation\msrcode{oeInitialiseNewCrisisEvent} is deactivated."
 @endPostP
 //example
 @example" "

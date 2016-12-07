@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @description "sent to confirm the crisis event's location."
 //preProtocol descriptions
 @preP
-"the crisis event is supposed to be initialised, but not created yet."
+"the crisis event is supposed to be initialised, but not deployed yet."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -17,11 +17,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPreF
 //postFunctional descriptions
 @postF 
-"the attribute \msrcode{isLocationConfirmed} of the newly initialised \msrcode{ctCrisisEvent} is set to true."
+"the attribute\msrcode{isLocationConfirmed} of the newly initialised\msrcode{ctCrisisEvent} is set to true."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"The operation\msrcode{oeCreateNewCrisisEvent} is activated."
 @endPostP
 //example
 @example" "

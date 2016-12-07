@@ -15,11 +15,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @description "sent to get a map with pin."
 //preProtocol descriptions
 @preP
-"the \msrcode{GeoPos} given by the communication company is a valid one."
+""
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"the \msrcode{GeoPos} given by the communication company is a valid one."
 @endPreF
 //postFunctional descriptions
 @postF 

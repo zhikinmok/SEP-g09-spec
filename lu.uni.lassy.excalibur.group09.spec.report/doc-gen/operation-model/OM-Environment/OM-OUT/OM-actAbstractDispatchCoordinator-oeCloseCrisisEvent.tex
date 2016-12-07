@@ -15,16 +15,15 @@ The \msrcode{oeCloseCrisisEvent} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator is associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
 
-	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{ }
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The coordinator's attribute \msrcode{isFree} is set back to true and can thus be associated to another crisis event.}
+	\addnumberedsinglerow{PostP}{The coordinator's attribute\msrcode{isFree} is set back to true and can thus be associated to another crisis event.}
+	\addnumberedsinglerow{PostP}{The operations\msrcode{oeMessage},\msrcode{oeRefreshMap},\msrcode{oeUpdateDispatchStatus} are deactivated.}
 	\end{operationmodel}
 
 

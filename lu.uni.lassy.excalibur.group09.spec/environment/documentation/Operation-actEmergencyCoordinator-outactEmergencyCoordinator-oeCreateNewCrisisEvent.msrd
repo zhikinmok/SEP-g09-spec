@@ -24,15 +24,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @description "sent to create an new crisis event and to alert the corresponding coordinators."
 //preProtocol descriptions
 @preP
-"the crisis event is supposed to be initialised, but not created yet."
-
-@preP
-"the attribute \msrcode{isLocationConfirmed} is set to true."
-
+"the crisis event is supposed to be initialised, but not deployed yet."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"the attribute\msrcode{isLocationConfirmed} is set to true."
 @endPreF
 //postFunctional descriptions
 @postF 
@@ -40,7 +36,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPostF
 //postProtocol descriptions
 @postP 
-"The selected \msrcode{ctDispatchCoordinator}'s attribute \msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
+"The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
+@postP
+"The operation\msrcode{oeCreateNewCrisisEvent},\msrcode{oeConfirmCrisisEventLocation},\msrcode{oeRequestCrisisEventLocation} are deactivated."
+@postP
+"The operation\msrcode{oeInitialiseNewCrisisEvent} is activated." 
+@postP
+"The operation\msrcode{oeGetCrisisEventInformation} for the selected DispatchCoordinators is activated."
 @endPostP
 //example
 @example" "

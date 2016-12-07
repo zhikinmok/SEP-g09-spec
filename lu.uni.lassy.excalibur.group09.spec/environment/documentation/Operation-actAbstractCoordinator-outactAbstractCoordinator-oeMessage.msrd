@@ -16,7 +16,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
  "
 //preProtocol descriptions
 @preP
-"the coordinator is associated to a crisis event."
+"the coordinator has been associated to a crisis event."
 @endPreP
 //preFunctional descriptions
 @preF

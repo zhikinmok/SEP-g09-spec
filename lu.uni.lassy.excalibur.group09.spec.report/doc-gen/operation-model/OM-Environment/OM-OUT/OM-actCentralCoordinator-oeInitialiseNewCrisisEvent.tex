@@ -21,10 +21,11 @@ The \msrcode{oeInitialiseNewCrisisEvent} operation has the following properties:
 	\addnumberedsinglerow{PreF}{ }
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{ctState instance should be equal to the one @pre incremented by one : self.rnActor.rnSystem.nextValueForAlertID = self.rnActor.rnSystem.nextValueForAlertID@pre+1}
+	\addnumberedsinglerow{PostF}{the attribute\msrcode{nextValueForAltertID}of the ctState instance should be equal to the one @pre incremented by one.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{The operation \msrcode{oeConfirmCrisisEventLocation},\msrcode{oeRequestCrisisEventLocation} are activated.}
+	\addnumberedsinglerow{PostP}{The operation\msrcode{oeInitialiseNewCrisisEvent} is deactivated.}
 	\end{operationmodel}
 
 
