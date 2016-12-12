@@ -42,22 +42,18 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				actor actFiremenCoordinator[secondary, passive]
 				actor actTowServiceCoordinator[secondary, passive]
 				
-				reuse oeInitialiseNewCrisisEvent[1..*]
+				reuse oeAddNewCrisisEvent[1..*]
 				reuse oeRequestCrisisEventLocation[0..*]
 				reuse oeReceiveCrisisEventLocation[0..*]
-				reuse oeConfirmCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
 				
-				step a: actCentralCoordinator executes oeInitialiseNewCrisisEvent
+				step a: actCentralCoordinator executes oeAddNewCrisisEvent
 				step b: actCentralCoordinator executes oeRequestCrisisEventLocation
 				step c: actCommunicationCompany executes oeReceiveCrisisEventLocation
-				step d: actCentralCoordinator executes oeConfirmCrisisEventLocation
-				step e: actCentralCoordinator executes oeCreateNewCrisisEvent
+				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
 				
 				ordering constraint "step (a) must be executed first"
-				ordering constraint "if step (c) then previously step (b)"
-				ordering constraint "step (d) must be executed before step (e)"
-				
+				ordering constraint "if step (c) then previously step (b)"				
 		}
 		
 		use case system usergoal ugGlobalDispatchManagement() {
@@ -96,9 +92,8 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		}
 		
 		
-		use case system subfunction oeInitialiseNewCrisisEvent() {
+		use case system subfunction oeAddNewCrisisEvent() {
 			actor actCentralCoordinator[primary,active]
-			//RETURN ADD EVENT NEW WINDOW ??
 		}
 		
 		use case system subfunction oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) {
@@ -115,14 +110,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			actor actCentralCoordinator[secondary, passive]
 			returned messages{
 				ieReceiveCrisisEventLocation(AdtMapWithPin) returned to actCentralCoordinator
-			}	
-		}
-		
-		
-		use case system subfunction oeConfirmCrisisEventLocation() {
-			actor actCentralCoordinator[primary, active]
-			returned messages{
-				ieConfirmCrisisEventLocation() returned to actCentralCoordinator
 			}	
 		}
 		

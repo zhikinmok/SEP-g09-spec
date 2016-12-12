@@ -7,7 +7,7 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 
 	\begin{operationmodel}
 	\addheading{Operation}
-	\adddoublerow{oeReceiveCrisisEventLocation}{sent to get a map with pin.}
+	\adddoublerow{oeReceiveCrisisEventLocation}{sent to get a map with pin returned to the central coordinator.}
 
 	\addrowheading{Parameters}
 	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
@@ -16,16 +16,16 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{}
+	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isInRequest}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{the \msrcode{GeoPos} given by the communication company is a valid one.}
+	\addnumberedsinglerow{PreF}{the \msrcode{GeoPos}given by the communication company is a valid one.}
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{the map with pins returned to the \msrcode{CentralCoordinator} includes a pin of the crisis event's location.}
+	\addnumberedsinglerow{PostF}{the map with pins returned to the \msrcode{CentralCoordinator}includes a pin of the crisis event's location.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{The actor's mode has been set to \msrcode{isInStandBy}.}
 	\end{operationmodel}
 
 

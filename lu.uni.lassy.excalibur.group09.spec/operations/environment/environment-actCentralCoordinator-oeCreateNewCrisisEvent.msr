@@ -9,7 +9,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AdtComment:dtComment):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		}

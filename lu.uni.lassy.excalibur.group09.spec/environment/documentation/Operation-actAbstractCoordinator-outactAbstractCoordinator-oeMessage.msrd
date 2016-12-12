@@ -16,19 +16,19 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
  "
 //preProtocol descriptions
 @preP
-"the coordinator has been associated to a crisis event."
+"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+"it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time."
 @endPreF
 //postFunctional descriptions
-@postF 
-" "
-@endPostF
-//postProtocol descriptions
-@postP 
-" "
-@endPostP
+//@postF 
+//" "
+//@endPostF
+////postProtocol descriptions
+//@postP 
+//" "
+//@endPostP
 //example
 @example" "

@@ -7,7 +7,7 @@ The \msrcode{oeGetCrisisEventInformation} operation has the following properties
 
 	\begin{operationmodel}
 	\addheading{Operation}
-	\adddoublerow{oeGetCrisisEventInformation}{sent to get the information stored in the current state of the crisis event.}
+	\adddoublerow{oeGetCrisisEventInformation}{sent to get the stored information of the crisis event to which the dispatch coordinator is associated.}
 
 	\addrowheading{Parameters}
 	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{a geographical position that identifies the actor's current position.} 
@@ -16,18 +16,17 @@ The \msrcode{oeGetCrisisEventInformation} operation has the following properties
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has been set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time.}
 	\addnumberedsinglerow{PreF}{the\msrcode{GeoPos} given by the coordinator is a valid one.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{the map with pins returned to coordinator includes a pin of the actor's current position and another one of the crisis event's location.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The operations\msrcode{oeMessage},\msrcode{oeUpdateDispatchStatus},\msrcode{oeRefreshMap} are activated.}
-	\addnumberedsinglerow{PostP}{The operation\msrcode{oeGetCrisisEventInformation} is deactivated.}
+	\addnumberedsinglerow{PostP}{The dispatch coordinator's mode has been set to \msrcode{isInMain}.}
 	\end{operationmodel}
 
 

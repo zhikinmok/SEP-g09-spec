@@ -12,10 +12,10 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 ""
 @endParameters
 
-@description "sent to get a map with pin."
+@description "sent to get a map with pin returned to the central coordinator."
 //preProtocol descriptions
 @preP
-""
+"The actor's mode has been set to \msrcode{isInRequest}."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -23,11 +23,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @endPreF
 //postFunctional descriptions
 @postF 
-"the map with pins returned to the \msrcode{CentralCoordinator} includes a pin of the crisis event's location."
+"the map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"The actor's mode has been set to \msrcode{isInStandBy}."
 @endPostP
 //example
 @example" "

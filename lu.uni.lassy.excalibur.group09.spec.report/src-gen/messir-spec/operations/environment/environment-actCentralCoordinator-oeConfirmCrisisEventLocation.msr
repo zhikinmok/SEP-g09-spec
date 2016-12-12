@@ -1,15 +1,15 @@
-package lu.uni.lassy.excalibur.group09.spec.environment.operations.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation {
-
-import lu.uni.lassy.messir.libraries.primitives
-import lu.uni.lassy.messir.libraries.math
-import lu.uni.lassy.messir.libraries.string
-import lu.uni.lassy.messir.libraries.calendar
-
-	Operation Model {
-
-		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation():ptBoolean{
-		// include below the specification information (pre,post or ocl or prolog)
-
-		}
-	}
-}
+//package lu.uni.lassy.excalibur.group09.spec.environment.operations.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation {
+//
+//import lu.uni.lassy.messir.libraries.primitives
+//import lu.uni.lassy.messir.libraries.math
+//import lu.uni.lassy.messir.libraries.string
+//import lu.uni.lassy.messir.libraries.calendar
+//
+//	Operation Model {
+//
+//		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeConfirmCrisisEventLocation():ptBoolean{
+//		// include below the specification information (pre,post or ocl or prolog)
+//
+//		}
+//	}
+//}

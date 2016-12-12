@@ -15,12 +15,12 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @description "sent to refresh the map."
 //preProtocol descriptions
 @preP
-"the coordinator has been associated to a crisis event."
+"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
 
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+"it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time."
 @preF
 "the\msrcode{GeoPos} given by the coordinator is a valid one."
 @endPreF
@@ -29,8 +29,8 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 "the map with pins returned to the coordinator includes a pin of the actor's current position and another one of the crisis event's location."
 @endPostF
 //postProtocol descriptions
-@postP 
-" "
-@endPostP
+//@postP 
+//" "
+//@endPostP
 //example
 @example" "

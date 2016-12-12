@@ -16,17 +16,15 @@ The \msrcode{oeRefreshMap} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has been set to \msrcode{isInMain}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time.}
 	\addnumberedsinglerow{PreF}{the\msrcode{GeoPos} given by the coordinator is a valid one.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{the map with pins returned to the coordinator includes a pin of the actor's current position and another one of the crisis event's location.}
 
-	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
 	\end{operationmodel}
 
 

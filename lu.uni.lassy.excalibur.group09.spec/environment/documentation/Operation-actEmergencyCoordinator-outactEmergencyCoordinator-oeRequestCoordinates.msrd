@@ -15,11 +15,11 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @description "sent to request a crisis event's location."
 //preProtocol descriptions
 @preP
-" "
+"The actor's mode has been set to \msrcode{isAddEvent}. "
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to correct communication company."
+"it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to the correct communication company."
 @endPreF
 //postFunctional descriptions
 @postF 
@@ -27,7 +27,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"The communication company's mode is set to \msrcode{isInRequest}."
 @endPostP
 //example
 @example" "

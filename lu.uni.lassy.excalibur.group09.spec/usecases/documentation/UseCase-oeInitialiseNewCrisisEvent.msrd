@@ -4,7 +4,7 @@
 */
 
 
-@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeInitialiseNewCrisisEvent
+@@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeAddNewCrisisEvent
 @description ""
 @protocolCondition
 "

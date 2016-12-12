@@ -44,13 +44,14 @@ Concept Model {
 		association assctCommentctDispatchedCoordinator
 			ctComment(rnctComment)[0..*] 
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
-
 			
-		association assctCommentctCentralCoordinator
+		association assctCommentactCentralCoordinator
 			ctComment(rnctComment)[0..*] 
 			actCentralCoordinator(rnactCentralCoordinator)[1..1] 
 
-	
+		association assctCrisisEventactCentralCoordinator
+			ctCrisisEvent(ctCrisisEvent)[0..*] 
+			actCentralCoordinator(rnactCentralCoordinator)[1..1] 
 	}
 }
 }

@@ -241,7 +241,6 @@
   <semanticResources>environment/documentation/Operation-actEmergencyCoordinator-outactEmergencyCoordinator-oeRequestCoordinates.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actEmergencyCoordinator-outactEmergencyCoordinator-oeMessage.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actEmergencyCoordinator-outactEmergencyCoordinator-oeCreateNewCrisisEvent.msrd</semanticResources>
-  <semanticResources>environment/documentation/Operation-actEmergencyCoordinator-outactEmergencyCoordinator-oeConfirmLocation.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actCommunicationCompany.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCommunicationCompany-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCommunicationCompany-outactCommunicationCompany-oeSendCoordinates.msrd</semanticResources>
@@ -268,7 +267,6 @@
   <semanticResources>documentation/View-uc-suGlobalManagementOfEvent.msrd</semanticResources>
   <semanticResources>usecases/usecaseinstance-suGlobalManagementOfEvent-ucisuGlobalManagementOfEvent.msr</semanticResources>
   <semanticResources>documentation/View-uci-ucisuGlobalManagementOfEvent.msrd</semanticResources>
-  <semanticResources>usecases/documentation/UseCaseInstance-ucisuGlobalManagementOfEvent.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtURL.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtMap.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtMapWithPin.msrd</semanticResources>
@@ -276,7 +274,6 @@
   <semanticResources>environment/documentation/Operation-actAbstractCoordinator-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeMessage.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAbstractCoordinator-outactAbstractCoordinator-oeUpdateDispatchStatus.msrd</semanticResources>
-  <semanticResources>usecases/documentation/UseCase-oeConfirmCrisisEventLocation.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtMap.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtURL-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtPin-is.msrd</semanticResources>
@@ -341,7 +338,6 @@
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctComment-init.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeInitialiseNewCrisisEvent.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-isMapWithPin.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeCloseCrisisEvent.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeGetCrisisEventInformation.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeCloseCrisisEvent.msrd</semanticResources>
@@ -356,6 +352,24 @@
   <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeRefreshMap.msr</semanticResources>
   <semanticResources>operations/environment/environment-actAbstractDispatchCoordinator-oeCloseCrisisEvent.msr</semanticResources>
   <semanticResources>operations/environment/environment-actFiremenCoordinator-oeRequestHelp.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actCentralCoordinator-oeAddNewCrisisEvent.msr</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeAddNewCrisisEvent.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctCrisisEventactCentralCoordinator.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-actCentralCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etCentralCoordinatorMode.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etDispatchStatus-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etHumanType-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etTeamType-is.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeRefreshMap.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeMessage.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeRefreshMap.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-removePinFromMap.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-addPinToMap.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etCentralCoordinatorMode-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etDispatchCoordinatorMode.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etDispatchCoordinatorMode-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etComCompanyMode.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etComCompanyMode-is.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_i0ZDYJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

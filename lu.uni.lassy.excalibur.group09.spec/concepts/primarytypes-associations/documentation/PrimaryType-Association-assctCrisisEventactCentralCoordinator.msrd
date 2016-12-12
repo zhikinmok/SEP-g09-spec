@@ -1,0 +1,8 @@
+/*
+@author Kira
+@date Mon Dec 12 19:20:39 CET 2016
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assctCrisisEventactCentralCoordinator
+@description "Association of a crisis event to the central coordinator actor (who created it)."

@@ -43,14 +43,9 @@ Concept Model {
 		
 		class ctCrisisEvent role rnCrisisEvent cardinality [1..*] {
 			attribute id: dtCrisisID
-			attribute location: dtMapWithPin
-			attribute isLocationConfirmed: ptBoolean
 			attribute geoPos: dtGeoPos
 			
 			operation init(	Aid:dtCrisisID,
-							Alocation:dtMapWithPin,
-							AisLocationConfirmed:ptBoolean,
-							Acomment:ptString,
 							AgeoPos:dtGeoPos
 			): ptBoolean
 			
@@ -69,10 +64,13 @@ Concept Model {
 			attribute status: etDispatchStatus
 			attribute geoPos: dtGeoPos
 			attribute isFree: ptBoolean
+			attribute mode: etDispatchCoordinatorMode
 			
 			operation init(	Atype:etTeamType,
 							Astatus:etDispatchStatus,
-							AgeoPos:dtGeoPos
+							AgeoPos:dtGeoPos,
+							AisFree:ptBoolean,
+							Amode:etDispatchCoordinatorMode
 			): ptBoolean
 		}
 		
@@ -82,7 +80,8 @@ Concept Model {
 			operation init( AmapWithPin:dtMapWithPin
 			) : ptBoolean
 			
-			operation isMapWithPin(AGeoPos1:dtGeoPos, AGeoPos2:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
+			operation removePinFromMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
+			operation addPinToMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
 		}
 
 	}

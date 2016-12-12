@@ -9,15 +9,6 @@
 @attribute
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.id
 ""
-@attribute
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.location
-""
-@attribute
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.isLocationConfirmed
-""
-//@attribute
-//lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.comment
-//""
 @endAttributes
 @operation
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init

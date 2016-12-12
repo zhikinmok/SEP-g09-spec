@@ -13,14 +13,14 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 
 @endParameters
 
-@description "sent to get the information stored in the current state of the crisis event."
+@description "sent to get the stored information of the crisis event to which the dispatch coordinator is associated."
 //preProtocol descriptions
 @preP
-"the coordinator has been associated to a crisis event."
+"The dispatch coordinator's mode has been set to \msrcode{hasBeenAssociatedToACrisisEvent}."
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+"it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time."
 @preF
 "the\msrcode{GeoPos} given by the coordinator is a valid one."
 @endPreF
@@ -30,9 +30,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @endPostF
 //postProtocol descriptions
 @postP 
-"The operations\msrcode{oeMessage},\msrcode{oeUpdateDispatchStatus},\msrcode{oeRefreshMap} are activated."
-@postP
-"The operation\msrcode{oeGetCrisisEventInformation} is deactivated."
+"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
 @endPostP
 //example
 @example" "

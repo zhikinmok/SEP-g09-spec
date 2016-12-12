@@ -17,25 +17,40 @@ Concept Model {
 
 	Primary Types {
 			   
-		   datatype dtGeoPos{
-		   		attribute latitude: dtLatitude
-		   		attribute longitude: dtLongitude
-		   		operation is() : ptBoolean
+		   datatype dtGeoPos {
+		   	attribute latitude:dtLatitude
+		   	attribute longitude:dtLongitude
+		   	operation is():ptBoolean
 		   }
 		   
 		   enum etDispatchStatus {
-		   		constants["InStation", "InTransit", "Arrived"]
-		   		operation is() : ptBoolean
-		   }		   
+		   	constants["InStation", "InTransit", "Arrived"]
+		   	operation is():ptBoolean
+		   }
 		   
 		   enum etHumanType {
-		   		constants["Victim", "Witness"]
-		   		operation is() : ptBoolean
+		   	constants["Victim", "Witness"]
+		   	operation is():ptBoolean
 		   }
 		   
 		   enum etTeamType {
-		   		constants["Ambulance", "Police", "TowService"]
-		   		operation is() : ptBoolean
+		   	constants["Ambulance", "Police", "TowService"]
+		   	operation is():ptBoolean
+		   }
+		   
+		   enum etCentralCoordinatorMode {
+		   	constants["isInMain", "isInAddEvent"]
+		   	operation is():ptBoolean
+		   }
+		   
+		   enum etDispatchCoordinatorMode {
+		   	constants["hasBeenAssociatedToACrisisEvent", "isInStandBy", "isInMain", "isInMainWithCloseEventUnlocked"]
+		   	operation is():ptBoolean
+		   }
+		   
+		   enum etComCompanyMode {
+		   	constants["isInRequest", "isInStandBy"]
+		   	operation is():ptBoolean
 		   }
 	}
 }

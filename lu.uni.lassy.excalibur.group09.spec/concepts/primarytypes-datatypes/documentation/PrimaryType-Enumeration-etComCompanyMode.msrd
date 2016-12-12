@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Mon Dec 12 21:34:23 CET 2016
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etComCompanyMode
+@description ""
+@operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etComCompanyMode.is
+""
+@endOperations

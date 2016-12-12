@@ -16,16 +16,16 @@ The \msrcode{oeRequestCrisisEventLocation} operation has the following propertie
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{ }
+	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isAddEvent}. }
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to correct communication company.}
+	\addnumberedsinglerow{PreF}{it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to the correct communication company.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{the phone number can be identified by the communication company.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
+	\addnumberedsinglerow{PostP}{The communication company's mode is set to \msrcode{isInRequest}.}
 	\end{operationmodel}
 
 

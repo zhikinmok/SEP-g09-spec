@@ -7,7 +7,7 @@ The \msrcode{oeCloseCrisisEvent} operation has the following properties:
 
 	\begin{operationmodel}
 	\addheading{Operation}
-	\adddoublerow{oeCloseCrisisEvent}{sent to close up the associated event.
+	\adddoublerow{oeCloseCrisisEvent}{sent to close up the associated crisis event for the current coordinator.
 	 }
 
 
@@ -15,15 +15,17 @@ The \msrcode{oeCloseCrisisEvent} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has been set to \msrcode{isInMainWithCloseEventUnlocked}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time.}
 
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{The coordinator's attribute\msrcode{isFree} is set back to true and can thus be associated to another crisis event.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The coordinator's attribute\msrcode{isFree} is set back to true and can thus be associated to another crisis event.}
-	\addnumberedsinglerow{PostP}{The operations\msrcode{oeMessage},\msrcode{oeRefreshMap},\msrcode{oeUpdateDispatchStatus} are deactivated.}
+	\addnumberedsinglerow{PostP}{The dispatch coordinator is no longer associated to the current crisis event.}
+	\addnumberedsinglerow{PostP}{The dispatch coordinator's mode has been set to \msrcode{isInStandBy}.}
 	\end{operationmodel}
 
 

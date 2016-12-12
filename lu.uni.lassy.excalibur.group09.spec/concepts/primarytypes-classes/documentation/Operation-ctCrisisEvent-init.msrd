@@ -10,15 +10,6 @@ lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.
 @parameter
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Aid
 ""
-@parameter
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Alocation
-""
-@parameter
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.AisLocationConfirmed
-""
-@parameter
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.init.Acomment
-""
 @endParameters
 
 @description "

@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Mon Dec 12 19:10:29 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeAddNewCrisisEvent
+@description "sent with the intention to add a new crisis event.
+ "
+//preProtocol descriptions
+@preP
+"The actor's mode has been set to \msrcode{isInMain}."
+@endPreP
+//preFunctional descriptions
+//@preF
+//" "
+//@endPreF
+////postFunctional descriptions
+//@postF 
+//""
+//@endPostF
+//postProtocol descriptions
+@postP 
+"The actor's mode has been set to \msrcode{isInAddEvent}."
+@endPostP
+//example
+@example" "

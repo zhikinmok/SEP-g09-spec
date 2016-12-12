@@ -6,25 +6,25 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeCloseCrisisEvent
-@description "sent to close up the associated event.
+@description "sent to close up the associated crisis event for the current coordinator.
  "
 //preProtocol descriptions
 @preP
-"the coordinator has been associated to a crisis event."
+"The dispatch coordinator's mode has been set to \msrcode{isInMainWithCloseEventUnlocked}."
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+"it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time."
 @endPreF
-////postFunctional descriptions
-//@postF 
-//" "
-//@endPostF
+//postFunctional descriptions
+@postF 
+"The coordinator's attribute\msrcode{isFree} is set back to true and can thus be associated to another crisis event."
+@endPostF
 //postProtocol descriptions
 @postP 
-"The coordinator's attribute\msrcode{isFree} is set back to true and can thus be associated to another crisis event."
+"The dispatch coordinator is no longer associated to the current crisis event."
 @postP 
-"The operations\msrcode{oeMessage},\msrcode{oeRefreshMap},\msrcode{oeUpdateDispatchStatus} are deactivated."
+"The dispatch coordinator's mode has been set to \msrcode{isInStandBy}."
 @endPostP
 //example
 @example" "

@@ -47,133 +47,106 @@
         <path d="M484 158 L526 158 L526 176 L484 176 L484 158 Z" />
       </clipPath>
       <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
-        <path d="M463 560 L485 560 L485 602 L463 602 L463 560 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
-        <path d="M484 560 L526 560 L526 578 L484 578 L484 560 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath17">
-        <path d="M463 460 L485 460 L485 502 L463 502 L463 460 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
-        <path d="M484 460 L517 460 L517 478 L484 478 L484 460 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath19">
         <path d="M558 9 L750 9 L750 61 L558 61 L558 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
         <path d="M558 9 L753 9 L753 61 L558 61 L558 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath21">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath17">
         <path d="M648 59 L660 59 L660 946 L648 946 L648 59 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath22">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
         <path d="M643 301 L665 301 L665 343 L643 343 L643 301 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath23">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath19">
         <path d="M664 301 L706 301 L706 319 L664 319 L664 301 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath24">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
         <path d="M643 234 L665 234 L665 276 L643 276 L643 234 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath25">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath21">
         <path d="M664 234 L697 234 L697 252 L664 252 L664 234 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath26">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath22">
         <path d="M758 9 L936 9 L936 61 L758 61 L758 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath27">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath23">
         <path d="M758 9 L939 9 L939 61 L758 61 L758 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath28">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath24">
         <path d="M841 59 L853 59 L853 946 L841 946 L841 59 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29">
-        <path d="M836 669 L858 669 L858 698 L836 698 L836 669 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath25">
+        <path d="M836 460 L858 460 L858 502 L836 502 L836 460 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath30">
-        <path d="M857 669 L890 669 L890 687 L857 687 L857 669 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath26">
+        <path d="M857 460 L890 460 L890 478 L857 478 L857 460 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath31">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath27">
         <path d="M947 9 L1133 9 L1133 61 L947 61 L947 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath32">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath28">
         <path d="M947 9 L1136 9 L1136 61 L947 61 L947 9 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath33">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29">
         <path d="M1034 59 L1046 59 L1046 946 L1034 946 L1034 59 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath34">
-        <path d="M1029 732 L1051 732 L1051 774 L1029 774 L1029 732 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath30">
+        <path d="M1029 505 L1051 505 L1051 547 L1029 547 L1029 505 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath35">
-        <path d="M1050 732 L1083 732 L1083 750 L1050 750 L1050 732 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath31">
+        <path d="M1050 505 L1083 505 L1083 523 L1050 523 L1050 505 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath36">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath32">
         <path d="M-1 -1 L1143 -1 L1143 956 L-1 956 L-1 -1 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath37">
-        <path d="M166 71 L345 71 L345 89 L166 89 L166 71 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath33">
+        <path d="M181 71 L331 71 L331 89 L181 89 L181 71 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath38">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath34">
         <path d="M43 85 L55 85 L55 96 L43 96 L43 85 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath39">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath35">
         <path d="M135 384 L401 384 L401 405 L135 405 L135 384 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath40">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath36">
         <path d="M43 405 L55 405 L55 416 L43 416 L43 405 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath41">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath37">
         <path d="M46 337 L465 337 L465 355 L46 355 L46 337 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath42">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath38">
         <path d="M455 351 L467 351 L467 362 L455 362 L455 351 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath43">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath39">
         <path d="M48 139 L464 139 L464 157 L48 157 L48 139 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath44">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath40">
         <path d="M43 153 L55 153 L55 164 L43 164 L43 153 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath45">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath41">
         <path d="M134 282 L557 282 L557 300 L134 300 L134 282 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath46">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath42">
         <path d="M43 296 L55 296 L55 307 L43 307 L43 296 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath47">
-        <path d="M53 486 L465 486 L465 565 L53 565 L53 486 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath48">
-        <path d="M53 486 L464 486 L464 565 L53 565 L53 486 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath49">
-        <path d="M43 555 L55 555 L55 566 L43 566 L43 555 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath50">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath43">
         <path d="M205 215 L487 215 L487 233 L205 233 L205 215 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath51">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath44">
         <path d="M635 229 L647 229 L647 240 L635 240 L635 229 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath52">
-        <path d="M140 441 L372 441 L372 459 L140 459 L140 441 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath45">
+        <path d="M186 442 L700 442 L700 460 L186 460 L186 442 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath53">
-        <path d="M455 455 L467 455 L467 466 L455 466 L455 455 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath46">
+        <path d="M828 456 L840 456 L840 467 L828 467 L828 456 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath54">
-        <path d="M68 600 L840 600 L840 692 L68 692 L68 600 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath47">
+        <path d="M282 487 L796 487 L796 505 L282 505 L282 487 Z" />
       </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath55">
-        <path d="M828 665 L840 665 L840 676 L828 676 L828 665 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath56">
-        <path d="M282 713 L796 713 L796 731 L282 731 L282 713 Z" />
-      </clipPath>
-      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath57">
-        <path d="M1021 727 L1033 727 L1033 738 L1021 738 L1021 727 Z" />
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath48">
+        <path d="M1021 501 L1033 501 L1033 512 L1021 512 L1021 501 Z" />
       </clipPath>
     </defs>
     <g font-size="13" fill="rgb(238,201,142)" font-family="'Lucida Sans Unicode'" stroke-linejoin="round" stroke="rgb(238,201,142)" stroke-width="0" stroke-miterlimit="0">
@@ -208,96 +181,79 @@
       <rect x="464" y="159" clip-path="url(#clipPath13)" fill="rgb(39,76,114)" width="20" height="40" stroke="none" />
       <rect x="464" y="159" clip-path="url(#clipPath13)" fill="none" width="19" height="39" stroke="rgb(39,76,114)" />
       <text xml:space="preserve" x="485" y="174" clip-path="url(#clipPath14)" stroke="none">out02</text>
-      <rect x="464" y="561" clip-path="url(#clipPath15)" fill="rgb(39,76,114)" width="20" height="40" stroke="none" />
-      <rect x="464" y="561" clip-path="url(#clipPath15)" fill="none" width="19" height="39" stroke="rgb(39,76,114)" />
-      <text xml:space="preserve" x="485" y="576" clip-path="url(#clipPath16)" stroke="none">out05</text>
-      <rect x="464" y="461" clip-path="url(#clipPath17)" fill="rgb(194,239,255)" width="20" height="40" stroke="none" />
-      <rect x="464" y="461" clip-path="url(#clipPath17)" fill="none" width="19" height="39" stroke="rgb(194,239,255)" />
-      <text xml:space="preserve" x="485" y="476" clip-path="url(#clipPath18)" stroke="none">in03</text>
-      <rect x="559" y="10" clip-path="url(#clipPath19)" fill="rgb(255,245,181)" width="190" height="50" stroke="none" />
-      <rect x="559" y="10" clip-path="url(#clipPath19)" fill="none" width="189" height="49" />
-      <text xml:space="preserve" x="631" y="34" clip-path="url(#clipPath20)" stroke="none">Orange</text>
-      <text xml:space="preserve" x="561" y="50" clip-path="url(#clipPath20)" stroke="none">: actCommunicationCompany</text>
-      <line clip-path="url(#clipPath21)" fill="none" x1="653" x2="653" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
+      <rect x="559" y="10" clip-path="url(#clipPath15)" fill="rgb(255,245,181)" width="190" height="50" stroke="none" />
+      <rect x="559" y="10" clip-path="url(#clipPath15)" fill="none" width="189" height="49" />
+      <text xml:space="preserve" x="631" y="34" clip-path="url(#clipPath16)" stroke="none">Orange</text>
+      <text xml:space="preserve" x="561" y="50" clip-path="url(#clipPath16)" stroke="none">: actCommunicationCompany</text>
+      <line clip-path="url(#clipPath17)" fill="none" x1="653" x2="653" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
     </g>
     <g stroke-linecap="butt" font-size="13" fill="rgb(39,76,114)" font-family="'Lucida Sans Unicode'" stroke-dasharray="10,10" stroke="rgb(39,76,114)" stroke-width="1.1">
-      <rect x="644" y="302" clip-path="url(#clipPath22)" width="20" height="40" stroke="none" />
-      <rect x="644" y="302" clip-path="url(#clipPath22)" fill="none" width="19" stroke-dasharray="none" height="39" stroke-width="0.1" />
+      <rect x="644" y="302" clip-path="url(#clipPath18)" width="20" height="40" stroke="none" />
+      <rect x="644" y="302" clip-path="url(#clipPath18)" fill="none" width="19" stroke-dasharray="none" height="39" stroke-width="0.1" />
     </g>
     <g stroke-width="0.1" font-size="13" font-family="'Lucida Sans Unicode'" stroke-linecap="butt">
-      <text xml:space="preserve" x="665" y="317" clip-path="url(#clipPath23)" stroke="none">out03</text>
-      <rect x="644" y="235" clip-path="url(#clipPath24)" fill="rgb(194,239,255)" width="20" height="40" stroke="none" />
-      <rect x="644" y="235" clip-path="url(#clipPath24)" fill="none" width="19" height="39" stroke="rgb(194,239,255)" />
-      <text xml:space="preserve" x="665" y="250" clip-path="url(#clipPath25)" stroke="none">in01</text>
-      <rect x="759" y="10" clip-path="url(#clipPath26)" fill="rgb(255,245,181)" width="176" height="50" stroke="none" />
-      <rect x="759" y="10" clip-path="url(#clipPath26)" fill="none" width="175" height="49" />
-      <text xml:space="preserve" x="830" y="34" clip-path="url(#clipPath27)" stroke="none">Fabio</text>
-      <text xml:space="preserve" x="771" y="50" clip-path="url(#clipPath27)" stroke="none">: actFiremenCoordinator</text>
-      <line clip-path="url(#clipPath28)" fill="none" x1="846" x2="846" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
+      <text xml:space="preserve" x="665" y="317" clip-path="url(#clipPath19)" stroke="none">out03</text>
+      <rect x="644" y="235" clip-path="url(#clipPath20)" fill="rgb(194,239,255)" width="20" height="40" stroke="none" />
+      <rect x="644" y="235" clip-path="url(#clipPath20)" fill="none" width="19" height="39" stroke="rgb(194,239,255)" />
+      <text xml:space="preserve" x="665" y="250" clip-path="url(#clipPath21)" stroke="none">in01</text>
+      <rect x="759" y="10" clip-path="url(#clipPath22)" fill="rgb(255,245,181)" width="176" height="50" stroke="none" />
+      <rect x="759" y="10" clip-path="url(#clipPath22)" fill="none" width="175" height="49" />
+      <text xml:space="preserve" x="830" y="34" clip-path="url(#clipPath23)" stroke="none">Fabio</text>
+      <text xml:space="preserve" x="771" y="50" clip-path="url(#clipPath23)" stroke="none">: actFiremenCoordinator</text>
+      <line clip-path="url(#clipPath24)" fill="none" x1="846" x2="846" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
     </g>
     <g stroke-linecap="butt" font-size="13" fill="rgb(194,239,255)" font-family="'Lucida Sans Unicode'" stroke-dasharray="10,10" stroke="rgb(194,239,255)" stroke-width="1.1">
-      <rect x="837" y="670" clip-path="url(#clipPath29)" width="20" height="27" stroke="none" />
-      <rect x="837" y="670" clip-path="url(#clipPath29)" fill="none" width="19" stroke-dasharray="none" height="26" stroke-width="0.1" />
+      <rect x="837" y="461" clip-path="url(#clipPath25)" width="20" height="40" stroke="none" />
+      <rect x="837" y="461" clip-path="url(#clipPath25)" fill="none" width="19" stroke-dasharray="none" height="39" stroke-width="0.1" />
     </g>
     <g stroke-width="0.1" font-size="13" font-family="'Lucida Sans Unicode'" stroke-linecap="butt">
-      <text xml:space="preserve" x="858" y="685" clip-path="url(#clipPath30)" stroke="none">in04</text>
-      <rect x="948" y="10" clip-path="url(#clipPath31)" fill="rgb(255,245,181)" width="184" height="50" stroke="none" />
-      <rect x="948" y="10" clip-path="url(#clipPath31)" fill="none" width="183" height="49" />
-      <text xml:space="preserve" x="1028" y="34" clip-path="url(#clipPath32)" stroke="none">Ted</text>
-      <text xml:space="preserve" x="954" y="50" clip-path="url(#clipPath32)" stroke="none">: actTowServiceCoordinator</text>
-      <line clip-path="url(#clipPath33)" fill="none" x1="1039" x2="1039" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
+      <text xml:space="preserve" x="858" y="476" clip-path="url(#clipPath26)" stroke="none">in03</text>
+      <rect x="948" y="10" clip-path="url(#clipPath27)" fill="rgb(255,245,181)" width="184" height="50" stroke="none" />
+      <rect x="948" y="10" clip-path="url(#clipPath27)" fill="none" width="183" height="49" />
+      <text xml:space="preserve" x="1028" y="34" clip-path="url(#clipPath28)" stroke="none">Ted</text>
+      <text xml:space="preserve" x="954" y="50" clip-path="url(#clipPath28)" stroke="none">: actTowServiceCoordinator</text>
+      <line clip-path="url(#clipPath29)" fill="none" x1="1039" x2="1039" y1="60" y2="945" stroke-dasharray="10,10" stroke-width="1.1" />
     </g>
     <g stroke-linecap="butt" font-size="13" fill="rgb(194,239,255)" font-family="'Lucida Sans Unicode'" stroke-dasharray="10,10" stroke="rgb(194,239,255)" stroke-width="1.1">
-      <rect x="1030" y="733" clip-path="url(#clipPath34)" width="20" height="40" stroke="none" />
-      <rect x="1030" y="733" clip-path="url(#clipPath34)" fill="none" width="19" stroke-dasharray="none" height="39" stroke-width="0.1" />
+      <rect x="1030" y="506" clip-path="url(#clipPath30)" width="20" height="40" stroke="none" />
+      <rect x="1030" y="506" clip-path="url(#clipPath30)" fill="none" width="19" stroke-dasharray="none" height="39" stroke-width="0.1" />
     </g>
     <g stroke-width="0.1" font-size="13" font-family="'Lucida Sans Unicode'" stroke-linecap="butt">
-      <text xml:space="preserve" x="1051" y="748" clip-path="url(#clipPath35)" stroke="none">in05</text>
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="90" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <text x="167" y="87" clip-path="url(#clipPath37)" stroke="none" stroke-width="2.1" xml:space="preserve">oeInitialiseNewCrisisEvent()</text>
-      <line clip-path="url(#clipPath38)" fill="none" x1="52" x2="45" y1="87" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <line clip-path="url(#clipPath38)" fill="none" x1="45" x2="52" y1="90" y2="93" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="410" y2="410" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <text x="167" y="401" clip-path="url(#clipPath39)" stroke="none" stroke-width="2.1" xml:space="preserve">oeConfirmCrisisEventLocation()</text>
-      <line clip-path="url(#clipPath40)" fill="none" x1="52" x2="45" y1="407" y2="410" stroke="rgb(136,136,136)" stroke-width="2.1" />
-      <line clip-path="url(#clipPath40)" fill="none" x1="45" x2="52" y1="410" y2="413" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <text xml:space="preserve" x="1051" y="521" clip-path="url(#clipPath31)" stroke="none">in04</text>
+      <line clip-path="url(#clipPath32)" fill="none" x1="464" x2="45" y1="90" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <text x="182" y="87" clip-path="url(#clipPath33)" stroke="none" stroke-width="2.1" xml:space="preserve">oeAddNewCrisisEvent()</text>
+      <line clip-path="url(#clipPath34)" fill="none" x1="52" x2="45" y1="87" y2="90" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <line clip-path="url(#clipPath34)" fill="none" x1="45" x2="52" y1="90" y2="93" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="464" x2="45" y1="410" y2="410" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <text x="137" y="401" clip-path="url(#clipPath35)" stroke="none" stroke-width="2.1" xml:space="preserve">oeCreateNewCrisisEvent("AdtName=Wa...</text>
+      <line clip-path="url(#clipPath36)" fill="none" x1="52" x2="45" y1="407" y2="410" stroke="rgb(136,136,136)" stroke-width="2.1" />
+      <line clip-path="url(#clipPath36)" fill="none" x1="45" x2="52" y1="410" y2="413" stroke="rgb(136,136,136)" stroke-width="2.1" />
     </g>
     <g stroke-linecap="butt" font-size="13" fill="rgb(136,136,136)" font-family="'Lucida Sans Unicode'" stroke-dasharray="5,5" stroke="rgb(136,136,136)" stroke-width="2.1">
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="356" y2="356" />
-      <text x="47" y="353" clip-path="url(#clipPath41)" fill="black" stroke="none" xml:space="preserve">ieReceiveCrisisEventLocation(A string for the image with the pins)</text>
-      <line clip-path="url(#clipPath42)" fill="none" x1="457" x2="464" y1="359" y2="356" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath42)" fill="none" x1="464" x2="457" y1="356" y2="353" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="158" y2="158" stroke-dasharray="none" />
-      <text x="49" y="155" clip-path="url(#clipPath43)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeRequestCrisisEventLocation("AdtPhoneNumber=691 12 34 56")</text>
-      <line clip-path="url(#clipPath44)" fill="none" x1="52" x2="45" y1="155" y2="158" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath44)" fill="none" x1="45" x2="52" y1="158" y2="161" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="644" x2="45" y1="301" y2="301" stroke-dasharray="none" />
-      <text x="135" y="298" clip-path="url(#clipPath45)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeReceiveCrisisEventLocation("Latitude=75.08, Longitude=23.03")</text>
-      <line clip-path="url(#clipPath46)" fill="none" x1="52" x2="45" y1="298" y2="301" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath46)" fill="none" x1="45" x2="52" y1="301" y2="304" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="560" y2="560" stroke-dasharray="none" />
-      <text x="116" y="508" clip-path="url(#clipPath47)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeCreateNewCrisisEvent("AdtName=Walter","</text>
-      <text x="62" y="524" clip-path="url(#clipPath47)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">AenHumanType=Witness","AdtPhoneNumber=691123456","A </text>
-      <text x="65" y="540" clip-path="url(#clipPath47)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">string for the image with the pins","The Witness can't stay at </text>
-      <text x="153" y="556" clip-path="url(#clipPath48)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">the accident's location for long.")</text>
-      <line clip-path="url(#clipPath49)" fill="none" x1="52" x2="45" y1="557" y2="560" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath49)" fill="none" x1="45" x2="52" y1="560" y2="563" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="644" x2="45" y1="234" y2="234" />
-      <text x="206" y="231" clip-path="url(#clipPath50)" fill="black" stroke="none" xml:space="preserve">ieRequestCrisisEventLocation(691 12 34 56)</text>
-      <line clip-path="url(#clipPath51)" fill="none" x1="637" x2="644" y1="237" y2="234" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath51)" fill="none" x1="644" x2="637" y1="234" y2="231" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="460" y2="460" />
-      <text x="141" y="457" clip-path="url(#clipPath52)" fill="black" stroke="none" xml:space="preserve">ieConfirmCrisisEventLocation(Done)</text>
-      <line clip-path="url(#clipPath53)" fill="none" x1="457" x2="464" y1="463" y2="460" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath53)" fill="none" x1="464" x2="457" y1="460" y2="457" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="837" x2="45" y1="670" y2="670" />
-      <text x="198" y="653" clip-path="url(#clipPath54)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,You have received a new Crisis Event Dispatch Order!)</text>
-      <line clip-path="url(#clipPath55)" fill="none" x1="830" x2="837" y1="673" y2="670" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath55)" fill="none" x1="837" x2="830" y1="670" y2="667" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath36)" fill="none" x1="1030" x2="45" y1="732" y2="732" />
-      <text x="283" y="729" clip-path="url(#clipPath56)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,You have received a new Crisis Event Dispatch Order!)</text>
-      <line clip-path="url(#clipPath57)" fill="none" x1="1023" x2="1030" y1="735" y2="732" stroke-dasharray="none" />
-      <line clip-path="url(#clipPath57)" fill="none" x1="1030" x2="1023" y1="732" y2="729" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="464" x2="45" y1="356" y2="356" />
+      <text x="47" y="353" clip-path="url(#clipPath37)" fill="black" stroke="none" xml:space="preserve">ieReceiveCrisisEventLocation(A string for the image with the pins)</text>
+      <line clip-path="url(#clipPath38)" fill="none" x1="457" x2="464" y1="359" y2="356" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath38)" fill="none" x1="464" x2="457" y1="356" y2="353" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="464" x2="45" y1="158" y2="158" stroke-dasharray="none" />
+      <text x="49" y="155" clip-path="url(#clipPath39)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeRequestCrisisEventLocation("AdtPhoneNumber=691 12 34 56")</text>
+      <line clip-path="url(#clipPath40)" fill="none" x1="52" x2="45" y1="155" y2="158" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath40)" fill="none" x1="45" x2="52" y1="158" y2="161" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="644" x2="45" y1="301" y2="301" stroke-dasharray="none" />
+      <text x="135" y="298" clip-path="url(#clipPath41)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeReceiveCrisisEventLocation("Latitude=75.08, Longitude=23.03")</text>
+      <line clip-path="url(#clipPath42)" fill="none" x1="52" x2="45" y1="298" y2="301" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath42)" fill="none" x1="45" x2="52" y1="301" y2="304" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="644" x2="45" y1="234" y2="234" />
+      <text x="206" y="231" clip-path="url(#clipPath43)" fill="black" stroke="none" xml:space="preserve">ieRequestCrisisEventLocation(691 12 34 56)</text>
+      <line clip-path="url(#clipPath44)" fill="none" x1="637" x2="644" y1="237" y2="234" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath44)" fill="none" x1="644" x2="637" y1="234" y2="231" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="837" x2="45" y1="461" y2="461" />
+      <text x="187" y="458" clip-path="url(#clipPath45)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,You have received a new Crisis Event Dispatch Order!)</text>
+      <line clip-path="url(#clipPath46)" fill="none" x1="830" x2="837" y1="464" y2="461" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath46)" fill="none" x1="837" x2="830" y1="461" y2="458" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath32)" fill="none" x1="1030" x2="45" y1="506" y2="506" />
+      <text x="283" y="503" clip-path="url(#clipPath47)" fill="black" stroke="none" xml:space="preserve">ieReceiveNewCrisisEvent(1,You have received a new Crisis Event Dispatch Order!)</text>
+      <line clip-path="url(#clipPath48)" fill="none" x1="1023" x2="1030" y1="509" y2="506" stroke-dasharray="none" />
+      <line clip-path="url(#clipPath48)" fill="none" x1="1030" x2="1023" y1="506" y2="503" stroke-dasharray="none" />
     </g>
   </g>
 </svg>

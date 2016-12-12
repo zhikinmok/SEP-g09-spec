@@ -18,26 +18,26 @@ Environment Model {
 							
 			actor actCentralCoordinator role rnactCentralCoordinator cardinality [1..*] {
 				
+				attribute mode: etCentralCoordinatorMode
 				operation init():ptBoolean
 			
 				input interface inactCentralCoordinator {
 					operation ieReceiveCrisisEventLocation(AdtMapWithPin:dtMapWithPin) : ptBoolean
-					operation ieConfirmCrisisEventLocation(AdMessage:ptString) : ptBoolean
 					operation ieMessageCentralCoordinator(AdtComment:dtComment) : ptBoolean
 				}
 				
 				
 				output interface outactCentralCoordinator {
-					operation oeInitialiseNewCrisisEvent() : ptBoolean
+					operation oeAddNewCrisisEvent() : ptBoolean
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtAddress, AdtComment:dtComment) : ptBoolean
-					operation oeConfirmCrisisEventLocation() : ptBoolean
+					operation oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
 				}
 			}
 			
 			
 			actor actCommunicationCompany role rnactCommunicationCompany cardinality [1..*] {
 				
+				attribute mode: etComCompanyMode
 				operation init() : ptBoolean
 			
 				input interface inactCommunicationCompany {

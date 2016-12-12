@@ -7,31 +7,38 @@ The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
 
 	\begin{operationmodel}
 	\addheading{Operation}
-	\adddoublerow{oeCreateNewCrisisEvent}{sent to create an new crisis event and to alert the corresponding coordinators.}
+	\adddoublerow{oeCreateNewCrisisEvent}{sent to create a new crisis event and to alert the corresponding coordinators.}
 
 	\addrowheading{Parameters}
 	\addnumbereddoublerow{}{AdtName: ptString}{the name of the notifier that informed the Central Coordinator of the crisis event.} 
 	\addnumbereddoublerow{}{AetHumanType: etHumanType}{the notifier can be either a victim or a witness.} 
 	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{the phone number of the notifier.} 
-	\addnumbereddoublerow{}{AdtMapWithPin: dtAddress}{a map with pins showing the crisis event's location.} 
+	\addnumbereddoublerow{}{AdtMapWithPin: dtMapWithPin}{a map with pins showing the crisis event's location.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the crisis event is supposed to be initialised, but not deployed yet.}
+	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isInAddEvent}.}
 		
-	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{the attribute\msrcode{isLocationConfirmed} is set to true.}
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{An alert message is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
+	\addnumberedsinglerow{PostF}{An alert message 'You have received a new dispatch order!' is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
+	\addnumberedsinglerow{PostF}{The selected\msrcode{ctDispatchCoordinator}s' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\addnumberedsinglerow{PostF}{the attribute\msrcode{nextValueForAltertID} in ctState instance should be equal to the one @pre incremented by one.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
-	\addnumberedsinglerow{PostP}{The operation\msrcode{oeCreateNewCrisisEvent},\msrcode{oeConfirmCrisisEventLocation},\msrcode{oeRequestCrisisEventLocation} are deactivated.}
-	\addnumberedsinglerow{PostP}{The operation\msrcode{oeInitialiseNewCrisisEvent} is activated.}
-	\addnumberedsinglerow{PostP}{The operation\msrcode{oeGetCrisisEventInformation} for the selected DispatchCoordinators is activated.}
+	\addnumberedsinglerow{PostP}{A new crisis event is created and initialised with
+		a new crisis event ID which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
+		and a geographical position of the crisis event (which is used to illustrate the pin on AdtMapWithPin).}
+	\addnumberedsinglerow{PostP}{The new crisis event is then associated with
+		the \msrcode{actCentralCoordinator} who created this instance,\newline
+		two \msrcode{ctDispatchCoordinator}s selected by \msrcode{PostF 1} and their mode are set to \msrcode{hasBeenAssociatedToACrisisEvent},\newline
+		a \msrcode{ctHuman}which may be initialised, if it is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
+		a \msrcode{ctMapWithPin}which is initialised using the geographical position of the crisis event, illustrated as a pin, and a google map image that shows the 15km surroundings of 15km of that pin,\newline
+		\msrcode{ctComment}s which is initalised if the actor has given some additional comments to the crisis event.
+	}
+	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain}.}
 	\end{operationmodel}
 
 
