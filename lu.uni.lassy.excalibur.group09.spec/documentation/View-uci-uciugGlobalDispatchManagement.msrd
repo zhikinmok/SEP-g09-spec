@@ -8,4 +8,4 @@
 @instance Use-Case usecases.uciugGlobalDispatchManagement.uciugGlobalDispatchManagement 
 @description "Shows the ugGlobalDispatchManagement instance."
 @caption "ugGlobalDispatchManagement"
-@scale MaxWidth
+@scale 0.50

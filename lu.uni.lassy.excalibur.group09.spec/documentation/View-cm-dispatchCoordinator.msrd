@@ -9,5 +9,6 @@
 @level Local
 @sublevel Primary Class
 @number 18
-@description "View of the actors and operations regarding a dispatched coordinator."
-@caption "View of the actors and operations regarding a dispatched coordinator."
+@description "View of the actors and operations regarding a dispatched coordinator"
+@caption "View of the actors and operations regarding a dispatched coordinator"
+@scale MaxWidth

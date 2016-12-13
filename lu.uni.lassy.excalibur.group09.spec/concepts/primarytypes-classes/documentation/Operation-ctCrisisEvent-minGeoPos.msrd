@@ -1,0 +1,25 @@
+/*
+@author Kira
+@date Tue Dec 13 16:57:17 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.minGeoPos
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.minGeoPos.AGeoPos1
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctCrisisEvent.minGeoPos.AGeoPos2
+""
+@endParameters
+
+@description "used to compare which of the given two geographical position is nearer to the geographical position of the crisis event.
+ "
+//postFunctional descriptions
+@postF 
+"Returns a single geographical position which is the one nearer to the crisis event."
+@endPostF
+//example
+@example" "

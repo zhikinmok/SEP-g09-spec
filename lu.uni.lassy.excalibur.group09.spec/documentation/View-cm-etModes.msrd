@@ -9,5 +9,6 @@
 @level Local
 @sublevel Primary Datatype
 @number 16
-@description "View of all the different modes for the coordinators/actors."
-@caption "View of all the different modes for the coordinators/actors."
+@description "View of all the different modes for the coordinators/actors"
+@caption "View of all the different modes for the coordinators/actors"
+@scale MaxWidth

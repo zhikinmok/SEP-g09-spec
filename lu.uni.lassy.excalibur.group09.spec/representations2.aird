@@ -385,6 +385,7 @@
   <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assactCentralCoordinatorctMapWithPin.msrd</semanticResources>
   <semanticResources>documentation/View-cm-mapWithPinInit.msrd</semanticResources>
   <semanticResources>documentation/View-cm-dispatchCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisisEvent-minGeoPos.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jBsfkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

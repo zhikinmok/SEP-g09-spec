@@ -9,7 +9,7 @@
 @level Local
 @sublevel Primary Class
 @number 12
-@description "View of all the associations."
-@caption ""
+@description "Main view of the concept model"
+@caption "Main view of the concept model"
 @scale MaxHeight
 @orientation Landscape

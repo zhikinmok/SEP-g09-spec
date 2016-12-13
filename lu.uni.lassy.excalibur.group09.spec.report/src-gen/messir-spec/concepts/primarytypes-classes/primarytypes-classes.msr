@@ -49,6 +49,8 @@ Concept Model {
 							AgeoPos:dtGeoPos
 			): ptBoolean
 			
+			operation minGeoPos(AGeoPos1:dtGeoPos, AGeoPos2:dtGeoPos) : ptBoolean
+			
 		}
 		
 		class ctComment role rnComment cardinality [0..*] {

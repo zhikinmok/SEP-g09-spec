@@ -9,5 +9,6 @@
 @level Local
 @sublevel Primary Datatype
 @number 17
-@description "Concept model of the 'initialisation' of a mapWithPin."
-@caption "Concept model of the 'initialisation' of a mapWithPin."
+@description "View of 'mapWithPin' and its relationships"
+@caption "View of 'mapWithPin' and its relationships"
+@scale MaxWidth
