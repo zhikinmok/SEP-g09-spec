@@ -5,4 +5,4 @@
 
 
 @@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assactComCompanyctMapWithPin
-@description ""
+@description "Association of a communication company to a map with pin."

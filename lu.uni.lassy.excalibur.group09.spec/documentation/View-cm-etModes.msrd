@@ -1,0 +1,13 @@
+/*
+@author Kira
+@date Tue Dec 13 12:20:41 CET 2016
+*/
+
+
+@@view cm-etModes
+@model Concept 
+@level Local
+@sublevel Primary Datatype
+@number 16
+@description "View of all the different modes for the coordinators/actors."
+@caption "View of all the different modes for the coordinators/actors."

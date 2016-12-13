@@ -15,12 +15,14 @@ The \msrcode{oeAddRequestHelp} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{The firemen coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
 	\addnumberedsinglerow{PreP}{The firemen coordinator's modeFM has been set to \msrcode{isNotInRequestHelp}.}
 		
 
 
 	\addrowheading{Post-Condition (protocol)}
 	\addnumberedsinglerow{PostP}{The firemen coordinator's modeFM is set to \msrcode{isInRequestHelp}. }
+	\addnumberedsinglerow{PostP}{The firemen coordinator's mode is set to \msrcode{isNull}. }
 	\end{operationmodel}
 
 

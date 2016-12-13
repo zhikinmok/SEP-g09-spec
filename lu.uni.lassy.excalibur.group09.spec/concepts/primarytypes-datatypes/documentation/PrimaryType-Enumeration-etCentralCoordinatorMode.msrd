@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etCentralCoordinatorMode
-@description ""
+@description "Modes of the Central Coordinator to identify what operations he/she can do at what moment."
 @operation
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etCentralCoordinatorMode.is
 ""

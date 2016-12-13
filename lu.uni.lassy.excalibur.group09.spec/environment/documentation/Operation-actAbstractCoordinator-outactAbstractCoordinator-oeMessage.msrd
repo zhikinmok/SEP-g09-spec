@@ -16,7 +16,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
  "
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
+"The dispatch coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
 @endPreP
 //preFunctional descriptions
 @preF

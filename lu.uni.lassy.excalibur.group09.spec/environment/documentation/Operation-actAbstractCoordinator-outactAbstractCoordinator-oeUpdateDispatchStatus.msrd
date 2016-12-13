@@ -27,7 +27,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @endPostF
 //postProtocol descriptions
 @postP 
-"when the attribute\msrcode{status} of the coordinator is set to 'Arrived', the mode is set to \msrcode{isInMainWithCloseEventUnlocked}."
+"when the attribute\msrcode{status} of the coordinator is set to 'Arrived', the actor's mode is set to \msrcode{isInMainWithCloseEventUnlocked}."
 @endPostP
 //example
 @example" "

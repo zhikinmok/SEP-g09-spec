@@ -10,6 +10,8 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
  "
 //preProtocol descriptions
 @preP
+"The firemen coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
+@preP
 "The firemen coordinator's modeFM has been set to \msrcode{isNotInRequestHelp}."
 @endPreP
 ////preFunctional descriptions
@@ -23,6 +25,8 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 ////postProtocol descriptions
 @postP 
 "The firemen coordinator's modeFM is set to \msrcode{isInRequestHelp}. "
+@postP 
+"The firemen coordinator's mode is set to \msrcode{isNull}. "
 @endPostP
 //example
 @example" "

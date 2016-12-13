@@ -18,7 +18,7 @@
 \contentsline {lstlisting}{\numberline {B.18}Messir Spec. file primarytypes-classes-ctMapWithPin-addPinToMap.msr.}{57}{lstlisting.B.18}
 \contentsline {lstlisting}{\numberline {B.19}Messir Spec. file primarytypes-classes-ctMapWithPin-getAllPins.msr.}{58}{lstlisting.B.19}
 \contentsline {lstlisting}{\numberline {B.20}Messir Spec. file primarytypes-classes-ctMapWithPin-getMap.msr.}{58}{lstlisting.B.20}
-\contentsline {lstlisting}{\numberline {B.21}Messir Spec. file primarytypes-classes-ctMapWithPin-removeAllPinsFromMap.msr.}{58}{lstlisting.B.21}
+\contentsline {lstlisting}{\numberline {B.21}Messir Spec. file primarytypes-classes-ctMapWithPin-removeAllPinsFromMap.msr.}{59}{lstlisting.B.21}
 \contentsline {lstlisting}{\numberline {B.22}Messir Spec. file primarytypes-classes.msr.}{59}{lstlisting.B.22}
 \contentsline {lstlisting}{\numberline {B.23}Messir Spec. file primarytypes-datatypes.msr.}{60}{lstlisting.B.23}
 \contentsline {lstlisting}{\numberline {B.24}Messir Spec. file secondarytypes-associations.msr.}{61}{lstlisting.B.24}

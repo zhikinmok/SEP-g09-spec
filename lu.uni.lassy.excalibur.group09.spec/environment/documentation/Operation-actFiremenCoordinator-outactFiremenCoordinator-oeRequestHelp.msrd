@@ -18,7 +18,9 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 @description "sent to assign additional dispatch coordinators to the associated crisis event."
 //preProtocol descriptions
 @preP
-"The firemen coordinator's mode has been set to \msrcode{isInRequestHelp}."
+"The firemen coordinator's mode has been set to \msrcode{isNull}."
+@preP
+"The firemen coordinator's modeFM has been set to \msrcode{isInRequestHelp}."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -38,7 +40,7 @@ that are geographically the nearest of the crisis event's location."
 @endPostF
 //postProtocol descriptions
 @postP
-"The actor's mode is set to \msrcode{isInMain}."
+"The actor's mode is set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
 @postP
 "the selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}."
 @postP

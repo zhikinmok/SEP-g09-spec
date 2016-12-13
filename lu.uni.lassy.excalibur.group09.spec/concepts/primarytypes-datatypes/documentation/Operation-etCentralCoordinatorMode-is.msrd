@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etCentralCoordinatorMode.is
-@description "
- "
+@description "used to determine which strings are considered as modes of the Central Coordinator."
 //postFunctional descriptions
 @postF 
 " "

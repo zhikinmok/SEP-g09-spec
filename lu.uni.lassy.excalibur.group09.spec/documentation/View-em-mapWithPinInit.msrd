@@ -1,0 +1,12 @@
+/*
+@author Kira
+@date Tue Dec 13 12:40:48 CET 2016
+*/
+
+
+@@view em-mapWithPinInit
+@model Environment 
+@level Local
+@number 17
+@description ""
+@caption ""

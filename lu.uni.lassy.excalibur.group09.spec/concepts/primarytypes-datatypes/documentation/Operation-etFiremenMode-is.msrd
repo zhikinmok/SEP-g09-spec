@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes.etFiremenMode.is
-@description "
- "
+@description "used to determine which strings are considered as second modes of the Firemen Coordinator."
 //postFunctional descriptions
 @postF 
 " "

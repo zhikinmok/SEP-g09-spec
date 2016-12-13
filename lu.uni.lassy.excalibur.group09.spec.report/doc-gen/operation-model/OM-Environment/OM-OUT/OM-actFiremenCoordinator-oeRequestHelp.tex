@@ -17,7 +17,8 @@ The \msrcode{oeRequestHelp} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The firemen coordinator's mode has been set to \msrcode{isInRequestHelp}.}
+	\addnumberedsinglerow{PreP}{The firemen coordinator's mode has been set to \msrcode{isNull}.}
+	\addnumberedsinglerow{PreP}{The firemen coordinator's modeFM has been set to \msrcode{isInRequestHelp}.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched (or firemen) coordinator can only be associated to a single crisis event at the same time.}
@@ -32,7 +33,7 @@ The \msrcode{oeRequestHelp} operation has the following properties:
 	\addnumberedsinglerow{PostF}{The selected dispatch coordinator(s)' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain}.}
+	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
 	\addnumberedsinglerow{PostP}{the selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
 	\addnumberedsinglerow{PostP}{if a firemen coordinator has been selected, his modeFM is set to \msrcode{isNotInRequestHelp}.}
 	\end{operationmodel}

@@ -17,7 +17,7 @@ The \msrcode{oeMessage} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has been set to \msrcode{isInMain}.}
+	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time.}
