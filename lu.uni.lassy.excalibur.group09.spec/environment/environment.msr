@@ -31,6 +31,7 @@ Environment Model {
 					operation oeAddNewCrisisEvent() : ptBoolean
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
 					operation oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
+					operation oeMovePinOnMap (AdtGeoPos:dtGeoPos) : ptBoolean				
 				}
 			}
 			
@@ -78,6 +79,7 @@ Environment Model {
 				}
 				
 				output interface outactFiremenCoordinator {
+					operation oeAddRequestHelp() : ptBoolean
 					operation oeRequestHelp(AetTeamType: etTeamType, ARequestedNumber:ptInteger) : ptBoolean
 				}
 			}
@@ -85,6 +87,7 @@ Environment Model {
 			
 			actor actPoliceCoordinator role rnPoliceCoordinator cardinality [1..*] extends actAbstractDispatchCoordinator {
 				
+				attribute modeFM: etFiremenMode
 				operation init() : ptBoolean
 			
 				input interface inactPoliceCoordinator {

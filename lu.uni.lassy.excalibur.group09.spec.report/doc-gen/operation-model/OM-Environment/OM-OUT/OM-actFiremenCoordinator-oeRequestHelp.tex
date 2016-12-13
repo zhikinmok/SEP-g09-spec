@@ -7,7 +7,7 @@ The \msrcode{oeRequestHelp} operation has the following properties:
 
 	\begin{operationmodel}
 	\addheading{Operation}
-	\adddoublerow{oeRequestHelp}{sent to request help from the corresponding team type.}
+	\adddoublerow{oeRequestHelp}{sent to assign additional dispatch coordinators to the associated crisis event.}
 
 	\addrowheading{Parameters}
 	\addnumbereddoublerow{}{AetTeamType: etTeamType}{} 
@@ -17,16 +17,24 @@ The \msrcode{oeRequestHelp} operation has the following properties:
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{the coordinator has been associated to a crisis event.}
+	\addnumberedsinglerow{PreP}{The firemen coordinator's mode has been set to \msrcode{isInRequestHelp}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time.}
+	\addnumberedsinglerow{PreF}{it is supposed that a dispatched (or firemen) coordinator can only be associated to a single crisis event at the same time.}
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{An alert message is sent to the nearest and free requested coordinator type.}
+	\addnumberedsinglerow{PostF}{An alert message 'You have received a new dispatch order!' is sent to\newline
+		one or more free FiremenCoordinator(s) and/or\newline
+		one or more free TowServiceCoordinator(s) and/or\newline
+		one or more free PoliceCoordinator(s)\newline
+	that are geographically the nearest of the crisis event's location.}
+	\addnumberedsinglerow{PostF}{The new crisis event is then associated to the selected dispatch coordinator(s).}
+	\addnumberedsinglerow{PostF}{The selected dispatch coordinator(s)' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain}.}
+	\addnumberedsinglerow{PostP}{the selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
+	\addnumberedsinglerow{PostP}{if a firemen coordinator has been selected, his modeFM is set to \msrcode{isNotInRequestHelp}.}
 	\end{operationmodel}
 
 

@@ -15,11 +15,11 @@ lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.a
 ""
 @endParameters
 
-@description "
+@description "used to add a pin to a map.
  "
 //postFunctional descriptions
 @postF 
-" "
+"convert the given geographical position into a pin on a map."
 @endPostF
 //example
 @example" "

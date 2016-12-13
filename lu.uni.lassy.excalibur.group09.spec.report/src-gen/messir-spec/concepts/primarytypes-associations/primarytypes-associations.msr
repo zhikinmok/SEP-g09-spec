@@ -27,7 +27,11 @@ Concept Model {
 
 		association assDispatchedCoordinatortctMapWithPin
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
-			ctMapWithPin(rndtMapWithPin)[1..1]			
+			ctMapWithPin(rndtMapWithPin)[1..1]		
+				
+			association assactComCompanyctMapWithPin
+		actCommunicationCompany(rnactCommunicationCompany)[1..1] 
+		ctMapWithPin(rndtMapWithPin)[1..*]		
 			
 		association assClassActorDispatchCoordinator
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 

@@ -42,7 +42,11 @@ package usecases.uciugGlobalDispatchManagement {
 					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=Arrived") {
 						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Fabio			
 					}
-	
+					
+					Fabio executed instanceof subfunction oeAddRequestHelp() {
+			
+					}
+
 					Fabio executed instanceof subfunction oeRequestHelp("AenTeamType=Police", "RequestedNumber=1") {
 						ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Polo
 					}

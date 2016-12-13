@@ -21,24 +21,28 @@ The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
 	\addrowheading{Pre-Condition (protocol)}
 	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isInAddEvent}.}
 		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{The map with pin created by the communication company and maybe modified by the central coordinator only has a single pin. }
 
 	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{A new crisis event is created and initialised with
+		a new crisis event ID which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
+		and the geographical position of the crisis event which is extracted from the map with pin created by the communication company and maybe modified by the central coordinator.}
 	\addnumberedsinglerow{PostF}{An alert message 'You have received a new dispatch order!' is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
-	\addnumberedsinglerow{PostF}{The selected\msrcode{ctDispatchCoordinator}s' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
+	\addnumberedsinglerow{PostF}{The new crisis event is then associated to
+		the central coordinator who created this instance,\newline
+		the two selected dispatch coordinators,\newline
+		the map with pin created by the communication company and maybe modified by the central coordinator.,\newline
+		an human who may be initialised, if he/she is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
+		comments which is/are initalised if the central coordinator has given some additional comments to the crisis event.
+	}
+	\addnumberedsinglerow{PostF}{The two selected dispatch coordinators' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
 	\addnumberedsinglerow{PostF}{the attribute\msrcode{nextValueForAltertID} in ctState instance should be equal to the one @pre incremented by one.}
 
 	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{A new crisis event is created and initialised with
-		a new crisis event ID which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
-		and a geographical position of the crisis event (which is used to illustrate the pin on AdtMapWithPin).}
-	\addnumberedsinglerow{PostP}{The new crisis event is then associated with
-		the \msrcode{actCentralCoordinator} who created this instance,\newline
-		two \msrcode{ctDispatchCoordinator}s selected by \msrcode{PostF 1} and their mode are set to \msrcode{hasBeenAssociatedToACrisisEvent},\newline
-		a \msrcode{ctHuman}which may be initialised, if it is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
-		a \msrcode{ctMapWithPin}which is initialised using the geographical position of the crisis event, illustrated as a pin, and a google map image that shows the 15km surroundings of 15km of that pin,\newline
-		\msrcode{ctComment}s which is initalised if the actor has given some additional comments to the crisis event.
-	}
 	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain}.}
+	\addnumberedsinglerow{PostP}{the two selected dispatch coordinators' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
+	\addnumberedsinglerow{PostP}{the selected firemen coordinator's modeFM is set to \msrcode{isNotInRequestHelp}.}
 	\end{operationmodel}
 
 

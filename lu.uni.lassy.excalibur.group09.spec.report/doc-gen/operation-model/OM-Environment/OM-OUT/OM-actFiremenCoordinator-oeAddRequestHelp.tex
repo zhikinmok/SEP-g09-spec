@@ -1,0 +1,36 @@
+\subsection{Operation Model for oeAddRequestHelp}
+
+\label{OM-oeAddRequestHelp}
+
+
+The \msrcode{oeAddRequestHelp} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeAddRequestHelp}{sent with the intention to request help from additional dispatch coordinators. 
+	 }
+
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{The firemen coordinator's modeFM has been set to \msrcode{isNotInRequestHelp}.}
+		
+
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{The firemen coordinator's modeFM is set to \msrcode{isInRequestHelp}. }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

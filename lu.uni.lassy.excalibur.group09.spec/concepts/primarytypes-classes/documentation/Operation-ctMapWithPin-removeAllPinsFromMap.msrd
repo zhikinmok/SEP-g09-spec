@@ -1,0 +1,25 @@
+/*
+@author Kira
+@date Tue Dec 13 01:09:21 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.removeAllPinsFromMap
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.removeAllPinsFromMap.AGeoPos
+""
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.removeAllPinsFromMap.AdtMapWithPin
+""
+@endParameters
+
+@description "used to remove all pins on the map. (usually used to afterwards regenerate new pins, so that the map stays clean)
+ "
+//postFunctional descriptions
+@postF 
+"removes all pins currently on the map."
+@endPostF
+//example
+@example" "

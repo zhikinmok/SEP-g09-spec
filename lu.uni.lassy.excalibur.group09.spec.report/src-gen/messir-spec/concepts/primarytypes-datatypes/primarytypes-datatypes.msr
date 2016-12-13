@@ -44,14 +44,23 @@ Concept Model {
 		   }
 		   
 		   enum etDispatchCoordinatorMode {
-		   	constants["isAssociatedToACrisisEvent", "isInStandBy"]
+		   	constants["hasBeenAssociatedToACrisisEvent", "isInStandBy", "isInMain", "isInMainWithCloseEventUnlocked"]
 		   	operation is():ptBoolean
+		   }
+		 
+		   enum etFiremenMode {
+		   	
+		   	constants["isInRequestHelp", "isNotInRequestHelp"]
+		   	operation is():ptBoolean
+		   	
 		   }
 		   
 		   enum etComCompanyMode {
 		   	constants["isInRequest", "isInStandBy"]
 		   	operation is():ptBoolean
 		   }
+		   
+		   
 	}
 }
 }

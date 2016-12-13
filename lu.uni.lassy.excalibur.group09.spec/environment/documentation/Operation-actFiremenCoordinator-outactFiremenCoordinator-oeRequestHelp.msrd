@@ -15,22 +15,34 @@ lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFire
 ""
 @endParameters
 
-@description "sent to request help from the corresponding team type."
+@description "sent to assign additional dispatch coordinators to the associated crisis event."
 //preProtocol descriptions
 @preP
-"the coordinator has been associated to a crisis event."
+"The firemen coordinator's mode has been set to \msrcode{isInRequestHelp}."
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that a dispatched coordinator can only be associated to one crisis event at the same time."
+"it is supposed that a dispatched (or firemen) coordinator can only be associated to a single crisis event at the same time."
 @endPreF
 //postFunctional descriptions
 @postF 
-"An alert message is sent to the nearest and free requested coordinator type."
+"An alert message 'You have received a new dispatch order!' is sent to\newline
+	one or more free FiremenCoordinator(s) and/or\newline
+	one or more free TowServiceCoordinator(s) and/or\newline
+	one or more free PoliceCoordinator(s)\newline
+that are geographically the nearest of the crisis event's location."
+@postF
+"The new crisis event is then associated to the selected dispatch coordinator(s)."
+@postF 
+"The selected dispatch coordinator(s)' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
 @endPostF
 //postProtocol descriptions
-@postP 
-"The selected\msrcode{ctDispatchCoordinator}'s attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event."
+@postP
+"The actor's mode is set to \msrcode{isInMain}."
+@postP
+"the selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}."
+@postP
+"if a firemen coordinator has been selected, his modeFM is set to \msrcode{isNotInRequestHelp}."
 @endPostP
 //example
 @example" "

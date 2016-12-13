@@ -1,0 +1,28 @@
+/*
+@author Kira
+@date Tue Dec 13 01:48:48 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actFiremenCoordinator.outactFiremenCoordinator.oeAddRequestHelp
+@description "sent with the intention to request help from additional dispatch coordinators. 
+ "
+//preProtocol descriptions
+@preP
+"The firemen coordinator's modeFM has been set to \msrcode{isNotInRequestHelp}."
+@endPreP
+////preFunctional descriptions
+//@preF
+//" "
+//@endPreF
+////postFunctional descriptions
+//@postF 
+//" "
+//@endPostF
+////postProtocol descriptions
+@postP 
+"The firemen coordinator's modeFM is set to \msrcode{isInRequestHelp}. "
+@endPostP
+//example
+@example" "

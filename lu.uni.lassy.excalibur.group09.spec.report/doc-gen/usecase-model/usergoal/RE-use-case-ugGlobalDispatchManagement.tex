@@ -32,6 +32,7 @@ The goal is to have the requested coordinators arrive on the crisis event's loca
 \addnumberedsinglerow{}{\msrucname{oeMessage [0..*]}}
 \addnumberedsinglerow{}{\msrucname{oeRequestHelp [0..*]}}
 \addnumberedsinglerow{}{\msrucname{oeCloseCrisisEvent [2..*]}}
+\addnumberedsinglerow{}{\msrucname{oeAddRequestHelp [0..*]}}
 
 \addrowheading{Protocol condition(s)}
 \addnumberedsinglerow{}{
@@ -52,6 +53,7 @@ modifications have been made to the system and its environment concerning a cris
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeRefreshMap} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeMessage} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeAddRequestHelp} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actFiremenCoordinator} executes the \msrucname{oeRequestHelp} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeGetCrisisEventInformation} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeUpdateDispatchStatus} use case}
@@ -59,13 +61,10 @@ modifications have been made to the system and its environment concerning a cris
 \addalphanumberedsinglerow{}{the actor \msrcode{actTowServiceCoordinator} executes the \msrucname{oeCloseCrisisEvent} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actPoliceCoordinator} executes the \msrucname{oeCloseCrisisEvent} use case}
 \addrowheading{Steps Ordering Constraints}
-\addnumberedsinglerow{}{if step (b) then previously step (a)}
-\addnumberedsinglerow{}{if step (d) then previously step (c)}
+\addnumberedsinglerow{}{if step (b),(d),(j) then previously step (a),(c),(i) respectively}
+\addnumberedsinglerow{}{if step (k),(l),(m) then previously step (b),(d),(j) at least two times respectively}
 \addnumberedsinglerow{}{step (h) can only be executed if step (g) has at least been executed once previously}
 \addnumberedsinglerow{}{if step (i) then previously step (h)}
-\addnumberedsinglerow{}{if step (j) then previously step (b) at least two times}
-\addnumberedsinglerow{}{if step (k) then previously step (d) at least two times}
-\addnumberedsinglerow{}{if step (l) then previously step (i) at least two times}
 
 \addrowheading{Additional Information}
 \addsinglerow{

@@ -46,14 +46,19 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				reuse oeRequestCrisisEventLocation[0..*]
 				reuse oeReceiveCrisisEventLocation[0..*]
 				reuse oeCreateNewCrisisEvent[1..*]
+				reuse oeMovePinOnMap[0..*]
 				
 				step a: actCentralCoordinator executes oeAddNewCrisisEvent
 				step b: actCentralCoordinator executes oeRequestCrisisEventLocation
 				step c: actCommunicationCompany executes oeReceiveCrisisEventLocation
-				step d: actCentralCoordinator executes oeCreateNewCrisisEvent
+				step d: actCentralCoordinator executes oeMovePinOnMap
+				step e: actCentralCoordinator executes oeCreateNewCrisisEvent
 				
 				ordering constraint "step (a) must be executed first"
-				ordering constraint "if step (c) then previously step (b)"				
+				ordering constraint "if step (c) then previously step (b)"
+				ordering constraint "if step (d) then previously step (c)"	
+				ordering constraint "step (e) executed as last"
+				ordering constraint "step (a), (b), (c), (e) must be executed at least once"			
 		}
 		
 		use case system usergoal ugGlobalDispatchManagement() {
@@ -68,6 +73,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				reuse oeMessage[0..*]
 				reuse oeRequestHelp[0..*]
 				reuse oeCloseCrisisEvent[2..*]
+				reuse oeAddRequestHelp[0..*]
 	
 				step a: actFiremenCoordinator executes oeGetCrisisEventInformation
 				step b: actFiremenCoordinator executes oeUpdateDispatchStatus
@@ -75,20 +81,19 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				step d: actTowServiceCoordinator executes oeUpdateDispatchStatus
 				step e: actTowServiceCoordinator executes oeRefreshMap
 				step f: actTowServiceCoordinator executes oeMessage
-				step g: actFiremenCoordinator executes oeRequestHelp
-				step h: actPoliceCoordinator executes oeGetCrisisEventInformation
-				step i: actPoliceCoordinator executes oeUpdateDispatchStatus
-				step j: actFiremenCoordinator executes oeCloseCrisisEvent
-				step k: actTowServiceCoordinator executes oeCloseCrisisEvent
-				step l: actPoliceCoordinator executes oeCloseCrisisEvent
+				step g: actFiremenCoordinator executes oeAddRequestHelp
+				step h: actFiremenCoordinator executes oeRequestHelp
+				step i: actPoliceCoordinator executes oeGetCrisisEventInformation
+				step j: actPoliceCoordinator executes oeUpdateDispatchStatus
+				step k: actFiremenCoordinator executes oeCloseCrisisEvent
+				step l: actTowServiceCoordinator executes oeCloseCrisisEvent
+				step m: actPoliceCoordinator executes oeCloseCrisisEvent
 				
-				ordering constraint "if step (b) then previously step (a)"
-				ordering constraint "if step (d) then previously step (c)"
+				ordering constraint "if step (b),(d),(j) then previously step (a),(c),(i) respectively"
+				ordering constraint "if step (k),(l),(m) then previously step (b),(d),(j) at least two times respectively"	
 				ordering constraint "step (h) can only be executed if step (g) has at least been executed once previously"
 				ordering constraint "if step (i) then previously step (h)"
-				ordering constraint "if step (j) then previously step (b) at least two times"	
-				ordering constraint "if step (k) then previously step (d) at least two times"
-				ordering constraint "if step (l) then previously step (i) at least two times"		
+	
 		}
 		
 		
@@ -111,6 +116,13 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			returned messages{
 				ieReceiveCrisisEventLocation(AdtMapWithPin) returned to actCentralCoordinator
 			}	
+		}
+		
+		use case system subfunction oeMovePinOnMap() {
+			actor actCentralCoordinator[primary,active]
+			returned messages{
+				ieReceiveCrisisEventLocation(AdtMapWithPin) returned to actCentralCoordinator
+			}
 		}
 		
 		
@@ -154,6 +166,9 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 			}
 		}
 		
+		use case system subfunction oeAddRequestHelp() {
+			actor actFiremenCoordinator[primary,active]
+		}
 		
 		use case system subfunction oeRequestHelp(AetTeamType: etTeamType, RequestedNumber:ptInteger) {
 			actor actFiremenCoordinator[primary,active]

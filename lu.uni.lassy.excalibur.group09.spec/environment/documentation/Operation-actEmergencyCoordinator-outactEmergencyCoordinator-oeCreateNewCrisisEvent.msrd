@@ -55,6 +55,8 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 "The actor's mode is set to \msrcode{isInMain}."
 @postP
 "the two selected dispatch coordinators' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}."
+@postP
+"the selected firemen coordinator's modeFM is set to \msrcode{isNotInRequestHelp}."
 @endPostP
 //example
 @example" "

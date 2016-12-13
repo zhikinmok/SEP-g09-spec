@@ -1,0 +1,43 @@
+\subsection{Operation Model for oeMovePinOnMap}
+
+\label{OM-oeMovePinOnMap}
+
+
+The \msrcode{oeMovePinOnMap} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeMovePinOnMap}{sent to move the pin on the map (adjustments).
+	 }
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isAddEvent}.}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{It is supposed that a map with pin has already been initialised by the communication company.}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{The returned map has the previous pin replaced by a new one using the geographical position given by the actor.}
+	\addnumberedsinglerow{PostF}{The returned map only has a single pin on it.}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

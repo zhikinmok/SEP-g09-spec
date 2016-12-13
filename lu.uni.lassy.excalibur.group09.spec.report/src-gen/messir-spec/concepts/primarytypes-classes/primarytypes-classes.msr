@@ -80,7 +80,9 @@ Concept Model {
 			operation init( AmapWithPin:dtMapWithPin
 			) : ptBoolean
 			
-			operation removePinFromMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
+			operation getAllPins() : ptBoolean
+			operation getMap() : ptBoolean
+			operation removeAllPinsFromMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
 			operation addPinToMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
 		}
 

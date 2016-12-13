@@ -1,0 +1,36 @@
+/*
+@author Kira
+@date Tue Dec 13 00:43:30 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMovePinOnMap
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeMovePinOnMap.AdtGeoPos
+""
+@endParameters
+
+@description "sent to move the pin on the map (adjustments).
+ "
+//preProtocol descriptions
+@preP
+"The actor's mode has been set to \msrcode{isAddEvent}."
+@endPreP
+//preFunctional descriptions
+@preF
+"It is supposed that a map with pin has already been initialised by the communication company."
+@endPreF
+//postFunctional descriptions
+@postF 
+"The returned map has the previous pin replaced by a new one using the geographical position given by the actor."
+@postF 
+"The returned map only has a single pin on it."
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

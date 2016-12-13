@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Tue Dec 13 01:09:51 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.getMap
+@description "used to get the (updated) map with pin(s).
+ "
+//postFunctional descriptions
+@postF 
+"Returns a map with pin with a surrounding area of 20km around the pins after having updated the map and the pins using its own inner operations."
+@endPostF
+//example
+@example" "

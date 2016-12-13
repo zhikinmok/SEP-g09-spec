@@ -30,6 +30,7 @@ The goal is to manage the creation of a new crisis event including all the neces
 \addnumberedsinglerow{}{\msrucname{oeRequestCrisisEventLocation [0..*]}}
 \addnumberedsinglerow{}{\msrucname{oeReceiveCrisisEventLocation [0..*]}}
 \addnumberedsinglerow{}{\msrucname{oeCreateNewCrisisEvent [1..*]}}
+\addnumberedsinglerow{}{\msrucname{oeMovePinOnMap [0..*]}}
 
 \addrowheading{Protocol condition(s)}
 \addnumberedsinglerow{}{
@@ -47,10 +48,14 @@ a dispatch order including the crisis event's information such as the id, map wi
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeAddNewCrisisEvent} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeRequestCrisisEventLocation} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actCommunicationCompany} executes the \msrucname{oeReceiveCrisisEventLocation} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeMovePinOnMap} use case}
 \addalphanumberedsinglerow{}{the actor \msrcode{actCentralCoordinator} executes the \msrucname{oeCreateNewCrisisEvent} use case}
 \addrowheading{Steps Ordering Constraints}
 \addnumberedsinglerow{}{step (a) must be executed first}
 \addnumberedsinglerow{}{if step (c) then previously step (b)}
+\addnumberedsinglerow{}{if step (d) then previously step (c)}
+\addnumberedsinglerow{}{step (e) executed as last}
+\addnumberedsinglerow{}{step (a), (b), (c), (e) must be executed at least once}
 
 \addrowheading{Additional Information}
 \addsinglerow{

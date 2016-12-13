@@ -23,9 +23,14 @@ package usecases.uciugCreateNewCrisisEvent {
 					ieRequestCrisisEventLocation("691 12 34 56") returned to Orange
 				}
 				
-				Orange executed instanceof subfunction oeReceiveCrisisEventLocation("Latitude=75.08, Longitude=23.03") {
-					ieReceiveCrisisEventLocation("A string for the image with the pins") returned to Camille
+				Orange executed instanceof subfunction oeReceiveCrisisEventLocation("Latitude=87.20, Longitude=20.25") {
+					ieReceiveCrisisEventLocation("A string for the image with the pin") returned to Camille
 				}
+				
+				Camille executed instanceof subfunction oeMovePinOnMap("Latitude=75.08, Longitude=23.03") {
+					ieReceiveCrisisEventLocation("A string for the image with the pin") returned to Camille
+				}
+
 				
 				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691123456", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
 					ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Fabio

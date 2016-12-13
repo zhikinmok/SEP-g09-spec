@@ -23,7 +23,14 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @endPreF
 //postFunctional descriptions
 @postF 
-"the map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone."
+"A new map with pin is created and initialised with the \msrcode{ctMapWithPin} using the given geographical position as base and its own inner operations (cf. Chapter 5.6)."
+@postF 
+"The new map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone."
+@postF
+"The new map with pin is then associated to\newline
+	the central coordinator who received it\newline
+	and the communication company who created it,\newline
+"
 @endPostF
 //postProtocol descriptions
 @postP 
