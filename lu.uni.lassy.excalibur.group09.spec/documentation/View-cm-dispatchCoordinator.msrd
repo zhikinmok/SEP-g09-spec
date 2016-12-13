@@ -1,0 +1,13 @@
+/*
+@author Kira
+@date Tue Dec 13 12:46:41 CET 2016
+*/
+
+
+@@view cm-dispatchCoordinator
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 18
+@description "View of the actors and operations regarding a dispatched coordinator."
+@caption "View of the actors and operations regarding a dispatched coordinator."

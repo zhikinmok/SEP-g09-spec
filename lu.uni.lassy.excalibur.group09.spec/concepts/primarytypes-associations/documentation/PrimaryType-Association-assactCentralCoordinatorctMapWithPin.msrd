@@ -5,4 +5,4 @@
 
 
 @@Primary Type Association lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.associations.assactCentralCoordinatorctMapWithPin
-@description ""
+@description "association between a Central Coordinator and a map with pin."

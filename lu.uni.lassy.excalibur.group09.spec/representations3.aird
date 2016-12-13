@@ -382,7 +382,9 @@
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etFiremenMode-is.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeAddRequestHelp.msrd</semanticResources>
   <semanticResources>documentation/View-cm-etModes.msrd</semanticResources>
-  <semanticResources>documentation/View-em-mapWithPinInit.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assactCentralCoordinatorctMapWithPin.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-mapWithPinInit.msrd</semanticResources>
+  <semanticResources>documentation/View-cm-dispatchCoordinator.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jBwxAJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>
