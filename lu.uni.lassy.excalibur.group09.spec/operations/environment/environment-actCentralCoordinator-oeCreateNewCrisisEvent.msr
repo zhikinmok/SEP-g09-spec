@@ -55,6 +55,13 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 			and 'TowService' = ASecondTeamType
 			
 			//MISSING NEAREST CONDITION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			/*
+				SELECT forAll self.rnActor.rnSystem.rnctDispatchedCoordinator
+					SELECT forAll rnctDispatchedCoordnator.isFree = 'TRUE'
+						SELECT forALL min(GeoPos1,GeoPos2) = rnctDispatchCoordinator.geoPos
+				
+			*/
+			
 			and 'TRUE' = TheFiremenCoordinator.isFree@pre
 			and 'TRUE' = TheTowService.isFree@pre
 			and 'InStation' = TheFiremen.status@post
@@ -75,8 +82,6 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 			
 			//MISSING HOW TO CHECK IF IT'S ALREADY IN DATABASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
 			and if()
-			
-			
 			
 			
 				then(

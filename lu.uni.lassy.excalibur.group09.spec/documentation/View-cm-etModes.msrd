@@ -11,4 +11,4 @@
 @number 16
 @description "View of all the different modes for the coordinators/actors"
 @caption "View of all the different modes for the coordinators/actors"
-@scale MaxWidth
+@scale 0.80
