@@ -34,7 +34,7 @@ Concept Model {
 		   }
 		   
 		   enum etTeamType {
-		   	constants["Ambulance", "Police", "TowService"]
+		   	constants["Firemen", "Police", "TowService"]
 		   	operation is():ptBoolean
 		   }
 		   

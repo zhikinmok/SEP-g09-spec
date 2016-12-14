@@ -30,7 +30,7 @@ Environment Model {
 				output interface outactCentralCoordinator {
 					operation oeAddNewCrisisEvent() : ptBoolean
 					operation oeRequestCrisisEventLocation(AdtPhoneNumber:dtPhoneNumber) : ptBoolean
-					operation oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
+					operation oeCreateNewCrisisEvent(AName:dtString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
 					operation oeMovePinOnMap (AdtGeoPos:dtGeoPos) : ptBoolean				
 				}
 			}
@@ -55,7 +55,7 @@ Environment Model {
 				operation init() : ptBoolean
 			
 				input interface inactAbstractDispatchCoordinator {
-					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AdtComment:dtComment) : ptBoolean
+					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AMessage:dtString) : ptBoolean
 					operation ieReceiveCrisisEventInformation(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
 					operation ieMessageAbstractDispatchCoordinator(AdtComment: dtComment) : ptBoolean
 					operation ieReceiveMap(AdtMapWithPin: dtMapWithPin) : ptBoolean

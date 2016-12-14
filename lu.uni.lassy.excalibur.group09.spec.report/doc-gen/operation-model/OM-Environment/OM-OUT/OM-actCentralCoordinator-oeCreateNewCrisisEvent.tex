@@ -10,10 +10,10 @@ The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
 	\adddoublerow{oeCreateNewCrisisEvent}{sent to create a new crisis event and to alert the corresponding coordinators.}
 
 	\addrowheading{Parameters}
-	\addnumbereddoublerow{}{AdtName: ptString}{the name of the notifier that informed the Central Coordinator of the crisis event.} 
+	\addnumbereddoublerow{}{AName: dtString}{the name of the notifier that informed the Central Coordinator of the crisis event.} 
 	\addnumbereddoublerow{}{AetHumanType: etHumanType}{the notifier can be either a victim or a witness.} 
 	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{the phone number of the notifier.} 
-	\addnumbereddoublerow{}{AdtMapWithPin: dtMapWithPin}{a map with pins showing the crisis event's location.} 
+	\addnumbereddoublerow{}{AdtMapWithPin: dtMapWithPin}{a map with pin showing the crisis event's location.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
@@ -28,12 +28,13 @@ The \msrcode{oeCreateNewCrisisEvent} operation has the following properties:
 	\addnumberedsinglerow{PostF}{A new crisis event is created and initialised with
 		a new crisis event ID which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
 		and the geographical position of the crisis event which is extracted from the map with pin created by the communication company and maybe modified by the central coordinator.}
-	\addnumberedsinglerow{PostF}{An alert message 'You have received a new dispatch order!' is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's location.}
+	\addnumberedsinglerow{PostF}{An alert message 'You have received a new dispatch order!' is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's
+	 location and their dispatch status are set to 'InStation'.}
 	\addnumberedsinglerow{PostF}{The new crisis event is then associated to
 		the central coordinator who created this instance,\newline
 		the two selected dispatch coordinators,\newline
-		the map with pin created by the communication company and maybe modified by the central coordinator.,\newline
-		an human who may be initialised, if he/she is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
+		the map with pin created by the communication company and maybe modified by the central coordinator,\newline
+		the human, who may be initialised, if he/she is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
 		comments which is/are initalised if the central coordinator has given some additional comments to the crisis event.
 	}
 	\addnumberedsinglerow{PostF}{The two selected dispatch coordinators' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}

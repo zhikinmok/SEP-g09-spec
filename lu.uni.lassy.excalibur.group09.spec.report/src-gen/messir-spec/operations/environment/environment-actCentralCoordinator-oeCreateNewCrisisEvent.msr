@@ -6,12 +6,145 @@ import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes 
 import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeCreateNewCrisisEvent(
+			AName:dtString, 
+			AetHumanType:etHumanType, 
+			AdtPhoneNumber:dtPhoneNumber, 
+			AdtMapWithPin:dtMapWithPin, 
+			AdtComment:dtComment
+		):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
+		preP{
+			//PreP 01
+			let AetCentralCoordinatorMode:etCentralCoordinatorMode in
+			self.rnActor.mode@pre = AetCentralCoordinatorMode
+			and 'isInAddEvent' = AetCentralCoordinatorMode
+						
+		}
+				
+		postF{
+			let TheCrisisEvent:ctCrisisEvent in
+			let TheMessage:dtString in
+			let AdtGeoPos:dtGeoPos in
+			let AdtCrisisID:dtCrisisID in
+			
+			let AetFiremenMode:etFiremenMode in
+			let AFirstTeamType:etTeamType in
+			let ASecondTeamType:etTeamType in
+			let TheFiremenCoordinator:ctDispatchedCoordinator in
+			let TheTowServiceCoordinator:ctDispatchedCoordinator in	
+					
+			let TheHuman:ctHuman in
 
+			//PostF 01
+			self.rnActor.rnSystem.nextValueForAlertID@pre = AdtCrisisID
+			and self.rnActor.rnctMapWith.getPin() = AdtGeoPos
+			and TheCrisisEvent.init(
+				AdtCrisisID,
+				AdtGeoPos
+			)
+			
+			//PostF 02
+			and TheFiremenCoordinator.type@pre = AFirstTeamType
+			and 'Firemen' = AFirstTeamType
+			and TheTowServiceCoordinator.type@pre = ASecondTeamType
+			and 'TowService' = ASecondTeamType
+			
+			//MISSING NEAREST CONDITION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			and 'TRUE' = TheFiremenCoordinator.isFree@pre
+			and 'TRUE' = TheTowService.isFree@pre
+			and 'InStation' = TheFiremen.status@post
+			and 'InStation' = TheFiremen.status@post
+			
+			and 'You have received a new dispatch order!' = TheMessage.value
+			and 
+			
+			
+			
+			//PostF 03
+			and TheCrisisEvent.rnactCentralCoordinator = self.rnActor@pre
+			
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheFiremenCoordinator
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheTowServiceCoordinator
+			
+			and TheCrisisEvent.rnctMapWithPin = self.rnActor.rnctMapWith@post
+			
+			//MISSING HOW TO CHECK IF IT'S ALREADY IN DATABASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
+			and if()
+			
+			
+			
+			
+				then(
+					TheCrisisEvent.rnHuman = TheHuman
+				)	
+				else(
+					TheHuman.init(
+						AdtPhoneNumber,
+						AName,
+						AetHumanType
+					)
+					TheCrisisEvent.rnHuman = TheHuman
+				)
+				endif
+			
+			and TheCrisisEvent.rnctComment = self.rnActor.rnctComment@post
+			
+			//PostF 04
+			and 'FALSE' = TheFiremenCoordinator.isFree@post
+			and 'FALSE' = TheTowServiceCoordinator.isFree@post
+			
+			//PostF 05
+			and self.rnActor.rnSystem.nextValueForAlertID@post = self.rnActor.rnSystem.nextValueForAlertID@pre + 1
+			
+			
+			
+			
+		}
+		
+		
+		postP{
+			let TheCrisisEvent:ctCrisisEvent in
+			let AetCentralCoordinatorMode:etCentralCoordinatorMode in
+			let AetDispatchCoordinatorMode:etDispatchCoordinatorMode in
+			let AetFiremenMode:etFiremenMode in
+			let AFirstTeamType:etTeamType in
+			let ASecondTeamType:etTeamType in
+			let TheFiremenCoordinator:ctDispatchedCoordinator in
+			let TheTowServiceCoordinator:ctDispatchedCoordinator in
+			
+			
+			//PostP 01
+			and self.rnActor.mode@post = AetCentralCoordinatorMode
+			and 'isInMain' = AetCentralCoordinatorMode
+			
+			/*PostP 02 & 03*/
+			and self.rnActor.rnctCrisisEvent = TheCrisisEvent
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheFiremenCoordinator
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheTowServiceCoordinator
+			
+			and TheFiremenCoordinator.type@pre = AFirstTeamType
+			and 'Firemen' = AFirstTeamType
+			and TheTowServiceCoordinator.type@pre = ASecondTeamType
+			and 'TowService' = ASecondTeamType
+			
+			//PostP 02
+			and TheFiremenCoordinator.mode@post = AetDispatchCoordinatorMode
+			and TheTowServiceCoordinator.mode@post = AetDispatchCoordinatorMode
+			and 'hasBeenAssociatedToACrisisEvent' = AetDispatchCoordinatorMode
+			
+			//PostP 03
+			and TheFirementCoordinator.modeFM@post = AetFiremenMode
+			and 'IsNotInRequestHelp' = AetFiremenMode
+		}
+		
+		
+		
+		
 		}
 	}
 }

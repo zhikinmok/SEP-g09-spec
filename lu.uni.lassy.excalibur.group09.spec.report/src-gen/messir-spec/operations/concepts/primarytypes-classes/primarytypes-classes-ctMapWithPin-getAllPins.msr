@@ -7,7 +7,7 @@ import lu.uni.lassy.messir.libraries.calendar
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.getAllPins():ptBoolean{
+		operation: lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.getPin():ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		}

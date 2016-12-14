@@ -5,12 +5,12 @@
 
 
 @@Operation
-lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.getAllPins
-@description "used to get the geographical positions of the pins that is currently shown on the map. (usually used only when there's actually a single pin on the map)
+lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes.ctMapWithPin.getPin
+@description "used to get the geographical position of the pin that is currently shown on the map. (used only when there's a single pin on the map)
  "
 //postFunctional descriptions
 @postF 
-"returns a list of geographical positions."
+"returns a geographical positions."
 @endPostF
 //example
 @example" "

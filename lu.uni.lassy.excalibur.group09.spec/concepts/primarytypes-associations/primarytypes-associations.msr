@@ -23,19 +23,19 @@ Concept Model {
 			
 		association assctCrisisEventctMapWithPin
 			ctCrisisEvent(rnctCrisisEvent)[1..1] 
-			ctMapWithPin(rndtMapWithPin)[1..1]
+			ctMapWithPin(rnctMapWithPin)[1..1]
 
 		association assDispatchedCoordinatortctMapWithPin
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 
-			ctMapWithPin(rndtMapWithPin)[1..1]		
+			ctMapWithPin(rnctMapWithPin)[1..1]		
 				
 			association assactComCompanyctMapWithPin
 		actCommunicationCompany(rnactCommunicationCompany)[1..1] 
-		ctMapWithPin(rndtMapWithPin)[1..*]		
+		ctMapWithPin(rnctMapWithPin)[1..*]		
 			
 			association assactCentralCoordinatorctMapWithPin
 		actCentralCoordinator(rnactCentralCoordinator)[1..1] 
-		ctMapWithPin(rndtMapWithPin)[1..*]	
+		ctMapWithPin(rnctMapWithPin)[1..*]	
 		
 		association assClassActorDispatchCoordinator
 			ctDispatchedCoordinator(rnctDispatchedCoordinator)[1..1] 

@@ -6,7 +6,7 @@
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent
 @description ""
-@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtName ""
+@parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AName ""
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AetHumanType ""
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtPhoneNumber ""
 @parameter lu.uni.lassy.excalibur.group09.spec.usecases.oeCreateNewCrisisEvent.AdtMapWithPin ""

@@ -126,7 +126,7 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 		}
 		
 		
-		use case system subfunction oeCreateNewCrisisEvent(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) {
+		use case system subfunction oeCreateNewCrisisEvent(AName:dtString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) {
 			actor actCentralCoordinator[primary,active]
 			actor actAbstractDispatchCoordinator[secondary,passive]
 			returned messages{
