@@ -40,6 +40,10 @@ Concept Model {
 			}
 				   
 		datatype dtMapWithPin extends dtImage {
+				operation getPinGeoPos() : dtGeoPos
+				operation removeAllPinsFromMap() : ptBoolean
+				operation addPinToMap(AGeoPos:dtGeoPos) : ptBoolean	
+				operation distance(AGeoPosOne:dtGeoPos, AGeoPosTwo:dtGeoPos) : dtInteger			
 				operation is() : ptBoolean
 			}
 		

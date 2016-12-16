@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Fri Dec 16 19:48:23 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.getPinGeoPos
+@description "used to get the geographical position of the pin that is currently shown on the map (used only when there's a single pin on the map).
+ "
+//postFunctional descriptions
+@postF 
+"Returns a geographical position of the pin that was on the map."
+@endPostF
+//example
+@example" "

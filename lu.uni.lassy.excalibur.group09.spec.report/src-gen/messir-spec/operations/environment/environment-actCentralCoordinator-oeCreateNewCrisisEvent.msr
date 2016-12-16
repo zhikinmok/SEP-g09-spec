@@ -7,6 +7,7 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes 
 import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.datatypes
 import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group09.spec.environment 
 
 	Operation Model {
 
@@ -19,8 +20,9 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 		):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 		preP{
-			//PreP 01
 			let AetCentralCoordinatorMode:etCentralCoordinatorMode in
+			
+			//PreP 01
 			self.rnActor.mode@pre = AetCentralCoordinatorMode
 			and 'isInAddEvent' = AetCentralCoordinatorMode
 						
@@ -29,23 +31,28 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 		postF{
 			let TheCrisisEvent:ctCrisisEvent in
 			let TheMessage:dtString in
-			let AdtGeoPos:dtGeoPos in
+			
+			let AdtGeoPosOfCrisisEvent:dtGeoPos in
 			let AdtCrisisID:dtCrisisID in
+			
+
+			let TheFiremenCoordinator:ctDispatchedCoordinator in
+			let TheTowServiceCoordinator:ctDispatchedCoordinator in	
+			let TheFiremenCoordinatorIN:actAbstractDispatchCoordinator in
+			let TheTowServiceCoordinatorIN:actAbstractDispatchCoordinator in
 			
 			let AetFiremenMode:etFiremenMode in
 			let AFirstTeamType:etTeamType in
 			let ASecondTeamType:etTeamType in
-			let TheFiremenCoordinator:ctDispatchedCoordinator in
-			let TheTowServiceCoordinator:ctDispatchedCoordinator in	
 					
 			let TheHuman:ctHuman in
 
 			//PostF 01
 			self.rnActor.rnSystem.nextValueForAlertID@pre = AdtCrisisID
-			and self.rnActor.rnctMapWith.getPin() = AdtGeoPos
+			and self.rnActor.rnctMapWithPin.mapWithPin.getPinGeoPos() = AdtGeoPosOfCrisisEvent
 			and TheCrisisEvent.init(
 				AdtCrisisID,
-				AdtGeoPos
+				AdtGeoPosOfCrisisEvent
 			)
 			
 			//PostF 02
@@ -53,15 +60,28 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 			and 'Firemen' = AFirstTeamType
 			and TheTowServiceCoordinator.type@pre = ASecondTeamType
 			and 'TowService' = ASecondTeamType
-			
-			//MISSING NEAREST CONDITION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			and 'TRUE' = TheFiremenCoordinator.isFree@pre
 			and 'TRUE' = TheTowService.isFree@pre
+
+			
+			/*
+			ctDispatchCoordinator such that there doesn't exist another ctDispatchCoordinator that has a shorter distance 
+			between its geographical position and the geographical position of the newly instanciated crisis event.
+			*/
+			and TheFiremenCoordinator = self.rnActor.rnSystem.rnctDispatchedCoordinator->select(
+						dc1 / dtMapWithPin.distance(dc1.geoPos,AdtGeoPosOfCrisisEvent) > distance(self.rnActor.rnSystem.rnctDispatchedCoordinator.geoPos,AdtGeoPosOfCrisisEvent)->isEmpty()
+			)
+			
+			and TheTowServiceCoordinator = self.rnActor.rnSystem.rnctDispatchedCoordinator->select(
+						dc1 / dtMapWithPin.distance(dc1.geoPos,AdtGeoPosOfCrisisEvent) > distance(self.rnActor.rnSystem.rnctDispatchedCoordinator.geoPos,AdtGeoPosOfCrisisEvent)->isEmpty()
+			)
+			
 			and 'InStation' = TheFiremen.status@post
 			and 'InStation' = TheFiremen.status@post
 			
 			and 'You have received a new dispatch order!' = TheMessage.value
-			and 
+			and TheFiremenIN^ieReceiveNewCrisisEvent(AdtCrisisID, 'You have received a new dispatch order!')
+			and TheTowServiceIN^ieReceiveNewCrisisEvent(AdtCrisisID, 'You have received a new dispatch order!')
 			
 			
 			
@@ -71,15 +91,15 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 			and TheCrisisEvent.rnctDispatchedCoordinator = TheFiremenCoordinator
 			and TheCrisisEvent.rnctDispatchedCoordinator = TheTowServiceCoordinator
 			
-			and TheCrisisEvent.rnctMapWithPin = self.rnActor.rnctMapWith@post
+			and TheCrisisEvent.rnctMapWithPin = self.rnActor.rnctMapWithPin@post
 			
-			//MISSING HOW TO CHECK IF IT'S ALREADY IN DATABASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
-			and if()
-			
-			
-			
-			
+			//IF an ctHuman instance with the same id (PhoneNumber) is already in the system state, associate it to that instance
+			//ELSE initialise a new ctHuman instance and associate it	
+			and if(
+					self.rnActor.rnSystem.rnHuman -> exists(h / h.id = AdtPhoneNumber)	
+				)			
 				then(
+					TheHuman = self.rnActor.rnSystem.rnHuman -> select(h / h.id = AdtPhoneNumber)
 					TheCrisisEvent.rnHuman = TheHuman
 				)	
 				else(
@@ -109,13 +129,17 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 		
 		postP{
 			let TheCrisisEvent:ctCrisisEvent in
+			
 			let AetCentralCoordinatorMode:etCentralCoordinatorMode in
 			let AetDispatchCoordinatorMode:etDispatchCoordinatorMode in
-			let AetFiremenMode:etFiremenMode in
+			
 			let AFirstTeamType:etTeamType in
 			let ASecondTeamType:etTeamType in
+			
 			let TheFiremenCoordinator:ctDispatchedCoordinator in
 			let TheTowServiceCoordinator:ctDispatchedCoordinator in
+			
+			let AetFiremenMode:etFiremenMode in
 			
 			
 			//PostP 01
@@ -124,14 +148,16 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.primarytypes.classes
 			
 			/*PostP 02 & 03*/
 			and self.rnActor.rnctCrisisEvent = TheCrisisEvent
-			and TheCrisisEvent.rnctDispatchedCoordinator = TheFiremenCoordinator
-			and TheCrisisEvent.rnctDispatchedCoordinator = TheTowServiceCoordinator
 			
+			//To make sure who is who
 			and TheFiremenCoordinator.type@pre = AFirstTeamType
 			and 'Firemen' = AFirstTeamType
 			and TheTowServiceCoordinator.type@pre = ASecondTeamType
 			and 'TowService' = ASecondTeamType
 			
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheFiremenCoordinator
+			and TheCrisisEvent.rnctDispatchedCoordinator = TheTowServiceCoordinator
+						
 			//PostP 02
 			and TheFiremenCoordinator.mode@post = AetDispatchCoordinatorMode
 			and TheTowServiceCoordinator.mode@post = AetDispatchCoordinatorMode

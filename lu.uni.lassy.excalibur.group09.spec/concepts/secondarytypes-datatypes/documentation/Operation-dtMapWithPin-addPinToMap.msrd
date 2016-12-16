@@ -1,0 +1,22 @@
+/*
+@author Kira
+@date Fri Dec 16 19:46:30 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.addPinToMap
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.addPinToMap.AGeoPos
+"the geographical position of the pin we want to add."
+@endParameters
+
+@description "used to add a pin to the map.
+ "
+//postFunctional descriptions
+@postF 
+"The given geographical position is converted into a pin on the map."
+@endPostF
+//example
+@example" "

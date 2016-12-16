@@ -1,0 +1,25 @@
+/*
+@author Kira
+@date Fri Dec 16 19:54:03 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.distance
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.distance.AGeoPosOne
+"One of the two geographical position used to calculate the distance between them."
+@parameter
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.distance.AGeoPosTwo
+"One of the two geographical position used to calculate the distance between them."
+@endParameters
+
+@description "used to calculcate the distance between two geographical position.
+ "
+//postFunctional descriptions
+@postF 
+"The further given geographical positions are apart, the greater the integer (maybe not really a postF...)."
+@endPostF
+//example
+@example" "

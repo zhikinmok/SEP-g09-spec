@@ -11,5 +11,5 @@
 @number 12
 @description "Main view of the concept model"
 @caption "Main view of the concept model"
-@scale MaxHeight
+@scale MaxWidth
 @orientation Landscape

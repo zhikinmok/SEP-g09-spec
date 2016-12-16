@@ -16,7 +16,7 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The actor's mode has been set to \msrcode{isInRequest}.}
+	\addnumberedsinglerow{PreP}{The actor's mode is \msrcode{isInRequest}.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{the \msrcode{GeoPos} given by the communication company is a valid one.}
@@ -26,7 +26,7 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 	\addnumberedsinglerow{PostF}{The new map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone.}
 	\addnumberedsinglerow{PostF}{The new map with pin is then associated to\newline
 		the central coordinator who received it\newline
-		and the communication company who created it,\newline
+		and the communication company who initialised it,\newline
 	}
 
 	\addrowheading{Post-Condition (protocol)}

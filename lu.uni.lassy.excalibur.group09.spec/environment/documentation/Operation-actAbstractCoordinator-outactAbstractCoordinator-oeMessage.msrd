@@ -9,14 +9,14 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeMessage.AdtComment
-""
+"A comment or message that the coordinator wants to transmit."
 @endParameters
 
 @description "sent to transmit a message.
  "
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
+"The dispatch coordinator's mode is \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
 @endPreP
 //preFunctional descriptions
 @preF

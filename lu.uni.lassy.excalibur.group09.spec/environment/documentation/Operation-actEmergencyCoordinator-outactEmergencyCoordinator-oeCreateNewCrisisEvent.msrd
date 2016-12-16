@@ -24,27 +24,27 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 @description "sent to create a new crisis event and to alert the corresponding coordinators."
 //preProtocol descriptions
 @preP
-"The actor's mode has been set to \msrcode{isInAddEvent}."
+"The actor's mode is \msrcode{isInAddEvent}."
 @endPreP
 //preFunctional descriptions
 @preF
-"The map with pin created by the communication company and maybe modified by the central coordinator only has a single pin. "
+"The map with pin provided by the central coordinator only has a single pin. "
 @endPreF
 //postFunctional descriptions
 @postF
 "A new crisis event is created and initialised with
-	a new crisis event ID which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
-	and the geographical position of the crisis event which is extracted from the map with pin created by the communication company and maybe modified by the central coordinator."
+	a new crisis event id attribute which is the \msrcode{nextValueForAlertID}@pre in \msrcode{ctState}
+	and the geographical position attribute of the crisis event which is extracted from the map with pin provided by the central coordinator."
 @postF 
-"An alert message 'You have received a new dispatch order!' is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's
- location and their dispatch status are set to 'InStation'."
+"An alert message 'You have received a new dispatch order!' together with new crisis event id is sent to a free FiremenCoordinator and a free TowServiceCoordinator that are geographically the nearest of the crisis event's
+ location and their dispatch status attributes are set to 'InStation'."
 @postF
-"The new crisis event is then associated to
+"The new crisis event is then associated to :\newline
 	the central coordinator who created this instance,\newline
 	the two selected dispatch coordinators,\newline
-	the map with pin created by the communication company and maybe modified by the central coordinator,\newline
-	the human, who may be initialised, if he/she is not yet in the database, with his/her phone number as the unique id, a name and a type (witness/victim),\newline
-	comments which is/are initalised if the central coordinator has given some additional comments to the crisis event.
+	the map with pin instance that has the map with pin attriubute communicated by the central central coordinator in the parameters,\newline
+	the human instance, who may be initialised, if he/she is not yet in the system state, with his/her phone number as the unique id, a name and a type (witness/victim) which are given as parameters by the central coordinator,\newline
+	comment instance(s) which is/are initalised if the central coordinator has given some additional comments to the crisis event.
 "
 @postF 
 "The two selected dispatch coordinators' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event."

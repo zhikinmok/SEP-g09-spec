@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCentralCoordinator.oeRequestCrisisEventLocation.AdtPhoneNumber
-""
+"The phone number of the witness/victim used to get the geographical position."
 @endParameters
 
 @description "sent to request a crisis event's location."
 //preProtocol descriptions
 @preP
-"The actor's mode has been set to \msrcode{isAddEvent}."
+"The actor's mode is \msrcode{isInAddEvent}."
 @endPreP
 //preFunctional descriptions
 @preF

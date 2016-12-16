@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator
-@description "An abstract Actor which brings together the common operations of the FiremanCoordinator, the PoliceCoordinator and the TowServiceCoordinator."
+@description "An abstract Actor which brings together the common operations of the FiremenCoordinator, the PoliceCoordinator and the TowServiceCoordinator."
 //input events
 @inputEvent
 lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieReceiveNewCrisisEvent

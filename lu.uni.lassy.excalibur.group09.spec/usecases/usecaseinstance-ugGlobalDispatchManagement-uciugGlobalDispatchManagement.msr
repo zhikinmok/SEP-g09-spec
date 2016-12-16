@@ -13,16 +13,16 @@ package usecases.uciugGlobalDispatchManagement {
 				Polo 	: 	actPoliceCoordinator				
 			}
 			use case steps {
-					Fabio executed instanceof subfunction oeGetCrisisEventInformation() {
-						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Fabio
+					Fabio executed instanceof subfunction oeGetCrisisEventInformation("Latitude=60.21, Longitude=40.23") {
+						ieReceiveCrisisEventInformation("1","Walter","Witness","691 12 34 56","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Fabio
 					}
 				
 					Fabio executed instanceof subfunction oeUpdateDispatchStatus("AenDispatchStatus=InTransit") {
 						ieMessageAbstractDispatchCoordinator("Dispatch Status Updated.") returned to Fabio
 					}
 					
-					Ted executed instanceof subfunction oeGetCrisisEventInformation() {
-						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Ted
+					Ted executed instanceof subfunction oeGetCrisisEventInformation("Latitude=81.45, Longitude=52.87") {
+						ieReceiveCrisisEventInformation("1","Walter","Witness","691 12 34 56","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Ted
 					}
 					
 					Ted executed instanceof subfunction oeRefreshMap("Latitude=80.57, Longitude=50.23") {
@@ -51,7 +51,7 @@ package usecases.uciugGlobalDispatchManagement {
 						ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Polo
 					}
 					
-					Polo executed instanceof subfunction oeGetCrisisEventInformation() {
+					Polo executed instanceof subfunction oeGetCrisisEventInformation("Latitude=44.57, Longitude=63.23") {
 						ieReceiveCrisisEventInformation("1","Walter","Witness","691123456","A string for the image with the pins","The Witness can't stay at the accident's location for long.") returned to Polo
 					}
 	

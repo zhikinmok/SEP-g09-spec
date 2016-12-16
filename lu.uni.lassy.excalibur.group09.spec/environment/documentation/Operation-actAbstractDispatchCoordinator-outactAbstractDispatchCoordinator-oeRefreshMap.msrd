@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.outactAbstractDispatchCoordinator.oeRefreshMap.AdtGeoPos
-""
+"the coordinator's current geographical position."
 @endParameters
 
 @description "sent to refresh the map."
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
+"The dispatch coordinator's is \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}."
 
 @endPreP
 //preFunctional descriptions

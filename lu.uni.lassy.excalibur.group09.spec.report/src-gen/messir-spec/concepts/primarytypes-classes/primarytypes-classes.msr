@@ -47,10 +47,7 @@ Concept Model {
 			
 			operation init(	Aid:dtCrisisID,
 							AgeoPos:dtGeoPos
-			): ptBoolean
-			
-			operation minGeoPos(AGeoPos1:dtGeoPos, AGeoPos2:dtGeoPos) : ptBoolean
-			
+			): ptBoolean			
 		}
 		
 		class ctComment role rnComment cardinality [0..*] {
@@ -82,10 +79,6 @@ Concept Model {
 			operation init( AmapWithPin:dtMapWithPin
 			) : ptBoolean
 			
-			operation getPin() : ptBoolean
-			operation getMap() : ptBoolean
-			operation removeAllPinsFromMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
-			operation addPinToMap(AGeoPos:dtGeoPos, AdtMapWithPin:dtMapWithPin) : ptBoolean
 		}
 
 	}

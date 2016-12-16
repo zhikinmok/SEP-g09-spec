@@ -15,7 +15,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @description "sent to update the dispatch status."
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
+"The dispatch coordinator's mode is \msrcode{isInMain}."
 @endPreP
 //preFunctional descriptions
 @preF

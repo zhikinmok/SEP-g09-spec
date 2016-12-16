@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
  "
 //preProtocol descriptions
 @preP
-"The actor's mode has been set to \msrcode{isInMain}."
+"The actor's mode is \msrcode{isInMain}."
 @endPreP
 //preFunctional descriptions
 //@preF

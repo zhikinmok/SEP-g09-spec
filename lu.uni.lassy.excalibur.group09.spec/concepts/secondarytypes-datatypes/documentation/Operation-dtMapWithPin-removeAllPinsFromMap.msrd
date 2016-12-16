@@ -1,0 +1,16 @@
+/*
+@author Kira
+@date Fri Dec 16 19:50:12 CET 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes.dtMapWithPin.removeAllPinsFromMap
+@description "used to remove all pins on the map (usually used to afterwards regenerate new pins, so that the map stays clean).
+ "
+//postFunctional descriptions
+@postF 
+"All pins are removed from the map."
+@endPostF
+//example
+@example" "

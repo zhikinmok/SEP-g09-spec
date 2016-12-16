@@ -16,7 +16,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @description "sent to get the stored information of the crisis event to which the dispatch coordinator is associated."
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{hasBeenAssociatedToACrisisEvent}."
+"The dispatch coordinator's mode is \msrcode{hasBeenAssociatedToACrisisEvent}."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -26,7 +26,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @endPreF
 //postFunctional descriptions
 @postF 
-"the map with pins returned to coordinator includes a pin of the actor's current position and another one of the crisis event's location."
+"the map with pins returned to the coordinator includes a pin of the actor's current position and another one of the crisis event's location."
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCommunicationCompany.oeReceiveCrisisEventLocation.AdtGeoPos
-""
+"the geographical position used to initialise the map with pin."
 @endParameters
 
 @description "sent to get a map with pin returned to the central coordinator."
 //preProtocol descriptions
 @preP
-"The actor's mode has been set to \msrcode{isInRequest}."
+"The actor's mode is \msrcode{isInRequest}."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -23,13 +23,13 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @endPreF
 //postFunctional descriptions
 @postF 
-"A new map with pin is created and initialised with the \msrcode{ctMapWithPin} using the given geographical position as base and its own inner operations (cf. Chapter 5.6)."
+"A new map with pin instance is created and initialised using the given geographical position as base."
 @postF 
-"The new map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone."
+"The new map with pin returned to the \msrcode{CentralCoordinator} only has a single pin, which is the one corresponding to the geographical position given in the parameters."
 @postF
 "The new map with pin is then associated to\newline
 	the central coordinator who received it\newline
-	and the communication company who created it,\newline
+	and the communication company who initialised it,\newline
 "
 @endPostF
 //postProtocol descriptions

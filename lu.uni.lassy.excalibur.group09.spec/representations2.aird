@@ -359,7 +359,6 @@
   <semanticResources>environment/documentation/Operation-actAbstractDispatchCoordinator-outactAbstractDispatchCoordinator-oeRefreshMap.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeMessage.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeRefreshMap.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-addPinToMap.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etCentralCoordinatorMode-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etDispatchCoordinatorMode.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etDispatchCoordinatorMode-is.msrd</semanticResources>
@@ -367,10 +366,6 @@
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etComCompanyMode-is.msrd</semanticResources>
   <semanticResources>operations/environment/environment-actCentralCoordinator-oeMovePinOnMap.msr</semanticResources>
   <semanticResources>environment/documentation/Operation-actCentralCoordinator-outactCentralCoordinator-oeMovePinOnMap.msrd</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctMapWithPin-addPinToMap.msr</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctMapWithPin-removeAllPinsFromMap.msr</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctMapWithPin-getMap.msr</semanticResources>
-  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctMapWithPin-getAllPins.msr</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-removeAllPinsFromMap.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-getMap.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctMapWithPin-getAllPins.msrd</semanticResources>
@@ -385,7 +380,13 @@
   <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assactCentralCoordinatorctMapWithPin.msrd</semanticResources>
   <semanticResources>documentation/View-cm-mapWithPinInit.msrd</semanticResources>
   <semanticResources>documentation/View-cm-dispatchCoordinator.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisisEvent-minGeoPos.msrd</semanticResources>
+  <semanticResources>operations/concepts/secondarytypes-datatypes/secondarytypes-datatypes-dtMapWithPin-getPinGeoPos.msr</semanticResources>
+  <semanticResources>operations/concepts/secondarytypes-datatypes/secondarytypes-datatypes-dtMapWithPin-removeAllPinsFromMap.msr</semanticResources>
+  <semanticResources>operations/concepts/secondarytypes-datatypes/secondarytypes-datatypes-dtMapWithPin-addPinToMap.msr</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-addPinToMap.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-getPinGeoPos.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-removeAllPinsFromMap.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtMapWithPin-distance.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_jBsfkJr9Eeab8dC5SKBMlg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

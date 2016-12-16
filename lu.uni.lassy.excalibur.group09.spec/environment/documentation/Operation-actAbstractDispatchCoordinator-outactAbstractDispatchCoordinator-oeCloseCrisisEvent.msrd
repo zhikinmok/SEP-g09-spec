@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
  "
 //preProtocol descriptions
 @preP
-"The dispatch coordinator's mode has been set to \msrcode{isInMainWithCloseEventUnlocked}."
+"The dispatch coordinator's mode is \msrcode{isInMainWithCloseEventUnlocked}."
 @endPreP
 //preFunctional descriptions
 @preF
@@ -24,7 +24,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @postP 
 "The dispatch coordinator is no longer associated to the current crisis event."
 @postP 
-"The dispatch coordinator's mode has been set to \msrcode{isInStandBy}."
+"The dispatch coordinator's mode has is to \msrcode{isInStandBy}."
 @endPostP
 //example
 @example" "
