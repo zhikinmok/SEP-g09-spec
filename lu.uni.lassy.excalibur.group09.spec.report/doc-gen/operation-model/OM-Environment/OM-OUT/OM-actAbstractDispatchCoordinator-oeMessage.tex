@@ -11,13 +11,13 @@ The \msrcode{oeMessage} operation has the following properties:
 	 }
 
 	\addrowheading{Parameters}
-	\addnumbereddoublerow{}{AdtComment: dtComment}{} 
+	\addnumbereddoublerow{}{AdtComment: dtComment}{A comment or message that the coordinator wants to transmit.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode has is \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
+	\addnumberedsinglerow{PreP}{The dispatch coordinator's mode is \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that a dispatched coordinator can only be associated to a single crisis event at the same time.}

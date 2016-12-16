@@ -8,14 +8,99 @@
 
 \section{Domain Stakeholders}
 \label{sec:icrash-gendescr-stakeholders}
+All stakeholders of the system are detailed in this section. After a brief description of a
+stakeholder, its objectives are first stated. Thereafter, the responsibilities of
+the stakeholder are detailed which help to achieve the stakeholder objectives to a certain
+degree. While the objectives characterize the general problems addressed by the \msricrashmini system,
+the responsibilities describe concrete actions that are expected from a stakeholder. Some of
+these responsibilities can be traced looking at the use case described in
+Section 2.3, and hence must be supported by the \msricrashmini  system. 
+All stakeholders listed in this section have an interest in the system or are affected
+by the system in some way, but only a subset of the stakeholders are directly involved in the use
+cases described.
+Let us remind that use case diagrams or descriptions are not \msrmessir analysis phase mandatory outputs. They are proposed as informal means to help understanding the semantics of the system specification made of the mandatory analysis models, which provide a complete executable specification.
 
 \newpage
 
 \section{System's Actors}
 \label{sec:icrash-gendescr-actors}
+\subsection{Emergency Central}
+\subparagraph{Emergency Central Administrator}
+Most likely a chief or someone with high autorities in the Emergency Central. His
+job is to assign fellow colleagues as coordinators.
+
+\subparagraph{Emergency Central Coordinator}
+An Emergency Central Coordinator is an employee who has been given special rights
+by the administrator. His job is:
+
+\begin{enumerate}
+\item To check the incident's location with the notifier.
+\item To create the new event in the system.
+\item To send a dispatch message to the corresponding coordinators.
+\end{enumerate}
 
 
-The objective of this section is not to provide the full requirement elicitation document in this section but to reuse a part of this document to provide a informal introduction to the \msrmessir specification of the system under development. The use case model is made of a use case diagrams modelling abstractly and informally the actors and their use cases together with a set of use cases descriptions. 
-In addition, those diagrams and description tables are adapted to the \msrmessir specification since actor and messages names together with parameters are partly adapted to be consistent with the specification identifiers (see \cite{messirbook} for more details). 
+\subsection{Firemen}
+General idea : The most important dispatched coordinators, because they are the
+ones sitting in the ambulances and providing first aids to the injured individuals.
+
+\subparagraph{Firemen Administrator}
+Most likely a chief or someone with high autorities in the Firemen Department.
+His job is to assign fellow colleagues as coordinators.
+
+\subparagraph{Firemen Coordinator}
+A Firemen Coordinator is a Team Leader who has been given special
+rights by the administrator. His job is:
+
+\begin{enumerate}
+\item To assemble his team as soon as possible when a dispatch request is
+received.
+\item To provide information on his Team's whereabouts.
+\item To call for backup if needed when on-site.
+\item To send messages if needed.
+\end{enumerate}
+
+\subsection{Tow Service}
+General idea : Dispatched coordinators responsible of clearing the highway of
+the destroyed cars.
+
+\subparagraph{Tow Service Administrator}
+Most likely a chief or someone with high autorities in the Tow Service.
+His job is to assign fellow colleagues as coordinators.
+
+\subparagraph{Tow Service Coordinator}
+A Tow Service Coordinator is a Team Leader who has been given special
+rights by the administrator. His job is:
+
+\begin{enumerate}
+\item To assemble his team as soon as possible when a dispatch request is
+received.
+\item To provide information on his Team's whereabouts.
+\item To send messages if needed.
+\end{enumerate}
+
+\subsection{Police}
+General idea : General idea : Dispatched coordinators responsible of solving
+eventual conflicts between the victims.
+
+\subparagraph{Police Administrator}
+Most likely a chief or someone with high autorities in the Police Department.
+His job is to assign fellow colleagues as coordinators.
+
+\subparagraph{Police Coordinator}
+A Police Coordinator is a Team Leader who has been given special
+rights by the administrator. His job is:
+
+\begin{enumerate}
+\item To assemble his team as soon as possible when a dispatch request is
+received.
+\item To provide information on his Team's whereabouts.
+\item To send messages if needed.
+\end{enumerate}
 
 
+\subsection{Communication Company}
+A Communication Company is a company who provides fixed and mobile voice
+services like POST, TANGO, ORANGE, etc. Its job is to transfer any emergency
+calls to the Emergency Central and to provide the notifier's
+geographical postion via its network to the system.

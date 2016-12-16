@@ -43,8 +43,8 @@ import lu.uni.lassy.excalibur.group09.spec.concepts.secondarytypes.datatypes
 				actor actTowServiceCoordinator[secondary, passive]
 				
 				reuse oeAddNewCrisisEvent[1..*]
-				reuse oeRequestCrisisEventLocation[0..*]
-				reuse oeReceiveCrisisEventLocation[0..*]
+				reuse oeRequestCrisisEventLocation[1..*]
+				reuse oeReceiveCrisisEventLocation[1..*]
 				reuse oeCreateNewCrisisEvent[1..*]
 				reuse oeMovePinOnMap[0..*]
 				

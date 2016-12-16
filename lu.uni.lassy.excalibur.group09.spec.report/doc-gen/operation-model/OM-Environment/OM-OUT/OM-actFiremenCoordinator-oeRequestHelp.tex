@@ -28,14 +28,14 @@ The \msrcode{oeRequestHelp} operation has the following properties:
 		one or more free FiremenCoordinator(s) and/or\newline
 		one or more free TowServiceCoordinator(s) and/or\newline
 		one or more free PoliceCoordinator(s)\newline
-	that are geographically the nearest of the crisis event's location.}
-	\addnumberedsinglerow{PostF}{The new crisis event is then associated to the selected dispatch coordinator(s).}
+	that are geographically the nearest of the crisis event's location and their dispatch status attributes are set to 'InStation'.}
+	\addnumberedsinglerow{PostF}{The crisis event (self.rnActor.rnctCrisisEvent) is then associated to the selected dispatch coordinator(s).}
 	\addnumberedsinglerow{PostF}{The selected dispatch coordinator(s)' attribute\msrcode{isFree} is set to false and can thus no more be associated to another crisis event.}
 
 	\addrowheading{Post-Condition (protocol)}
 	\addnumberedsinglerow{PostP}{The actor's mode is set to \msrcode{isInMain} or \msrcode{isInMainWithCloseEventUnlocked}.}
-	\addnumberedsinglerow{PostP}{the selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
-	\addnumberedsinglerow{PostP}{if a firemen coordinator has been selected, his modeFM is set to \msrcode{isNotInRequestHelp}.}
+	\addnumberedsinglerow{PostP}{The selected dispatch coordinator(s)' modes are set to \msrcode{hasBeenAssociatedToACrisisEvent}.}
+	\addnumberedsinglerow{PostP}{If a firemen coordinator has been selected, his modeFM is set to \msrcode{isNotInRequestHelp}.}
 	\end{operationmodel}
 
 

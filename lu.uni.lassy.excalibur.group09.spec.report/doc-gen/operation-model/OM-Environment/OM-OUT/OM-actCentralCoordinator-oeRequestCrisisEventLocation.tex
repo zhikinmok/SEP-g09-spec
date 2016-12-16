@@ -10,13 +10,13 @@ The \msrcode{oeRequestCrisisEventLocation} operation has the following propertie
 	\adddoublerow{oeRequestCrisisEventLocation}{sent to request a crisis event's location.}
 
 	\addrowheading{Parameters}
-	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{} 
+	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{The phone number of the witness/victim used to get the geographical position.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The actor's mode is \msrcode{isAddEvent}.}
+	\addnumberedsinglerow{PreP}{The actor's mode is \msrcode{isInAddEvent}.}
 		
 	\addrowheading{Pre-Condition (functional)}
 	\addnumberedsinglerow{PreF}{it is supposed that the phone nuumber given by the \msrcode{CentralCoordinator} is always sent to the correct communication company.}

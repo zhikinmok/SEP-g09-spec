@@ -11,23 +11,21 @@ The \msrcode{oeMovePinOnMap} operation has the following properties:
 	 }
 
 	\addrowheading{Parameters}
-	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{the new geographical position of where the pin should be moved to.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
 
 	\addrowheading{Pre-Condition (protocol)}
-	\addnumberedsinglerow{PreP}{The actor's mode is \msrcode{isAddEvent}.}
+	\addnumberedsinglerow{PreP}{The actor's mode is \msrcode{isInAddEvent}.}
 		
 	\addrowheading{Pre-Condition (functional)}
-	\addnumberedsinglerow{PreF}{It is supposed that a map with pin has already been initialised by the communication company.}
+	\addnumberedsinglerow{PreF}{It is supposed that the actor's is already associated with a newly created map with pin.}
 
 	\addrowheading{Post-Condition (functional)}
 	\addnumberedsinglerow{PostF}{The returned map has the previous pin replaced by a new one using the geographical position given by the actor.}
 	\addnumberedsinglerow{PostF}{The returned map only has a single pin on it.}
 
-	\addrowheading{Post-Condition (protocol)}
-	\addnumberedsinglerow{PostP}{ }
 	\end{operationmodel}
 
 

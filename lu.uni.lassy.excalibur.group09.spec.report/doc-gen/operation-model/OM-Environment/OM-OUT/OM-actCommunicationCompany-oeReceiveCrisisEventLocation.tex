@@ -10,7 +10,7 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 	\adddoublerow{oeReceiveCrisisEventLocation}{sent to get a map with pin returned to the central coordinator.}
 
 	\addrowheading{Parameters}
-	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{} 
+	\addnumbereddoublerow{}{AdtGeoPos: dtGeoPos}{the geographical position used to initialise the map with pin.} 
 
 	\addrowheading{Return type}
 	\addsinglerow{ptBoolean}
@@ -22,8 +22,8 @@ The \msrcode{oeReceiveCrisisEventLocation} operation has the following propertie
 	\addnumberedsinglerow{PreF}{the \msrcode{GeoPos} given by the communication company is a valid one.}
 
 	\addrowheading{Post-Condition (functional)}
-	\addnumberedsinglerow{PostF}{A new map with pin is created and initialised with the \msrcode{ctMapWithPin} using the given geographical position as base and its own inner operations (cf. Chapter 5.6).}
-	\addnumberedsinglerow{PostF}{The new map with pin returned to the \msrcode{CentralCoordinator} includes a single pin, which is the one corresponding to the geographical position of the notifier's phone.}
+	\addnumberedsinglerow{PostF}{A new map with pin instance is created and initialised using the given geographical position as base.}
+	\addnumberedsinglerow{PostF}{The new map with pin returned to the \msrcode{CentralCoordinator} only has a single pin, which is the one corresponding to the geographical position given in the parameters.}
 	\addnumberedsinglerow{PostF}{The new map with pin is then associated to\newline
 		the central coordinator who received it\newline
 		and the communication company who initialised it,\newline

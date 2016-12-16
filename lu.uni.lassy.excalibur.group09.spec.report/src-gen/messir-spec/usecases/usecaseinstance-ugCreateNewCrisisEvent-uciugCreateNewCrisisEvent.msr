@@ -32,7 +32,7 @@ package usecases.uciugCreateNewCrisisEvent {
 				}
 
 				
-				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691123456", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
+				Camille executed instanceof subfunction oeCreateNewCrisisEvent("AdtName=Walter", "AenHumanType=Witness", "AdtPhoneNumber=691 12 34 56", "A string for the image with the pins", "The Witness can't stay at the accident's location for long.") {
 					ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Fabio
 					ieReceiveNewCrisisEvent("1","You have received a new Crisis Event Dispatch Order!") returned to Ted
 				}						
