@@ -22,7 +22,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCentralCoordinator.outactCent
 //@endPostF
 //postProtocol descriptions
 @postP 
-"The actor's mode has been set to \msrcode{isInAddEvent}."
+"The actor's mode is set to \msrcode{isInAddEvent}."
 @endPostP
 //example
 @example" "

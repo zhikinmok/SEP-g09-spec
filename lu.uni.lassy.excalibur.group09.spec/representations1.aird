@@ -4073,7 +4073,7 @@
               <styles xmi:type="notation:FilteringStyle" xmi:id="_DdmaErHPEeaCfvIOP_mDJg"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_DdfFUbHPEeaCfvIOP_mDJg" fontName="Lucida Sans Unicode" fontHeight="14" bold="true"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DdfFUrHPEeaCfvIOP_mDJg" x="12" y="312" width="327"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DdfFUrHPEeaCfvIOP_mDJg" x="12" y="312" width="399"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_rrrXoLQsEeamkp8rqD9ojw" type="2003" element="_rrqJgLQsEeamkp8rqD9ojw">
             <children xmi:type="notation:Node" xmi:id="_rrrXo7QsEeamkp8rqD9ojw" type="5007"/>
@@ -4437,7 +4437,7 @@
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_EaXkUbHPEeaCfvIOP_mDJg" routing="Rectilinear"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_EaXkUrHPEeaCfvIOP_mDJg" fontName="Lucida Sans Unicode" fontHeight="10"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EaXkU7HPEeaCfvIOP_mDJg" points="[-15, 0, 0, 23]$[-15, -23, 0, 0]"/>
-            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Eacc0LHPEeaCfvIOP_mDJg" id="(0.49847094801223235,0.0)"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Eacc0LHPEeaCfvIOP_mDJg" id="(0.4080681564331877,0.0)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Eacc0bHPEeaCfvIOP_mDJg" id="(0.4983164983164983,1.0)"/>
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_L-HgsLZQEeamPuzTvcgXeA" type="4001" element="_L9hDwLZQEeamPuzTvcgXeA" source="_A7GfoLD0EeapzJ5lhDV1BQ" target="_Ih870LZQEeamPuzTvcgXeA">
@@ -6384,7 +6384,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_tftYEMDEEeapF_Meo9UpKw" name="oeCreateNewCrisisEvent(&quot;AdtName=Walter&quot;,&quot;AenHumanType=Witness&quot;,&quot;AdtPhoneNumber=691123456&quot;,&quot;A string for the image with the pins&quot;,&quot;The Witness can't stay at the accident's location for long.&quot;)" sourceNode="_tfqUwMDEEeapF_Meo9UpKw" targetNode="_AD2apLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_tftYEMDEEeapF_Meo9UpKw" name="oeCreateNewCrisisEvent(&quot;AdtName=Walter&quot;,&quot;AenHumanType=Witness&quot;,&quot;AdtPhoneNumber=691 12 34 56&quot;,&quot;A string for the image with the pins&quot;,&quot;The Witness can't stay at the accident's location for long.&quot;)" sourceNode="_tfqUwMDEEeapF_Meo9UpKw" targetNode="_AD2apLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugCreateNewCrisisEvent-uciugCreateNewCrisisEvent.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.4/@actor"/>
         <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugCreateNewCrisisEvent-uciugCreateNewCrisisEvent.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.4/@actor"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_tgQKo8DEEeapF_Meo9UpKw" y="604" height="0"/>
@@ -7726,7 +7726,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CujtpLEMEea6IbWe52pFWg" name="oeGetCrisisEventInformation(AdtGeoPos)" sourceNode="_CujtcrEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CujtpLEMEea6IbWe52pFWg" name="oeGetCrisisEventInformation(&quot;Latitude=60.21, Longitude=40.23&quot;)" sourceNode="_CujtcrEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@actor"/>
         <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@actor"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_C0lc9LEMEea6IbWe52pFWg" y="130" height="0"/>
@@ -7738,7 +7738,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CujtqrEMEea6IbWe52pFWg" name="oeGetCrisisEventInformation(AdtGeoPos)" sourceNode="_CujthbEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CujtqrEMEea6IbWe52pFWg" name="oeGetCrisisEventInformation(&quot;Latitude=81.45, Longitude=52.87&quot;)" sourceNode="_CujthbEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@actor"/>
         <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@actor"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_C0mD8bEMEea6IbWe52pFWg" y="404" height="0"/>
@@ -7762,7 +7762,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Cujtv7EMEea6IbWe52pFWg" name="ieReceiveCrisisEventInformation(1,Walter,Witness,691123456,A string for the image with the pins,The Witness can't stay at the accident's location for long.)" sourceNode="_CujteLEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Cujtv7EMEea6IbWe52pFWg" name="ieReceiveCrisisEventInformation(1,Walter,Witness,691 12 34 56,A string for the image with the pins,The Witness can't stay at the accident's location for long.)" sourceNode="_CujteLEMEea6IbWe52pFWg" targetNode="_CujtZLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
         <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_C0mD-LEMEea6IbWe52pFWg" y="210" height="0"/>
@@ -7858,7 +7858,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_YrtcYLssEeaZLsUZBdS-zA" name="oeGetCrisisEventInformation(AdtGeoPos)" sourceNode="_YrpK8LssEeaZLsUZBdS-zA" targetNode="_CujtZLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_YrtcYLssEeaZLsUZBdS-zA" name="oeGetCrisisEventInformation(&quot;Latitude=44.57, Longitude=63.23&quot;)" sourceNode="_YrpK8LssEeaZLsUZBdS-zA" targetNode="_CujtZLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.9/@actor"/>
         <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.9/@actor"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_Ytioa7ssEeaZLsUZBdS-zA" y="1252" height="0"/>
@@ -7882,7 +7882,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Yrwfs7ssEeaZLsUZBdS-zA" name="ieReceiveCrisisEventInformation(1,Walter,Witness,691123456,A string for the image with the pins,The Witness can't stay at the accident's location for long.)" sourceNode="_Yrn80LssEeaZLsUZBdS-zA" targetNode="_CujtZLEMEea6IbWe52pFWg">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Yrwfs7ssEeaZLsUZBdS-zA" name="ieReceiveCrisisEventInformation(1,Walter,Witness,691 12 34 56,A string for the image with the pins,The Witness can't stay at the accident's location for long.)" sourceNode="_Yrn80LssEeaZLsUZBdS-zA" targetNode="_CujtZLEMEea6IbWe52pFWg">
         <target xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
         <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugGlobalDispatchManagement-uciugGlobalDispatchManagement.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
         <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_YryU5bssEeaZLsUZBdS-zA" y="461" height="0"/>
@@ -10195,7 +10195,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7jgPF8EpEeavXNrvfUVGww" x="4" y="-125"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_7jgPGMEpEeavXNrvfUVGww" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7jgPGcEpEeavXNrvfUVGww" x="-4" y="117"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7jgPGcEpEeavXNrvfUVGww" x="7" y="117"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_7jgPGsEpEeavXNrvfUVGww" type="6003">
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7jgPG8EpEeavXNrvfUVGww" x="1" y="140"/>
@@ -10497,7 +10497,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='Input_Interface']/@subNodeMappings[name='Input_Interface_Operation']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_7irIosEpEeavXNrvfUVGww" name="ieReceiveCrisisEventInformation(AdtName: ptString, AetHumanType: etHumanType, AdtPhoneNumber: dtPhoneNumber, AdtMapWithPin: dtMapWithPin, AdtComment: dtComment): ptBoolean    ">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_7irIosEpEeavXNrvfUVGww" name="ieReceiveCrisisEventInformation(AdtName: dtString, AetHumanType: etHumanType, AdtPhoneNumber: dtPhoneNumber, AdtMapWithPin: dtMapWithPin, AdtComment: dtComment): ptBoolean    ">
           <target xmi:type="messir:OperationDeclaration" href="environment/environment.msr#lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieReceiveCrisisEventInformation"/>
           <semanticElements xmi:type="messir:OperationDeclaration" href="environment/environment.msr#lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.inactAbstractDispatchCoordinator.ieReceiveCrisisEventInformation"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_7irIo8EpEeavXNrvfUVGww" labelSize="10" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/operation.png" labelAlignment="LEFT">

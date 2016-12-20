@@ -30,7 +30,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @endPostF
 //postProtocol descriptions
 @postP 
-"The dispatch coordinator's mode has been set to \msrcode{isInMain}."
+"The dispatch coordinator's mode is set to \msrcode{isInMain}."
 @endPostP
 //example
 @example" "

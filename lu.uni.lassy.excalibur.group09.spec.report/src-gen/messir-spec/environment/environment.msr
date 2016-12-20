@@ -56,7 +56,7 @@ Environment Model {
 			
 				input interface inactAbstractDispatchCoordinator {
 					operation ieReceiveNewCrisisEvent(AdtCrisisID:dtCrisisID, AMessage:dtString) : ptBoolean
-					operation ieReceiveCrisisEventInformation(AdtName:ptString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
+					operation ieReceiveCrisisEventInformation(AdtName:dtString, AetHumanType:etHumanType, AdtPhoneNumber:dtPhoneNumber, AdtMapWithPin:dtMapWithPin, AdtComment:dtComment) : ptBoolean
 					operation ieMessageAbstractDispatchCoordinator(AdtComment: dtComment) : ptBoolean
 					operation ieReceiveMap(AdtMapWithPin: dtMapWithPin) : ptBoolean
 				}

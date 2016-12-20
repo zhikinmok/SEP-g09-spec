@@ -34,7 +34,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actCommunicationCompany.outactCo
 @endPostF
 //postProtocol descriptions
 @postP 
-"The actor's mode has been set to \msrcode{isInStandBy}."
+"The actor's mode is set to \msrcode{isInStandBy}."
 @endPostP
 //example
 @example" "

@@ -281,7 +281,7 @@
       <line clip-path="url(#clipPath48)" fill="none" x1="644" x2="637" y1="234" y2="231" stroke-dasharray="none" />
       <line clip-path="url(#clipPath36)" fill="none" x1="464" x2="45" y1="564" y2="564" stroke-dasharray="none" />
       <text x="117" y="513" clip-path="url(#clipPath49)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">oeCreateNewCrisisEvent("AdtName=Walter","</text>
-      <text x="63" y="529" clip-path="url(#clipPath49)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">AenHumanType=Witness","AdtPhoneNumber=691123456","A </text>
+      <text x="57" y="529" clip-path="url(#clipPath49)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">AenHumanType=Witness","AdtPhoneNumber=691 12 34 56","A </text>
       <text x="66" y="545" clip-path="url(#clipPath49)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">string for the image with the pins","The Witness can't stay at </text>
       <text x="154" y="561" clip-path="url(#clipPath50)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve">the accident's location for long.")</text>
       <line clip-path="url(#clipPath51)" fill="none" x1="52" x2="45" y1="561" y2="564" stroke-dasharray="none" />

@@ -24,7 +24,7 @@ lu.uni.lassy.excalibur.group09.spec.environment.actAbstractDispatchCoordinator.o
 @postP 
 "The dispatch coordinator is no longer associated to the current crisis event."
 @postP 
-"The dispatch coordinator's mode has is to \msrcode{isInStandBy}."
+"The dispatch coordinator's mode is set to \msrcode{isInStandBy}."
 @endPostP
 //example
 @example" "
